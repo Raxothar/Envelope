@@ -1,0 +1,55 @@
+.col{
+	@include defaultcol();
+}
+
+@if($enable-classes){
+	@each $lib, $grid-collumns-count in $grid-collumns-counts {
+
+		@if($lib == 'bs'){
+			$lib: '';
+		}
+		@else {
+			$lib: '#{$lib}-';
+		}
+
+		@for $i from 1 through $grid-collumns-count {
+			.col-#{$lib}#{$i} {
+				@include col($i, $grid-collumns-count);
+			}
+		}
+
+		@each $bp, $width in $grid-breakpoints {
+			@include media($width) {
+				@for $i from 1 through $grid-collumns-count {
+					.col-#{$lib}#{$bp}-#{$i} {
+						@include col($i, $grid-collumns-count);
+					}
+				}
+				.hide-#{$lib}#{$bp} {
+					display: none !important;
+				}
+				.flex-#{$lib}#{$bp} {
+					display: flex !important;
+				}
+				.block-#{$lib}#{$bp} {
+					display: block !important;
+				}
+				.inline-#{$lib}#{$bp} {
+					display: inline !important;
+				}
+				.row-reverse-#{$lib}#{$bp} {
+					flex-direction: row-reverse !important;
+				}
+				.col-reverse-#{$lib}#{$bp} {
+					flex-direction: column-reverse !important;
+				}
+				.row-force-#{$lib}#{$bp} {
+					flex-direction: row !important;
+				}
+				.col-force-#{$lib}#{$bp} {
+					flex-direction: column !important;
+				}
+			}
+		}
+	}
+}

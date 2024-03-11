@@ -1,0 +1,11 @@
+@if($enable-classes){
+	 @each $key, $value in $aspect-ratios{
+		.aspect-ratio-#{$key} {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: $value;
+			overflow: hidden;
+		}
+	 }
+}

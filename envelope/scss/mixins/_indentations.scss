@@ -1,0 +1,8 @@
+@mixin int($type, $side:null, $value){
+	@if($side == null){
+		#{$type}: $value;
+	}
+	@else{
+		#{$type}-#{$side}: $value;
+	}
+}

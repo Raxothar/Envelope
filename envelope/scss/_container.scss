@@ -1,0 +1,22 @@
+
+
+@if $enable-classes{
+
+	.container, .container-fluid{
+		@include create-container();
+	}
+
+	@each $containerName, $width in $container-max-widths{
+		@if($containerName == 'main'){
+			$containerName: "";
+		}
+		@else{
+			$containerName: -#{$containerName};
+		}
+		.container#{$containerName}{
+			max-width: $width;
+			@extend .container-fluid;
+		}
+	}
+
+}

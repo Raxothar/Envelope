@@ -1,0 +1,8 @@
+@mixin col($size, $grid-count){
+	flex: 0 0 auto;
+	width: calc(#{percentage($size / $grid-count)} - #{$gap-grid});
+}
+
+@mixin defaultcol(){
+	flex: 1 0 0;
+}

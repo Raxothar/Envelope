@@ -1,0 +1,16 @@
+@if($enable-classes){
+	 @each $indent, $direction in $indentation{
+		 @for $i from 0 through 10{
+			 .#{$indent}-#{$i}{
+				 @include int($direction, null, map-get($indentations, $i));
+			 }
+		 }
+		  @each $side, $name in $sides{
+				@for $i from 0 through 10{
+					 .#{$indent}#{$side}-#{$i}{
+						 @include int($direction, $name, map-get($indentations, $i));
+					 }
+				}
+		  }
+	 }
+}

@@ -1,0 +1,75 @@
+$rem-base: 16;
+$enable-classes: true;
+
+$gutter: (
+	0: 0,
+	1: 0.25rem,
+	2: 0.5rem,
+	3: 1rem,
+	4: 1.5rem,
+	5: 3rem
+) !default;
+
+
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+	3xl: 1600px,
+	4xl: 1920px
+) !default;
+
+$container-max-widths: (
+	main: 1140px,
+	big: 1320px
+) !default;
+
+$grid-collumns-counts: (
+	bs: 12,
+	fc: 5,
+	sc: 7
+) !default;
+
+
+$gap-grid: map-get($gutter, 3);
+$gap-grid-half: $gap-grid * 0.5;
+
+$container-padding-x: $gap-grid * .5;
+
+$sides: (
+	t: top,
+	r: right,
+	b: bottom,
+	l: left
+) !default;
+
+$indentation : (
+	p: padding,
+	m: margin
+);
+
+$indentations:(
+	1: 0.25rem,
+	2: 0.5rem,
+	3: 1rem,
+	4: 1.5rem,
+	5: 3rem,
+	6: 4.5rem,
+	7: 6rem,
+	8: 9rem,
+	9: 12rem,
+	10: 15rem
+) !default;
+
+$aspect-ratios: (
+	1x1: 1,
+	16x9: 16 / 9,
+	4x3: 4 / 3,
+	21x9: 21 / 9,
+	3x4: 3 / 4,
+	9x16: 9 / 16
+) !default;
