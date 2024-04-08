@@ -2017,4 +2017,66 @@ html, body {
   word-wrap: break-word;
 }
 
-/*# sourceMappingURL=envelope.css.map */
+@font-face {
+  font-family: "DejaVu Serif";
+  src: local("DejaVu Serif"), local("DejaVuSerif"), url("dejavuserif.woff2") format("woff2"), url("dejavuserif.woff") format("woff"), url("dejavuserif.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DejaVu Serif";
+  src: local("DejaVu Serif Italic"), local("DejaVuSerif-Italic"), url("dejavuserifitalic.woff2") format("woff2"), url("dejavuserifitalic.woff") format("woff"), url("dejavuserifitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria Semi Bold"), url("geometria_medium.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Regular"), url("Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Medium"), url("Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Semi Bold"), url("Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Bold"), url("Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.h1 {
+  font-family: "DejaVu Serif";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.625rem;
+  line-height: 100%;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.h2 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0.03125rem;
+  color: #000;
+}
+
+/*# sourceMappingURL=default-glass-theme.css.map */

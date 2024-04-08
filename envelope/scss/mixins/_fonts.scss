@@ -1,0 +1,20 @@
+@mixin fontObject(
+	$selector,
+	$font-family: 'Arial',
+	$font-weight: normal,
+	$font-style: normal,
+	$font-size: 16px,
+	$line-height: 1.5,
+	$letter-spacing: normal,
+	$color: #000
+) {
+	#{$selector} {
+		font-family: $font-family;
+		font-weight: $font-weight;
+		font-style: $font-style;
+		font-size: $font-size;
+		line-height: $line-height;
+		letter-spacing: $letter-spacing;
+		color: $color;
+	}
+}
