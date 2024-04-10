@@ -1,0 +1,17 @@
+@mixin bp($bpMin, $bpMax: null) {
+	$minBp: null;
+	$maxBp: null;
+
+	@each $bpName, $bpValue in $grid-breakpoints {
+		@if $bpMin == $bpName {
+			$minBp: $bpValue;
+		}
+		@if $bpMax == $bpName {
+			$maxBp: $bpValue;
+		}
+	}
+
+	@include media($min: $minBp, $max: $maxBp) {
+		@content;
+	}
+}

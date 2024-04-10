@@ -7,22 +7,154 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="UIKit">
-    <section class="UIKit__fonts">
+    <section class="">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>Шрифты</h1>
+                    <h1 class="mb-4 UIKit__sectionTitle">Шрифты</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-lg-6">
-                    <h1 class="h1">H1 - deja vu serif, 42 (Book) / 100% </h1>
-                    <h2 class="h2">H2 - Geometria, 32 (semi Bold) / 100%</h2>
+                    <h1 class="h1 mb-4">H1 - deja vu serif, 42 (Book) / 100% </h1>
+                    <h2 class="h2 mb-4">H2 - Geometria (на самом деле Inter), 32 (semi Bold) / 100%</h2>
+                    <h3 class="h3 mb-4">H3 - Inter, 22 (bold) / 105%</h3>
+                    <h4 class="h4 mb-4">H4 - Inter, 20 (regular) / 105%</h4>
+                    <p class="title mb-4">Title - Inter, 18 (bold) /110%</p>
+                    <p class="subtitle mb-4">Subtitle - Inter, 16 (semi bold) /110%</p>
+                    <p class="text mb-4">Text - Inter, 16 (Regular) / 130%</p>
+                    <p class="smalltext mb-4">Small text - Inter, 14 (Regular) / 130%</p>
+                    <p class="comment mb-4">Comment - Inter, 12 (Medium) / 140%</p>
+                    <p class="menu mb-4">Menu - Inter, 18 (Medium) / 100%</p>
+                    <p class="buttonText mb-4">Button - Inter, 16 (Medium) / 100%</p>
+                    <p class="quote mb-4">Quote - Deja vu serif, 18 (Book Italic) / 150%</p>
                 </div>
-                <div class="col-xs-12 col-lg-6"></div>
             </div>
         </div>
     </section>
-    <script src="envelope/dist/js/envelope.min.js"></script>
+
+    <section class="UIKit__buttons">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-4 UIKit__sectionTitle">Кнопки</h1>
+                </div>
+            </div>
+            <div class="UIKit__buttons--row row">
+                <div class="col-xs-12 col-lg-4">
+                    <button class="button">Услуги</button>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <button class="button button--primary">Перезвоните мне</button>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <button class="button button--secondary">Вызвать агента</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="UIKit__interface">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-4 UIKit__sectionTitle">Элементы интерфейса</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row cards">
+                <div class="col-xs-12 col-lg-2 card card-icon">
+                    <div class="card__header">
+                        <div style='mask-image: url("assets/images/icons/example.svg"); -webkit-mask-image: url("assets/images/icons/example.svg");' class="mask-image card__icon"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Погребение</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-4 card">
+                    <div class="card__header">
+                        <h3 class="card__title title">Индивидуальный</h3>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__text smalltext">Набор для тех, кому необходимы высококачественные материалы и дополнительные услуг персонала агенства</p>
+                        <p class="card__price price">от <span>54 700 ₽</span></p>
+                    </div>
+                    <div class="card__footer">
+                        <a href="#" class="button button--primary">Подробнее</a>
+                        <a href="#" class="button">Заказать</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row cards">
+                <div class="col-xs-12 col-lg-4 card card-product">
+                    <div class="card__header">
+                        <div class="card__image">
+                            <img src="assets/images/product-example.png" alt="Продукт">
+                        </div>
+                        <h3 class="card__title title">Венок из иск. цветов Classic на стойке</h3>
+                        <span class="card__label label">В наличии</span>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__text smalltext">
+                            <li>Производство: Россия</li>
+                            <li>Высота, см: 140</li>
+                            <li>Материал: флористический материал</li>
+                            <li>Цвет: белый,зеленый</li>
+                        </ul>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price price"><span>17 000 ₽</span></p>
+                        <a href="#" class="button">Добавить в корзину</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-4 card card-product">
+                    <div class="card__header">
+                        <div class="card__image">
+                            <img src="assets/images/product-example.png" alt="Продукт">
+                        </div>
+                        <h3 class="card__title title">Венок из иск. цветов Classic на стойке</h3>
+                        <span class="card__label label label-first">Под заказ</span>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__text smalltext">
+                            <li>Производство: Россия</li>
+                            <li>Высота, см: 140</li>
+                            <li>Материал: флористический материал</li>
+                            <li>Цвет: белый,зеленый</li>
+                        </ul>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price price"><span>17 000 ₽</span></p>
+                        <a href="#" class="button">Добавить в корзину</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-4 card card-product">
+                    <div class="card__header">
+                        <div class="card__image">
+                            <img src="assets/images/product-example.png" alt="Продукт">
+                        </div>
+                        <h3 class="card__title title">Венок из иск. цветов Classic на стойке</h3>
+                        <span class="card__label label label-second">Новое поступление</span>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__text smalltext">
+                            <li>Производство: Россия</li>
+                            <li>Высота, см: 140</li>
+                            <li>Материал: флористический материал</li>
+                            <li>Цвет: белый,зеленый</li>
+                        </ul>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price price"><span>17 000 ₽</span></p>
+                        <a href="#" class="button">Добавить в корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="envelope/dist/js/envelope.js"></script>
 </body>
 </html>

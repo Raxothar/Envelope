@@ -1,0 +1,32 @@
+.button{
+	padding: px2rem(24) px2rem(32);
+	border-radius: px2rem(32);
+	background-color: var(--ev-color-mainBlue);
+	color: var(--ev-color-mainWhite);
+	box-shadow: px2rem(3) px2rem(7) px2rem(14) px2rem(0) hex2rgba(map-get($ev-colors, 'mainGray'), 0.1);
+	transition: background 0.3s ease-in-out;
+	&:hover{
+		background: var(--ev-gradient-grayBlueGray);
+	}
+	&--primary{
+		color: var(--ev-color-mainGray);
+		background-color: var(--ev-color-addColdWhite);
+		&:hover{
+			background: var(--ev-color-addColdBlue);
+		}
+	}
+	&--secondary{
+		color: var(--ev-color-mainWhite) !important;
+		background: var(--ev-gradient-darkGray);
+		transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+		text-transform: uppercase;
+		padding: px2rem(12) px2rem(24);
+		border-radius: px2rem(8);
+		&:hover{
+			background: var(--ev-gradient-coldLightGray);
+			color: var(--ev-color-mainGray) !important;
+		}
+	}
+
+}
+

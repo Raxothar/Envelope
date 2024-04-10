@@ -1,0 +1,22 @@
+.UIKit{
+	background-color: rgba(177, 255, 181, 0.04);
+	&__sectionTitle{
+		font-family: 'Arial', sans-serif;
+		font-size: 2rem;
+		font-weight: 700;
+		opacity: 0.7;
+		margin: 1rem 0;
+		padding: 1rem 0;
+		width: 100%;
+		border-bottom: 1px solid gray;
+		border-top: 1px solid gray;
+	}
+
+	&__buttons{
+		&--row > div{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

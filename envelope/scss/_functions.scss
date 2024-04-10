@@ -1,3 +1,31 @@
 @function px2rem($px){
 	@return calc($px / $rem-base) * 1rem ;
 }
+
+// Преобразование шестнадцатеричного символа в десятичное число
+@function hex-to-decimal($hex) {
+	$hex-map: (
+		'0': 0, '1': 1, '2': 2, '3': 3, '4': 4,
+		'5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
+		'a': 10, 'b': 11, 'c': 12, 'd': 13,
+		'e': 14, 'f': 15,
+		'A': 10, 'B': 11, 'C': 12, 'D': 13,
+		'E': 14, 'F': 15
+	);
+	@return map-get($hex-map, $hex);
+}
+
+@function hex2rgba($hex, $opacity: 1) {
+	$hex: "#{ $hex }";
+	@if str-slice($hex, 1, 1) != '#' {
+		@warn "Hex color should start with '#'.";
+		@return null;
+	}
+
+	$hex: str-slice($hex, 2);
+	$red: hex-to-decimal(str-slice($hex, 1, 1)) * 16 + hex-to-decimal(str-slice($hex, 2, 2));
+	$green: hex-to-decimal(str-slice($hex, 3, 3)) * 16 + hex-to-decimal(str-slice($hex, 4, 4));
+	$blue: hex-to-decimal(str-slice($hex, 5, 5)) * 16 + hex-to-decimal(str-slice($hex, 6, 6));
+
+	@return rgba($red, $green, $blue, $opacity);
+}
