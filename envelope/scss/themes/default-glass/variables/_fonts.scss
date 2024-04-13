@@ -8,21 +8,20 @@
 	@include fontObject('.h2', 'Inter', 600, normal, px2rem(32), 100%, px2rem(0.5), var(--ev-color-mainDark));
 }
 
-
 @include fontObject('.h3', 'Inter', 500, normal, px2rem(22), 105%, normal, var(--ev-color-mainDark));
 @include fontObject('.h4', 'Inter', 400, normal, px2rem(20), px2rem(27), normal, var(--ev-color-mainDark));
 
 
 @include fontObject('.title', 'Inter', 700, normal, px2rem(18), px2rem(19.8), px2rem(0.5), var(--ev-color-mainGray));
 @include fontObject('.subtitle', 'Inter', 600, normal, px2rem(16), px2rem(17.6), px2rem(0.5), var(--ev-color-mainGray));
-@include fontObject('.text, .text > *', 'Inter', 400, normal, px2rem(16), px2rem(20.8), px2rem(0.5), var(--ev-color-mainDark));
+@include fontObject('.text, .text > *, body', 'Inter', 400, normal, px2rem(16), px2rem(20.8), px2rem(0.5), var(--ev-color-mainDark));
 @include fontObject('.smalltext', 'Inter', 400, normal, px2rem(14), px2rem(18.2), px2rem(0.5), var(--ev-color-mainGray));
 @include fontObject('.comment', 'Inter', 400, normal, px2rem(12), px2rem(16.8), px2rem(1), var(--ev-color-mainGray));
 @include fontObject('.menu', 'Inter', 700, normal, px2rem(18), px2rem(18), px2rem(0.2), var(--ev-color-mainDark));
 @include fontObject('.buttonText', 'Inter', 600, normal, px2rem(16), px2rem(16), px2rem(0.2), var(--ev-color-mainDark));
 @include fontObject('.quote', 'DejaVu Serif', 400, italic, px2rem(18), px2rem(27), normal, var(--ev-color-mainDark));
 
-@include fontObject('.button', 'Inter', 500, normal, px2rem(16), px2rem(16), px2rem(0.2));
+@include fontObject('.button, .tabs__items-item', 'Inter', 500, normal, px2rem(16), px2rem(16), px2rem(0.2));
 @include fontObject('.button.button--secondary', 'Inter', 700, normal, px2rem(18), px2rem(18), px2rem(0.2));
 @include fontObject('.price', 'Inter', 400, normal, px2rem(16), px2rem(20.8), px2rem(0.5), var(--ev-color-mainBlue));
 @include fontObject('.price > span', 'Inter', 500, normal, px2rem(22), px2rem(22), normal, var(--ev-color-mainBlue));

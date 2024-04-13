@@ -58,12 +58,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="mb-4 UIKit__sectionTitle">Элементы интерфейса</h1>
+                    <h1 class="mb-4 UIKit__sectionTitle">Карточки</h1>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="row cards">
+            <div class="row cards mb-4">
                 <div class="col-xs-12 col-lg-2 card card-icon">
                     <div class="card__header">
                         <div style='mask-image: url("assets/images/icons/example.svg"); -webkit-mask-image: url("assets/images/icons/example.svg");' class="mask-image card__icon"></div>
@@ -154,7 +154,28 @@
             </div>
         </div>
     </section>
+    <section class="UIKit__tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-4 UIKit__sectionTitle">Вкладки</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container tabs">
+            <div class="row tabs__items">
+                <div class="tabs__items-item active" data-tab="1">Вкладка 1</div>
+                <div class="tabs__items-item" data-tab="2">Вкладка 2</div>
+                <div class="tabs__items-item" data-tab="3">Вкладка 3</div>
+            </div>
+            <div class="row tabs__content">
+                <div class="col-xs-12 tabs__content-item active" data-content="1">Контент вкладки 1</div>
+                <div class="col-xs-12 tabs__content-item" data-content="2">Контент вкладки 2</div>
+                <div class="col-xs-12 tabs__content-item" data-content="3">Контент вкладки 3</div>
+            </div>
+        </div>
+    </section>
 
-    <script type="text/javascript" src="envelope/dist/js/envelope.js"></script>
+    <script type="text/javascript" src="envelope/dist/js/envelope.min.js"></script>
 </body>
 </html>

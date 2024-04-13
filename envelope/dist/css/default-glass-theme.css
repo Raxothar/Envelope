@@ -2081,6 +2081,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
 }
 
+.tabs__items {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tabs__items-item {
+  width: fit-content;
+  cursor: pointer;
+}
+.tabs__content-item:not(.active) {
+  display: none;
+}
+
 .UIKit {
   background-color: rgba(177, 255, 181, 0.04);
 }
@@ -2223,7 +2236,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ev-color-mainGray);
 }
 
-.text, .text > * {
+.text, .text > *, body {
   font-family: "Inter";
   font-weight: 400;
   font-style: normal;
@@ -2283,7 +2296,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ev-color-mainDark);
 }
 
-.button {
+.button, .tabs__items-item {
   font-family: "Inter";
   font-weight: 500;
   font-style: normal;
@@ -2480,6 +2493,25 @@ h1, h2, h3, h4, h5, h6 {
 .card__image > img {
   object-fit: contain;
   object-position: center;
+}
+
+.tabs__items {
+  background-color: var(--ev-color-mainWhite);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.tabs__items-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: var(--ev-color-mainGray);
+  transition: background-color 0.3s, color 0.3s;
+}
+.tabs__items-item.active, .tabs__items-item:hover {
+  background-color: var(--ev-color-mainGray);
+  color: var(--ev-color-mainWhite);
 }
 
 /*# sourceMappingURL=default-glass-theme.css.map */

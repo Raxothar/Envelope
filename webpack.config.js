@@ -4,8 +4,8 @@ const path = require('path');
 module.exports = {
     mode: 'production', // Режим production автоматически включает оптимизацию
     entry: {
-        'envelope': './envelope/js/index.js', // Базовый JS файл
-        // Добавьте дополнительные точки входа для CSS, если они не импортируются в JavaScript
+        'envelope': './envelope/js/index.js',
+        'ev-tabs': './envelope/js/tabs.js',
     },
     output: {
         filename: '[name].min.js', // Генерирует минифицированный .js файл
