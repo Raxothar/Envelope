@@ -1,61 +1,769 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Envelope Framework</title>
+    <title>Мавзолей | Организация похорон в Сочи</title>
     <link rel="stylesheet" href="envelope/dist/css/default-glass-theme.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <section class="section mt-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-3 border p-2">
-                    <img class="border image-fluid aspect-ratio-1x1" src="envelope/images/logo.png" alt="">
+<body class="main">
+
+<header class="header">
+    <div class="container">
+        <div class="row header__top">
+            <div class="col-xs-2 col-tc-xl-3 header__top-logo">
+                <a href="#" class="logoTitle">Мавзолей сочи</a>
+                <span class="logoSubtitle hide-xs flex-lg">Организация похорон в Сочи</span>
+            </div>
+            <div class="col-xs-7 col-tc-xl-5 header__top-contacts">
+                <div class="header__top-contacts-item">
+                    <a href="tel:+78622610569" class="header__top-contacts-item--phone title">+7 (862) 261-05-69</a>
+                    <span class="header__top-contacts-item--address comment">Центральный район</span>
                 </div>
-                <div class="col-xs-12 col-md-9 border p-2">
-                    <h1>Всем привет</h1>
-                    <p>Это frontend-фреймворк <code>«Envelope»</code>. Благодаря нему вы можете создавать колонки любого размера, например шириной <code>1/7</code> или <code>1/5</code> от общей ширины row </p>
+                <div class="header__top-contacts-item">
+                    <a href="tel:+78622610569" class="header__top-contacts-item--phone title">+7 (862) 261-05-69</a>
+                    <span class="header__top-contacts-item--address comment">Центральный район</span>
+                </div>
+                <div class="header__top-contacts-item">
+                    <a href="tel:+78622610569" class="header__top-contacts-item--phone title">+7 (862) 261-05-69</a>
+                    <span class="header__top-contacts-item--address comment">Центральный район</span>
+                </div>
+            </div>
+            <div class="col-tc-xl-2 hide-xs block-lg header__top-buttons">
+                <div class="button button--secondary">Вызвать агента</div>
+            </div>
+            <div class="col-xs-1 header__top-burger hide-lg">
+                <div class="burger"></div>
+            </div>
+        </div>
+        <div class="row header__bottom">
+            <nav class="nav">
+                <ul class="nav__list menu">
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown__header">Главная <span class="dropdown__header-arrow"></span></a>
+                        <ul class="dropdown__content">
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown__header">О компании <span class="dropdown__header-arrow"></span></a>
+                        <ul class="dropdown__content">
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown__header">Услуги<span class="dropdown__header-arrow"></span></a>
+                        <ul class="dropdown__content">
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown__header">Цены<span class="dropdown__header-arrow"></span></a>
+                        <ul class="dropdown__content">
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown__header">Товары<span class="dropdown__header-arrow"></span></a>
+                        <ul class="dropdown__content">
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown__header">Контакты<span class="dropdown__header-arrow"></span></a>
+                        <ul class="dropdown__content">
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                            <li><a href="#">Подпункт</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="intro" style="background-image: url('assets/images/bf-bg.jpg');">
+    <div class="container">
+        <div class="glass">
+            <div class="row">
+                <div class="col-xs-12 col-lg-6 intro__info">
+                    <div class="h1 intro__info--title">Ритуальные услуги в Сочи</div>
+                    <div class="intro__info--text">Организуем достойную церемонию прощания и погребения / кремации</div>
+                    <div class="intro__info--buttons">
+                        <button class="button">Услуги</button>
+                        <button class="button button--primary">Перезвоните мне</button>
+                    </div>
+                    <p class="intro__info--subtext comment">Оставьте заявку, перезвоним в течение нескольких минут в любое время</p>
+                </div>
+                <div class="col-xs-12 col-lg-6 intro__price">
+                    <div class="row">
+                        <div class="quoteCard intro__price--card col-xs-12 col-lg-7">
+                            <div class="quoteCard__text">Добьемся для вас компенсации расходов от государства в размере</div>
+                            <div class="quoteCard__price">22 953,20₽</div>
+                        </div>
+                    </div>
+                    <div class="row boxShadow borderRadius colorCards">
+                        <div class="col-xs-6">
+                            <div class="colorCard dark">
+                                <div class="colorCard__title"><b>Рассрочка 0%</b></div>
+                                <div class="colorCard__text">на все программы<br>похорон и кремации</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="colorCard light">
+                                <div class="colorCard__title">Переплата <b>0₽</b></div>
+                                <div class="colorCard__text">Первый взнос <b>0₽<br> До 12 месяцев</b></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-<section class="section-1 mt-3">
+    </div>
+    <div class="intro__labels labels">
+        <a href="#" class="label">
+            <div class="label__icon icon cart"></div>
+            <div class="label__notification">0</div>
+        </a>
+        <a href="#" class="label">
+            <div class="label__icon icon calc"></div>
+        </a>
+        <a href="#" class="label">
+            <div class="label__icon icon yandex"></div>
+        </a>
+    </div>
+</section>
+
+<section class="notes">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-4 border p-2">col-md-4</div>
-            <div class="col-xs-12 col-md-4 border p-2">col-md-4</div>
-            <div class="col-xs-12 col-md-4 border p-2">col-md-4</div>
+        <div class="row notes__cards">
+            <div class="notes__cards--item quoteCard col-xs-6 col-lg-3">
+                <div class="quoteCard__title notes__cards--item-title">Если умер близкий человек</div>
+                <div class="quoteCard__text notes__cards--item-text">Действия родственников с первых минут после того, как умер человек</div>
+            </div>
+            <div class="notes__cards--item quoteCard col-xs-6 col-lg-3">
+                <div class="quoteCard__title notes__cards--item-title">Требуемые документы</div>
+                <div class="quoteCard__text notes__cards--item-text">Похоронные документы, которые придется оформлять</div>
+            </div>
+            <div class="notes__cards--item quoteCard col-xs-6 col-lg-3">
+                <div class="quoteCard__title notes__cards--item-title">Льготы и пособия</div>
+                <div class="quoteCard__text notes__cards--item-text">Какие есть пособия на погребение и кому положены?</div>
+            </div>
+            <a class="notes__cards--item col-xs-6 col-lg-3 colorCard blue borderRadius boxShadow" href="#">
+                <div class="colorCard__title notes__cards--item-title">Рассчитать стоимость похорон</div>
+                <div class="colorCard__text notes__cards--item-text"> <div class="icon calc"></div> Оставьте заявку и узнайте точную стоимость</div>
+            </a>
         </div>
     </div>
 </section>
-<section class="section-2 mt-3">
+
+<section class="mainText">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-fc-md-1 p-2 border">col-fc-md-1</div>
-            <div class="col-xs-12 col-fc-md-1 p-2 border">col-fc-md-1</div>
-            <div class="col-xs-12 col-fc-md-1 p-2 border">col-fc-md-1</div>
-            <div class="col-xs-12 col-fc-md-1 p-2 border">col-fc-md-1</div>
-            <div class="col-xs-12 col-fc-md-1 p-2 border">col-fc-md-1</div>
-        </div>
-    </div>
-</section>
-    <section class="section-3 mt-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sc-md-1 p-2 border">col-sc-md-1</div>
-                <div class="col-xs-12 col-sc-md-1 p-2 border">col-sc-md-1</div>
-                <div class="col-xs-12 col-sc-md-1 p-2 border">col-sc-md-1</div>
-                <div class="col-xs-12 col-sc-md-1 p-2 border">col-sc-md-1</div>
-                <div class="col-xs-12 col-sc-md-1 p-2 border">col-sc-md-1</div>
-                <div class="col-xs-12 col-sc-md-1 p-2 border">col-sc-md-1</div>
-                <div class="col-xs-12 col-sc-md-1 p-2 border">col-sc-md-1</div>
+            <div class="col-xs-12">
+                <div class="h2 mainText__title">Ритуальное агентство «Мавзолей» в Сочи</div>
             </div>
         </div>
-    </section>
-    <script src="envelope/dist/js/envelope.min.js"></script>
+        <div class="row">
+            <div class="col-xs-12 col-lg-8 mainText__left">
+                <div class="boxShadow mainText__content h4 content">
+                    <p>работает на основании нескольких важных принципов:</p>
+                    <ul>
+                        <li>аккуратное обращение с телом умершего;</li>
+                        <li>максимально уважительное отношение к родственникам и знакомым ушедшего человека;</li>
+                        <li>учет всех морально-этических вопросов.</li>
+                    </ul>
+                </div>
+                <div class="boxShadow mainText__content text content">
+                    <p>Специалисты компании категорически не поддерживают любые незаконные методы получения сведений о местах погребения покойников, а также контактных данных и адресов их близких людей. Отдельные виды услуг оказываются абсолютно бесплатно, ведь глубокое и искреннее сочувствие в связи с постигшей утратой – это именно то, чего так не хватает после ухода горячо любимых членов семьи.</p>
+                </div>
+                <div class="boxShadow mainText__content text content">
+                    <p>Все необходимые сведения по поводу того, как похоронить человека, а также организовать данную церемонию согласно принятым канонам, предоставляются при личном визите к представителям агентства «Мавзолей» или по указанным на сайте телефонам:</p>
+                    <div class="row mainText__content--phones">
+                        <div class="col-xs-12 col-lg-4 mainText__content--phones-item">
+                            <div class="comment">Центральный район</div>
+                            <div class="title">+7 (862) 261-05-69</div>
+                            <div class="comment">(круглосуточно)</div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 mainText__content--phones-item">
+                            <div class="comment">Центральный район</div>
+                            <div class="title">+7 (862) 261-05-69</div>
+                            <div class="comment">(круглосуточно)</div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 mainText__content--phones-item">
+                            <div class="comment">Центральный район</div>
+                            <div class="title">+7 (862) 261-05-69</div>
+                            <div class="comment">(круглосуточно)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-4 mainText__right">
+                <div class="col-xs-12 mainText__content borderRadius boxShadow">
+                    <div class="mainText__content--icon icon law"></div>
+                    <div class="mainText__content--text text">
+                        <p>Наше похоронное бюро осуществляет свою работу на основании ФЗ РФ «О погребении и похоронном деле», «Инструкцией о порядке похорон и содержании кладбищ в Российской Федерации» и иной нормативной документацией.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 mainText__content borderRadius boxShadow">
+                    <div class="mainText__content--icon icon hand-palm"></div>
+                    <div class="mainText__content--title subtitle">Порядочный и ответственный персонал</div>
+                </div>
+                <div class="col-xs-12 mainText__content borderRadius boxShadow">
+                    <div class="mainText__content--icon icon sale-box"></div>
+                    <div class="mainText__content--title subtitle">Отдельные виды услуг - оказываются бесплатно</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="row services__header">
+            <div class="col-xs-12 col-lg-8">
+                <div class="h2 services__header--title">Ритуальные услуги</div>
+                <div class="text services__header--text">
+                    <p>Похоронные услуги от агентства «Мавзолей» никогда не отличаются навязчивостью и учитывают абсолютное большинство ожиданий скорбящих родственников, которые далеко не всегда могут сразу предусмотреть все необходимое.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 hide-xs flex-lg">
+                <div class="quote services__header--quote">Более 20 лет<br>помогаем людям</div>
+            </div>
+        </div>
+        
+        <div class="carousel services__slider">
+            <div class="row cards services__cards carousel__slides">
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon tomb"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Погребение</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon funeral-services"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Отпевание</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon embalming"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Бальзами-<br>рование</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon cremation"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Кремация</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon agent"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Ритуальный агент</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon plane-car"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Перевозка умерших</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon tape"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Организация похорон</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon coffin"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Груз 200</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon agreement"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Прижизненный договор</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon porters"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Носильщики гроба</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon social"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Похороны эконом класса</p>
+                    </div>
+                </a>
+
+                <a class="col-xs-12 col-lg-2 card card-icon carousel__slide" href="#">
+                    <div class="card__header">
+                        <div class="mask-image card__icon icon vip"></div>
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title title">Организация VIP похорон</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slider__indicators"></div>
+        </div>
+        
+        
+        <div class="row services__button">
+            <div class="col-xs-12 services__button--wrap">
+                <div class="button">Смотреть все услуги</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="consult" style='background-image: url("assets/images/consult-bg.jpg")'>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 consult__glass">
+                <div class="card glass">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="h3">Интернет магазин похоронных товаров</div>
+                            <div class="smalltext">
+                                <p>Предлагает широкий ассортимент погребальных принадлежностей в зависимости от размера бюджета и характера прощальной процессии</p>
+                            </div>
+                            <a href="#" class="button button--light">Перейти в каталог</a>
+                        </div>
+                        <div class="col-xs-12 col-lg-6">
+                            <img src="assets/images/venok.png" alt="Венок">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-3 consult__warning">
+                <div class="consult__warning--title title">Будьте внимательны!</div>
+                <div class="consult__warning--text smalltext">
+                    <p>В настоящее время участились случаи мошенничества в сфере оказания ритуальных услуг населению</p>
+                    <p>Чтобы не стать жертвой черных агентов и мошенников, необходимо вызвать официального сотрудника «Мавзолей Сочи» по телефону круглосуточной горячей линии</p>
+                </div>
+                <a class="consult__warning--phone title" href="tel:+7 (862) 261-05-69">+7 (862) 261-05-69</a>
+            </div>
+            <div class="col-xs-12 col-lg-3 consult__phone">
+                <div class="consult__phone--header">
+                    <div class="h3">Поможем получить компенсацию</div>
+                    <div class="subtitle">на погребение или организовать похороны бесплатно</div>
+                </div>
+                <div class="consult__phone--body">
+                    <div class="smalltext">Размер пособия на достойное погребение составляет</div>
+                    <div class="title">22 953,20₽</div>
+                    <div class="comment">Пособие получает лицо, ответственное за организацию похорон</div>
+                    <a href="#" class="button button--light">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="trust">
+    <div class="container">
+        <div class="row trust__header">
+            <div class="col-xs-12 col-lg-8 trust__header--content">
+                <div class="h2">Почему нам доверяют?</div>
+                <div class="text">
+                    <p>Практически любая похоронная служба занимается оказанием данных услуг для тех, кто потерял своих близких, однако лишь наша компания подходит к этому вопросу с максимальной ответственностью. Мы готовы вам помочь!</p>
+                </div>
+            </div>
+            <div class="col-lg-2 hide-xs flex-lg trust__header--quote">
+                <div class="quote">Доверьтесь профессионалам</div>
+            </div>
+        </div>
+        <div class="row cards trust__cards">
+            <div class="col-xs-6 col-lg-3">
+                <div class="card card-icon card-gray">
+                    <div class="mask-image card__icon icon experience"></div>
+                    <div class="title">Опыт</div>
+                    <div class="smalltext">Более 20 лет оказываем ритуальные услуги жителям Сочи и края</div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-lg-3">
+                <div class="card card-icon card-gray">
+                    <div class="mask-image card__icon icon quality"></div>
+                    <div class="title">Качество</div>
+                    <div class="smalltext">Оказываем услуги в соответствии с ГОСТ Р 54611-2011, ГОСТ 32609-2014 и ГОСТ 32610-20</div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-lg-3">
+                <div class="card card-icon card-gray">
+                    <div class="mask-image card__icon icon rub"></div>
+                    <div class="title">Экономия</div>
+                    <div class="smalltext">Придерживаемся демократичных цен</div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-lg-3">
+                <div class="card card-icon card-gray">
+                    <div class="mask-image card__icon icon info"></div>
+                    <div class="title">Информирование</div>
+                    <div class="smalltext">Информируем о положенных льготах и помогаем получить пособие на погребение</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="priceSec" style="background-image: url('assets/images/price-bg.jpg')">
+    <div class="container glass">
+        <div class="row priceSec__header">
+            <div class="col-xs-12 col-lg-6">
+                <div class="h2">Стоимость организации похорон в Сочи</div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="smalltext">
+                    <p>Обладая статусом городской службы, наше предприятие имеет исключительную возможность предоставлять минимальные, при этом фиксированные цены на ритуальные услуги в Сочи.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tabs priceSec__tabs">
+            <div class="row tabs__items">
+                <div class="tabs__items-item active" data-tab="1">Захоронение</div>
+                <div class="tabs__items-item" data-tab="2">Кремация</div>
+            </div>
+            <div class="row tabs__content">
+                <div class="col-xs-12 tabs__content-item active" data-content="1">
+                    <div class="row cards">
+                        <div class="col-xs-12 col-lg-4 card">
+                            <div class="card__header">
+                                <h3 class="card__title title">Базовый</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text smalltext">Минимальный набор товаров и услуг необходимых для погребения</p>
+                                <p class="card__price price">от <span>16 720 ₽</span></p>
+                            </div>
+                            <div class="card__footer">
+                                <a href="#" class="button button--primary">Подробнее</a>
+                                <a href="#" class="button">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 card">
+                            <div class="card__header">
+                                <h3 class="card__title title">Полный</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text smalltext">Этот набор включает в себя весь необходимый комплекс процедур по проведению погребения</p>
+                                <p class="card__price price">от <span>27 420 ₽</span></p>
+                            </div>
+                            <div class="card__footer">
+                                <a href="#" class="button button--primary">Подробнее</a>
+                                <a href="#" class="button">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 card">
+                            <div class="card__header">
+                                <h3 class="card__title title">Индивидуальный</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text smalltext">Набор для тех, кому необходимы высококачественные материалы и дополнительные услуг персонала агенства</p>
+                                <p class="card__price price">от <span>54 700 ₽</span></p>
+                            </div>
+                            <div class="card__footer">
+                                <a href="#" class="button button--primary">Подробнее</a>
+                                <a href="#" class="button">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 tabs__content-item" data-content="2">
+                    <div class="row cards">
+                        <div class="col-xs-12 col-lg-4 card">
+                            <div class="card__header">
+                                <h3 class="card__title title">Базовый | Кремация</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text smalltext">Минимальный набор товаров и услуг необходимых для погребения</p>
+                                <p class="card__price price">от <span>16 720 ₽</span></p>
+                            </div>
+                            <div class="card__footer">
+                                <a href="#" class="button button--primary">Подробнее</a>
+                                <a href="#" class="button">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 card">
+                            <div class="card__header">
+                                <h3 class="card__title title">Полный | Кремация</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text smalltext">Этот набор включает в себя весь необходимый комплекс процедур по проведению погребения</p>
+                                <p class="card__price price">от <span>27 420 ₽</span></p>
+                            </div>
+                            <div class="card__footer">
+                                <a href="#" class="button button--primary">Подробнее</a>
+                                <a href="#" class="button">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 card">
+                            <div class="card__header">
+                                <h3 class="card__title title">Индивидуальный | Кремация</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text smalltext">Набор для тех, кому необходимы высококачественные материалы и дополнительные услуг персонала агенства</p>
+                                <p class="card__price price">от <span>54 700 ₽</span></p>
+                            </div>
+                            <div class="card__footer">
+                                <a href="#" class="button button--primary">Подробнее</a>
+                                <a href="#" class="button">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row priceSec__content">
+            <div class="col-xs-12 col-lg-9 priceSec__content--text content">
+                <div class="h2">Чем мы можем вам помочь?</div>
+                <div class="text">
+                    <p>Сотрудники ритуальной службы расскажут, как действовать после смерти близкого, куда позвонить, какие документы получить. Агент приедет в любое удобное для вас время и займется организацией похорон и поминок.</p>
+                </div>
+                <div class="h4">
+                    <p>Достоинства агентства «Мавзолей»</p>
+                    <ul>
+                        <li>полный комплекс услуг;</li>
+                        <li>гарантия качества в соответствии с законом РФ;</li>
+                        <li>готовые комплексы похорон на любую сумму;</li>
+                        <li>работаем в режиме 24/7;</li>
+                        <li>опытные и деликатные сотрудники;</li>
+                        <li>государственные расценки.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-3 priceSec__content--quote">
+                <div class="quote">помощь и поддержка в трудную минуту</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="formSec">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-9 formSec__form">
+                <div class="glass">
+                    <div class="h2">Получите оперативную консультацию бесплатно</div>
+                    <p class="smalltext">Горячая линия работает круглосуточно</p>
+                    <form action="#" class="row form">
+                        <div class="col-xs-12 col-lg-4 formSec__form--name">
+                            <div class="inputbox input-name">
+                                <input type="text" name="name" id="name" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 formSec__form--phone">
+                            <div class="inputbox input-phone">
+                                <input type="tel" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 formSec__form--button">
+                            <div class="inputbox input-button">
+                                <input class="button button--secondary" type="submit" value="Далее">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 formSec__form--check">
+                            <div class="inputbox input-check">
+                                <label for="check">
+                                    <input type="checkbox" name="check" id="check">
+                                    <span class="check"></span>
+                                    <span class="smalltext">Нажимая на кнопку Далее я соглашаюсь с условиями обработки <a href="#">персональных данных</a></span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-3 formSec__image">
+                <img src="assets/images/woman.png" alt="Женщина">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bf" style="background-image: url('assets/images/bf-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-tc-4 bf__info">
+                <div class="bf__info-card card">
+                    <div class="bf__info-card-title logoTitle">Мавзолей Сочи</div>
+                    <div class="bf__info-card-text logoSubtitle">Организация похорон в Сочи</div>
+                    <div class="bf__info-card-address text">г. Сочи, ул. Дагомысская, д. 60</div>
+                    <div class="bf__info-card-phone text">Телефон: <span>+7 (862) 261-05-69</span></div>
+                    <div class="bf__info-card-fax text">Факс: +7 (862) 261-66-30</div>
+                    <div class="bf__info-card-worktime logoSubtitle">Мы работаем ежедневно с 09:00 до 18:00 <i>mavzoley-sochi.ru</i></div>
+                    <div class="bf__info-card-button">
+                        <button class="button button--secondary">Вызвать агента</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bf__menu col-xs-12 col-tc-2">
+                <div class="bf__menu-header h3">Меню</div>
+                <nav class="bf__menu-nav nav">
+                    <ul class="nav__list menu">
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown__header">Главная <span class="dropdown__header-arrow"></span></a>
+                            <ul class="dropdown__content">
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown__header">О компании <span class="dropdown__header-arrow"></span></a>
+                            <ul class="dropdown__content">
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown__header">Услуги<span class="dropdown__header-arrow"></span></a>
+                            <ul class="dropdown__content">
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown__header">Цены<span class="dropdown__header-arrow"></span></a>
+                            <ul class="dropdown__content">
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown__header">Товары<span class="dropdown__header-arrow"></span></a>
+                            <ul class="dropdown__content">
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown__header">Контакты<span class="dropdown__header-arrow"></span></a>
+                            <ul class="dropdown__content">
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                                <li><a href="#">Подпункт</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="bf__menu second col-xs-12 col-tc-2">
+                <div class="bf__menu-header h3">Ритуальные товары</div>
+                <nav class="bf__menu-nav">
+                    <ul class="nav__list menu">
+                        <li class="nav__item"><a href="#" class="nav__link">Гробы</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Венки</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Кресты</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Текстиль</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Траурные ленты</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="bf__menu second col-xs-12 col-tc-2">
+                <div class="bf__menu-header h3">Ритуальные услуги</div>
+                <nav class="bf__menu-nav">
+                    <ul class="nav__list menu">
+                        <li class="nav__item"><a href="#" class="nav__link">Похоронный агент</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Организация похорон</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Перевозка умерших</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Кремация</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Груз 200</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Скрытый пункт 1</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Скрытый пункт 2</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Скрытый пункт 3</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Скрытый пункт 4</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Скрытый пункт 5</a></li>
+                        <a href="#" class="bf__menu-showAll link">Показать все</a>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 footer__copyright">
+                <p class="smalltext">&copy; 2009. ООО "Мавзолей". Ритуальные услуги в Сочи. Все права защищены</p>
+            </div>
+            <div class="col-xs-12 col-lg-6 footer__links">
+                <ul class="smalltext">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="envelope/js/index.js"></script>
+<script type="text/javascript" src="envelope/js/slider.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

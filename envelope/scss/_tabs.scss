@@ -1,12 +1,22 @@
 .tabs{
 	&__items{
+		width: fit-content;
 		display: inline-flex;
 		justify-content: flex-start;
 		align-items: center;
+		background-color: var(--ev-color-mainWhite);
+		margin-left: $gap-grid-half;
 		&-item{
 			width: fit-content;
 			cursor: pointer;
+			&:first-child{
+				margin-left: 0;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
 		}
+
 	}
 	&__content{
 		&-item:not(.active){

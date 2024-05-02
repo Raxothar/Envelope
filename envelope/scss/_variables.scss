@@ -2,11 +2,11 @@ $rem-base: 16;
 $enable-classes: true;
 
 $gutter: (
-	0: 0,
-	1: 0.25rem,
-	2: 0.5rem,
-	3: 1rem,
-	4: 1.5rem,
+	0: 0.25rem,
+	1: 1rem,
+	2: 1.5rem,
+	3: 2rem,
+	4: 2.5rem,
 	5: 3rem
 ) !default;
 
@@ -30,8 +30,8 @@ $container-max-widths: (
 
 $grid-collumns-counts: (
 	bs: 12,
-	fc: 5,
-	sc: 7
+	sc: 7,
+	tc: 10,
 ) !default;
 
 

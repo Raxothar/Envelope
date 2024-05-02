@@ -1,0 +1,57 @@
+.mainText{
+	padding-top: px2rem(72);
+	padding-bottom: px2rem(37);
+	background-color: var(--ev-color-addColdWhite);
+
+	&__title{
+		text-transform: uppercase;
+		margin-bottom: px2rem(8);
+	}
+
+	&__content{
+		background-color: var(--ev-color-mainWhite);
+		padding: px2rem(16) px2rem(24);
+		margin-bottom: px2rem(24);
+		align-items: center;
+		&.text > *{
+			color: var(--ev-color-mainGray);
+		}
+		&--icon{
+			width: px2rem(45);
+			height: px2rem(45);
+			margin: px2rem(7.5);
+			background-color: var(--ev-color-addColdBlue);
+		}
+		&--text{
+			margin-top: px2rem(12);
+			width: 100%;
+		}
+		&--title{
+			width: calc(100% - px2rem(60));
+			padding: px2rem(8) px2rem(16);
+		}
+		&--phones{
+			margin-top: px2rem(16);
+			justify-content: space-between;
+			&-item{
+				text-align: center;
+				border-bottom: px2rem(1) solid var(--ev-color-addColdBlue);
+				padding-bottom: px2rem(8);
+				.title{
+					margin-top: px2rem(4);
+					margin-bottom: px2rem(4);
+				}
+			}
+		}
+	}
+
+	&__right > &__content{
+		background: var(--ev-gradient-gray);
+		display: flex;
+		flex-wrap: wrap;
+		& *{
+			color: var(--ev-color-mainGray);
+		}
+	}
+
+}

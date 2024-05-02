@@ -5,7 +5,7 @@ module.exports = {
     mode: 'production', // Режим production автоматически включает оптимизацию
     entry: {
         'envelope': './envelope/js/index.js',
-        'ev-tabs': './envelope/js/tabs.js',
+        'slider': './envelope/js/slider.js',
     },
     output: {
         filename: '[name].min.js', // Генерирует минифицированный .js файл

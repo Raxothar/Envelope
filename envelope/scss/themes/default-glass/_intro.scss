@@ -1,0 +1,48 @@
+.intro{
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: px2rem(54) 0;
+	& > .container > .glass{
+		padding: px2rem(54) px2rem(56);
+		& > .row{
+			align-items: stretch;
+		}
+	}
+	&__info{
+		&--title, &--text, &--subtext{
+			color: var(--ev-color-mainGray);
+		}
+		&--text, &--subtext, &--buttons{
+			max-width: 80%;
+		}
+		&--title{
+			text-transform: uppercase;
+			margin-bottom: px2rem(24);
+		}
+		&--text{
+			margin-bottom: px2rem(28);
+		}
+		&--buttons{
+			display: flex;
+			margin-bottom: px2rem(16);
+			justify-content: space-between;
+			& > .button{
+				min-width: px2rem(206);
+			}
+		}
+	}
+	&__price{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__labels{
+		flex-direction: column;
+		right: px2rem(2);
+		top: 0;
+		height: 100%;
+		justify-content: center;
+	}
+}

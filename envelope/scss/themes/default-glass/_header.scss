@@ -1,0 +1,104 @@
+.header{
+	background-color: var(--ev-color-mainWhite);
+	&__top{
+		padding: px2rem(16) 0;
+		border-bottom: px2rem(1) solid var(--ev-color-addColdBlue);
+		&-logo{
+			display: flex;
+			& > *{
+				display: flex;
+				align-items: center;
+			}
+			& > .logoTitle{
+				width: 100%;
+			}
+		}
+		&-contacts{
+			display: flex;
+			justify-content: space-between;
+			&-item{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				&--address{
+					margin-top: px2rem(4);
+				}
+			}
+		}
+	}
+	&__bottom{
+		padding: px2rem(16) 0;
+		& .nav, & .nav__list{
+			width: 100%;
+			display: flex;
+		}
+		& .nav__list{
+			justify-content: space-between;
+			text-transform: uppercase;
+
+			.nav__item.dropdown{
+				display: flex;
+				align-items: center;
+				position: relative;
+				cursor: pointer;
+				&.open, & > .dropdown__header{
+					background: unset;
+				}
+			}
+
+			.nav__link{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: px2rem(11) px2rem(24);
+				border-radius: px2rem(8);
+				cursor: pointer;
+
+				.dropdown__header-arrow{
+					cursor: pointer;
+					background-color: var(--ev-color-mainDark);
+					margin-left: px2rem(8);
+					height: px2rem(18);
+					width: px2rem(18);
+					aspect-ratio: 1 / 1;
+					transition: background-color 0.3s ease-in-out;
+				}
+
+				&:hover, &:hover.dropdown__header{
+					background-color: var(--ev-color-addColdWhite);
+					transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+					box-shadow: px2rem(3) px2rem(7) px2rem(14) px2rem(0) var(--ev-color-mainGrayTransparent);
+				}
+			}
+
+			.nav__item > ul.dropdown__content{
+				display: none;
+				position: absolute;
+				top: px2rem(40);
+				left: 0;
+				overflow: hidden;
+				height: fit-content;
+				min-width: 100%;
+				width: fit-content;
+				z-index: 999;
+				background-color: var(--ev-color-mainWhite);
+				& > li{
+					padding: px2rem(16) px2rem(24);
+					& > a{
+						color: var(--ev-color-mainGray);
+					}
+					&:hover{
+						background-color: var(--ev-color-addColdWhite);
+					}
+				}
+			}
+
+			.nav__item:hover > ul.dropdown__content{
+				display: block;
+			}
+
+		}
+	}
+}
+

@@ -1,0 +1,75 @@
+.priceSec{
+	padding: px2rem(70) 0 px2rem(90) 0;
+	background-size: cover;
+	background-position: center;
+
+	.glass.container{
+		padding: px2rem(60);
+	}
+
+	&__header{
+		align-items: center;
+		.h2{
+			text-transform: uppercase;
+			padding: px2rem(8);
+		}
+		.h2, .smalltext > p{
+			color: var(--ev-color-mainGray);
+		}
+		.smalltext{
+			padding: px2rem(8) px2rem(16);
+		}
+	}
+
+	&__tabs{
+		margin-top: px2rem(16);
+		.tabs__content{
+			padding-top: px2rem(40);
+
+			.cards > .card{
+				background-color: transparent;
+				border: px2rem(1) solid var(--ev-color-addColdBlue);
+				&:first-child{
+					margin-left: 0;
+				}
+
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	&__content{
+		margin-top: px2rem(60);
+		padding-top: px2rem(24);
+		align-items: flex-end;
+
+		&--text{
+			.h2{
+				text-transform: uppercase;
+				margin: px2rem(8);
+			}
+			.text{
+				padding: px2rem(8) px2rem(16);
+			}
+			.h4{
+				padding: px2rem(16) px2rem(24);
+			}
+			*{
+				color: var(--ev-color-mainGray);
+			}
+
+		}
+
+		&--quote{
+			padding: px2rem(32);
+			.quote{
+				color: var(--ev-color-mainBlue);
+				text-transform: uppercase;
+				text-align: right;
+			}
+		}
+	}
+
+}

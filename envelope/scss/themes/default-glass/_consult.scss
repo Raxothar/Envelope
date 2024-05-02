@@ -1,0 +1,76 @@
+.consult{
+	padding: px2rem(48) 0;
+	&__glass > .card{
+		background-image: var(--ev-gradient-gray);
+		backdrop-filter: blur(px2rem(20));
+		background-color: transparent;
+		&:hover{
+			border-color: transparent;
+		}
+		& > .row{
+			align-items: center;
+		}
+		& .h3{
+			padding: px2rem(8) 0;
+			color: var(--ev-color-mainGray);
+		}
+		& .smalltext{
+			padding: px2rem(8) 0;
+		}
+		& .button{
+			margin-top: px2rem(32);
+		}
+	}
+
+	&__warning{
+		padding: px2rem(16);
+		border: px2rem(1) solid var(--ev-color-mainGray);
+		border-radius: px2rem(8);
+		background-color: var(--ev-color-addColdBlue);
+		&--title, &--phone, &--text > p{
+			color: var(--ev-color-mainGray);
+			padding: px2rem(8) 0;
+		}
+		&--phone{
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		&--text > p{
+			color: var(--ev-color-mainBlack);
+		}
+	}
+
+	&__phone{
+		border-radius: px2rem(8);
+		overflow: hidden;
+		border: px2rem(1) solid var(--ev-color-mainBlue);
+		&--header{
+			padding: px2rem(16);
+			background-color: var(--ev-color-mainBlue);
+			& > *{
+				color: var(--ev-color-mainWhite) !important;
+			}
+			& > .h3{
+				margin-bottom: px2rem(4);
+			}
+		}
+		&--body{
+			padding: 0 px2rem(16);
+			& > *:not(.button){
+				padding: px2rem(8) 0;
+			}
+			& > .button{
+				width: fit-content;
+			}
+			& > .smalltext, & > .comment{
+				color: var(--ev-color-mainBlack);
+			}
+			& > .title{
+				color: var(--ev-color-mainBlue);
+			}
+		}
+	}
+
+}

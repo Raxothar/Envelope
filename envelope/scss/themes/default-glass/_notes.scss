@@ -1,0 +1,27 @@
+.notes{
+	padding: px2rem(40) 0;
+
+	&__cards{
+		justify-content: space-between;
+		& > div{
+			margin: 0;
+		}
+		&--item{
+
+			&-text{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				& > .icon.calc{
+					height: px2rem(32);
+					aspect-ratio: 1 / 1;
+					background-color: var(--ev-color-mainWhite);
+					margin-right: px2rem(8);
+				}
+			}
+		}
+	}
+
+
+
+}

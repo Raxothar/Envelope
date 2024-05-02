@@ -1,0 +1,17 @@
+.footer{
+	background: var(--ev-gradient-grayBlueGray);
+	padding: px2rem(20) 0;
+	& *{
+		color: var(--ev-color-mainWhite);
+	}
+	&__links ul{
+		display: flex;
+		justify-content: flex-end;
+		& > li:first-child{
+			margin-right: px2rem(48);
+		}
+		& > li > a:hover{
+			text-decoration: underline;
+		}
+	}
+}

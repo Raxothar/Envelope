@@ -1,0 +1,124 @@
+.bf{
+	padding: px2rem(48) 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(px2rem(10));
+
+	& > .container > .row{
+		align-items: stretch;
+	}
+
+	&__info-card{
+		padding: px2rem(16) px2rem(40) px2rem(32) px2rem(40);
+		background-image: var(--ev-gradient-gray);
+		background-color: unset;
+		box-shadow: px2rem(0) px2rem(10) px2rem(20) px2rem(0) var(--ev-color-mainDarkTransparent);
+		border: none;
+
+		& > div{
+			margin-bottom: px2rem(12);
+		}
+
+		&-title{
+			line-height: px2rem(40);
+		}
+
+		&-title, &-text, &-phone, &-address, &-phone > span{
+			color: var(--ev-color-mainGray);
+		}
+
+		&-fax, &-worktime{
+			color: var(--ev-color-mainDark);
+		}
+
+		&-button{
+			margin-top: px2rem(12);
+		}
+
+		&:hover{
+			border: none;
+		}
+	}
+
+	&__menu {
+		background-image: var(--ev-gradient-gray);
+		border: px2rem(1) solid var(--ev-color-mainBlue);
+		border-radius: px2rem(8);
+		overflow: hidden;
+
+		&-header {
+			display: flex;
+			align-items: center;
+			background-color: var(--ev-color-mainBlue);
+			color: var(--ev-color-mainWhite);
+			height: px2rem(54);
+			max-height: px2rem(54);
+			padding: px2rem(16);
+		}
+
+		&-nav{
+			color: var(--ev-color-mainGray);
+			background-image: var(--ev-gradient-gray);
+			backdrop-filter: blur(px2rem(20));
+			.nav__list {
+				padding: px2rem(16);
+				.nav__item{
+					background-color: transparent;
+					padding: px2rem(8) 0;
+					& > a{
+						padding: 0;
+						color: var(--ev-color-mainGray);
+						text-transform: uppercase;
+					}
+					&.dropdown {
+						& > .dropdown__content{
+							display: none;
+							& > li{
+								padding: px2rem(16) px2rem(24);
+								& > a{
+									color: var(--ev-color-mainGray);
+								}
+								&:hover{
+									background-color: var(--ev-color-addColdWhite);
+								}
+							}
+						}
+						& > .dropdown__header{
+							background: unset !important;
+						}
+					}
+					&.dropdown:hover > .dropdown__content{
+						display: block;
+					}
+					& .dropdown__header-arrow{
+						width: 1em;
+						height: 100%;
+						aspect-ratio: 1 / 1;
+						background-color: var(--ev-color-mainBlack);
+					}
+				}
+			}
+		}
+
+		&-showAll{
+			display: flex;
+			margin-top: px2rem(12);
+			text-decoration: underline;
+			text-transform: none !important;
+			color: var(--ev-color-mainBlue) !important;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+	}
+
+	&__menu.second{
+		border-color: var(--ev-color-addColdBlue);
+		.bf__menu-header{
+			background-color: var(--ev-color-addColdBlue);
+			color: var(--ev-color-mainGray);
+		}
+	}
+
+}

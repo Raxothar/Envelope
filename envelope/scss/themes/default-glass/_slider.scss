@@ -1,0 +1,15 @@
+.carousel {
+
+	&__button {
+		background-color: transparent;
+		color: var(--ev-color-addGray);
+	}
+
+	&__indicator{
+		background-color: var(--ev-color-addGray);
+		&--active{
+			background-color: var(--ev-color-mainBlue);
+		}
+
+	}
+}

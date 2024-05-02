@@ -1,0 +1,53 @@
+.trust{
+	padding: px2rem(80) 0;
+	background-color: var(--ev-color-mainWhite);
+	&__header{
+		justify-content: space-between;
+		align-items: center;
+		&--content{
+			& > *{
+				color: var(--ev-color-mainGray) !important;
+			}
+			& > .h2{
+				padding: px2rem(8);
+				text-transform: uppercase;
+			}
+			& > .text{
+				padding: 0 px2rem(16);
+				& > *:not(:last-child){
+					margin: px2rem(8) 0;
+
+				}
+			}
+		}
+		&--quote{
+			text-align: right;
+			& > .quote{
+				text-align: right;
+				text-transform: uppercase;
+				color: var(--ev-color-mainBlue);
+			}
+		}
+	}
+	&__cards{
+		margin-top: px2rem(24);
+		align-items: stretch;
+		.card-gray{
+			justify-content: flex-start;
+			align-items: flex-start;
+			padding: 0 px2rem(24) px2rem(24) px2rem(24);
+			border-radius: px2rem(8);
+			border-color: transparent;
+			background-color: var(--ev-color-addColdWhite);
+			aspect-ratio: unset;
+			height: 100%;
+			& > .title, & > .smalltext {
+				color: var(--ev-color-mainGray);
+			}
+			& > .title{
+				padding: px2rem(24) 0 px2rem(8) 0;
+			}
+
+		}
+	}
+}
