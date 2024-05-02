@@ -53,5 +53,19 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+    let accordeons = document.querySelectorAll(".accordeon");
+    if(accordeons.length > 0){
+        accordeons.forEach((accordeon) => {
+            let accordeonItems = accordeon.querySelectorAll('.accordeon__item');
+            accordeonItems.forEach((accordeonItem) => {
+                let accordeonHeader = accordeonItem.querySelector('.accordeon__item--header');
+                accordeonHeader.addEventListener('click', (e) => {
+                    accordeonItem.classList.toggle('open');
+                });
+            });
+        });
+    }
+
 });
 

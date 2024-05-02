@@ -22,8 +22,8 @@
 @include fontObject('.quote', 'DejaVu Serif', 400, italic, px2rem(18), px2rem(27), normal, var(--ev-color-mainDark));
 @include fontObject('.link', 'Inter', 500, normal, px2rem(18), px2rem(19.8), px2rem(0.5), var(--ev-color-mainBlue));
 
-@include fontObject('input, input::placeholder, .button, .tabs__items-item', 'Inter', 500, normal, px2rem(16), px2rem(16), px2rem(0.2));
 @include fontObject('.button.button--secondary', 'Inter', 700, normal, px2rem(18), px2rem(18), px2rem(0.2));
+@include fontObject('input, input::placeholder, .button, .tabs__items-item', 'Inter', 500, normal, px2rem(16), px2rem(16), px2rem(0.2));
 @include fontObject('.price', 'Inter', 400, normal, px2rem(16), px2rem(20.8), px2rem(0.5), var(--ev-color-mainBlue));
 @include fontObject('.price > span, .bf__info-card-phone > span', 'Inter', 500, normal, px2rem(22), px2rem(22), normal, var(--ev-color-mainBlue));
 @include fontObject('.label', 'Inter', 700, normal, px2rem(12), px2rem(16.8), px2rem(1), var(--ev-color-mainWhite));

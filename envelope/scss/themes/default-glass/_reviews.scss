@@ -1,0 +1,26 @@
+.reviews{
+	background-color: var(--ev-color-addColdWhite);
+	padding: px2rem(80) 0;
+	&__header{
+		align-items: center;
+		margin-bottom: px2rem(16);
+		&--title .h2{
+			padding: px2rem(8);
+			text-transform: uppercase;
+			color: var(--ev-color-mainGray);
+		}
+		&--button .button{
+			font-weight: 400;
+			text-transform: unset;
+		}
+	}
+}
+
+@include bp(lg, null){
+	.carousel__button--left {
+		left: calc((100% / 3) + px2rem(8));
+	}
+	.carousel__button--right {
+		right: calc((100% / 3) + px2rem(8));
+	}
+}

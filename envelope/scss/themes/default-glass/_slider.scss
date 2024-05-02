@@ -3,12 +3,35 @@
 	&__button {
 		background-color: transparent;
 		color: var(--ev-color-addGray);
+		width: px2rem(32);
+		height: px2rem(32);
+		font-size: px2rem(28);
+		top: unset;
+		bottom: 0;
 	}
 
 	&__indicator{
-		background-color: var(--ev-color-addGray);
-		&--active{
-			background-color: var(--ev-color-mainBlue);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--ev-color-mainWhite);
+		border: px2rem(1) solid var(--ev-color-addColdBlue);
+		border-radius: 50%;
+		width: px2rem(24);
+		height: px2rem(24);
+		margin: 0 px2rem(8);
+		&::before{
+			content: '';
+			display: block;
+			width: px2rem(16);
+			height: px2rem(16);
+			background-color: var(--ev-color-addColdBlue);
+			border-radius: 50%;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+		}
+		&--active::before{
+			opacity: 1;
 		}
 
 	}

@@ -37,7 +37,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let servicesSlider = document.querySelector(".services__slider");
     if (servicesSlider) {
-        console.log('qu');
-        new Carousel(servicesSlider, {0: 4, 991: 12}, {arrows: true, nav: true});
+        if (window.innerWidth < 991) {
+            new Carousel(servicesSlider, {0: 2}, {arrows: true, nav: true});
+        }
+    }
+
+    let reviewsSlider = document.querySelector(".reviews__slider");
+    if (reviewsSlider) {
+        new Carousel(reviewsSlider, {0: 1, 992:3}, {arrows: true, nav: true});
+    }
+
+    let faqSlider = document.querySelector(".faq__licences--wrap--slider");
+    if (faqSlider) {
+        new Carousel(faqSlider, {0: 2}, {arrows: true, nav: true});
     }
 });
