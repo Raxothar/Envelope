@@ -122,3 +122,52 @@
 	}
 
 }
+
+@include bp(xs, lg){
+	.bf{
+		padding: px2rem(32) 0 px2rem(8) 0;
+		&__info{
+			margin-bottom: px2rem(24);
+			&-card{
+				padding: px2rem(16);
+				display: flex;
+				justify-content: center;
+				& > *{
+					text-align: center;
+				}
+				& > &-title{
+					padding: px2rem(8) 0;
+					margin-bottom: px2rem(8);
+				}
+				& > &-text{
+					margin-bottom: px2rem(4);
+					padding: 0;
+				}
+				& > &-address{
+					padding: 0;
+					margin-bottom: px2rem(8);
+				}
+				& > &-phone{
+					padding: 0;
+					margin-bottom: px2rem(8);
+				}
+				& > &-fax{
+					padding: 0;
+					margin-bottom: px2rem(8);
+				}
+				& > &-worktime{
+					padding: 0;
+					margin-bottom: px2rem(8);
+				}
+				& > &-button{
+					padding-top: px2rem(12);
+					display: flex;
+					justify-content: center;
+				}
+			}
+		}
+		&__menu{
+			margin-bottom: px2rem(24);
+		}
+	}
+}

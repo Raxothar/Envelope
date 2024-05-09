@@ -1,0 +1,44 @@
+.burger{
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	& > span{
+		position: relative;
+		transition: background-color 0.3s ease-in-out;
+	}
+	& > span, & > span::before, & > span::after{
+		display: block;
+		height: px2rem(3);
+		width: 100%;
+		background-color: #000;
+		border-radius: px2rem(1.5);
+	}
+	& > span::before, & > span::after{
+		content: "";
+		position: absolute;
+		left: 0;
+		transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+	}
+	& > span::before{
+		top: px2rem(10);
+	}
+	& > span::after{
+		top: px2rem(-10);
+	}
+
+	&.close > span{
+		background-color: transparent;
+	}
+	&.close > span::before{
+		top: 0;
+		transform: rotate(45deg);
+	}
+	&.close > span::after{
+		top: 0;
+		transform: rotate(-45deg);
+	}
+
+}

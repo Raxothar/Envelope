@@ -72,5 +72,73 @@
 			}
 		}
 	}
+}
 
+@include bp(xs, lg){
+	.consult{
+		padding: px2rem(40) 0;
+		&__glass{
+			border-radius: px2rem(32);
+			margin-bottom: px2rem(24);
+			& > .card.glass{
+				& > .row{
+					flex-direction: column-reverse;
+				}
+			}
+			&--image{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: px2rem(8);
+				& > img{
+					max-height: px2rem(200);
+				}
+			}
+			&--content{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				& > *{
+					text-align: center;
+				}
+				&--title{
+					padding: px2rem(8) 0;
+					margin-bottom: px2rem(8);
+				}
+				&--text{
+					margin-bottom: px2rem(8);
+				}
+				&--button{
+					margin-top: 0 !important;
+				}
+			}
+		}
+		&__warning{
+			margin-bottom: px2rem(24);
+			&--text, &--title, &--phone{
+				padding: px2rem(8) 0;
+			}
+			&--text > p{
+				padding: 0;
+			}
+			&--text > p+p{
+				margin-top: px2rem(8);
+			}
+			&--phone.title{
+				margin-top: px2rem(16);
+			}
+		}
+		&__phone{
+			&--body > .smalltext, &--body > .comment{
+				color: var(--ev-color-mainDark) !important;
+			}
+			&--body > .title{
+				text-align: center !important;
+			}
+			&--body > .button{
+				margin: px2rem(8) auto;
+			}
+		}
+	}
 }

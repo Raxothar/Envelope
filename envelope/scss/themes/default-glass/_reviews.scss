@@ -24,3 +24,30 @@
 		right: calc((100% / 3) + px2rem(8));
 	}
 }
+
+@include bp(xs, lg){
+	.reviews{
+		padding: px2rem(40) 0;
+		&__header{
+			margin-bottom: px2rem(32);
+			&--button > .button--secondary{
+				background: var(--ev-color-mainWhite);
+				color: var(--ev-color-mainGray) !important;
+			}
+		}
+		&__slider{
+			.carousel__slide{
+				width: 100%;
+				margin: 0;
+				.card-review{
+					width: calc(100% - $gap-grid);
+					.button--primary{
+						box-shadow: unset;
+						text-transform: uppercase;
+						padding: px2rem(16) px2rem(24);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,5 @@
 @mixin row{
-	width: 100%;
+	width: calc(100% + $gap-grid);
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: calc(-1 * $gap-grid-half);

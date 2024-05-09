@@ -71,5 +71,71 @@
 			}
 		}
 	}
+}
 
+@include bp(xs, lg){
+	.priceSec{
+		padding: px2rem(40) 0;
+		& > .glass.container{
+			width: calc(100% - (px2rem(12) * 2));
+			padding: px2rem(40) px2rem(24);
+			border-radius: px2rem(80) px2rem(80) 0 0;
+			margin: 0 px2rem(12);
+		}
+		&__header{
+			margin-bottom: px2rem(40);
+			& .h2, & .smalltext{
+				color: var(--ev-color-mainGray);
+			}
+			& .h2{
+				padding: px2rem(8);
+			}
+			& .smalltext{
+				padding: px2rem(8) px2rem(16);
+			}
+		}
+		&__tabs{
+			width: 100%;
+			.tabs__items{
+				width: 100%;
+				margin-left: 0;
+				justify-content: space-between;
+				&-item{
+					padding: px2rem(12) px2rem(32);
+					margin: 0;
+					&.active{
+						color: var(--ev-color-mainWhite);
+					}
+				}
+			}
+			.tabs__content{
+				padding: 0;
+				margin-top: px2rem(40);
+				&-item > .cards > .card{
+					width: 100%;
+					margin: 0 0 px2rem(16) 0;
+					padding: px2rem(16);
+					&__header > .title{
+						padding: 0 px2rem(8);
+					}
+					&__body{
+						margin-bottom: px2rem(28);
+					}
+				}
+			}
+		}
+		&__content{
+			padding-top: 0;
+			margin-top: px2rem(20);
+			.h2{
+				margin: 0;
+			}
+			.h2, .text, .h4{
+				padding: px2rem(8);
+			}
+			.h4 > p:first-child{
+				margin-bottom: px2rem(8);
+			}
+		}
+	}
 }

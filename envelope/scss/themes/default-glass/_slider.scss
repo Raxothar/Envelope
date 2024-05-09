@@ -36,3 +36,22 @@
 
 	}
 }
+
+@include bp(xs, lg){
+	.carousel{
+		&__indicator {
+			width: px2rem(16);
+			height: px2rem(16);
+			&::before {
+				width: px2rem(8);
+				height: px2rem(8);
+			}
+		}
+		&__button{
+			font-size: $gap-grid-half;
+			width: $gap-grid-half;
+			height: $gap-grid-half;
+			bottom: px2rem(2);
+		}
+	}
+}

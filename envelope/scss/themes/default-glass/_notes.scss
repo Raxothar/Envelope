@@ -21,7 +21,44 @@
 			}
 		}
 	}
+}
 
-
-
+@include bp(xs, lg){
+	.notes{
+		padding: px2rem(40) 0;
+		&__cards{
+			width: 100%;
+			margin: 0;
+			flex-direction: row;
+			align-items: stretch;
+			& > *{
+				margin: 0;
+			}
+			&--item{
+				padding: px2rem(8);
+				align-items: unset;
+				border-left: unset;
+				width: calc(50% - px2rem(12));
+				margin-bottom: px2rem(24) !important;
+				flex-direction: column;
+				&.blue{
+					.colorCard__title, .colorCard__text{
+						padding: 0;
+					}
+					.icon{
+						display: none;
+					}
+				}
+				&:not(.blue){
+					border-top: px2rem(1) solid var(--ev-color-mainGray);
+				}
+				& > *{
+					margin: 0;
+				}
+				& > &-title{
+					margin-bottom: px2rem(8);
+				}
+			}
+		}
+	}
 }

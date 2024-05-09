@@ -20,7 +20,7 @@ jobs:
         uses: mathieudutour/github-tag-action@v5.6
         with:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          default_bump: minor # Может быть 'patch', 'minor' или 'major'
+          default_bump: patch # Может быть 'patch', 'minor' или 'major'
           release_branches: master # Ограничивает действие веткой master
 
       # Архивирование папки dist с именем, включающим новую версию

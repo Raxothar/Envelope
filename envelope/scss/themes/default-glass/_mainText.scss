@@ -53,5 +53,38 @@
 			color: var(--ev-color-mainGray);
 		}
 	}
+}
 
+@include bp(xs, lg){
+	.mainText{
+		padding: px2rem(16) 0;
+		&__title{
+			padding: px2rem(8) 0;
+			margin-bottom: px2rem(16);
+		}
+		&__content{
+			&--phones{
+				margin-top: px2rem(8);
+				&-item{
+					margin-bottom: px2rem(16);
+				}
+			}
+		}
+		&__right{
+			width: 100%;
+		}
+		&__showMore{
+			width: 100%;
+			background-color: var(--ev-color-mainWhite);
+			padding: px2rem(8) 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
 }

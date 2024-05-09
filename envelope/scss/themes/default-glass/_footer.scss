@@ -15,3 +15,34 @@
 		}
 	}
 }
+
+@include bp(xs, lg){
+	.footer{
+		padding: 0;
+		& > .container > .row{
+			flex-direction: column-reverse;
+		}
+		&__links{
+			border-bottom: px2rem(1) solid var(--ev-color-addColdBlue);
+			padding-bottom: px2rem(8);
+			margin-bottom: px2rem(8);
+			margin-top: px2rem(8);
+			& > .smalltext{
+				display: flex;
+				flex-direction: row-reverse;
+				align-items: center;
+				& > *{
+					width: 50%;
+				}
+			}
+		}
+		&__copyright{
+			margin-bottom: px2rem(8);
+			& > p.smalltext{
+				color: var(--ev-color-addColdBlue);
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}

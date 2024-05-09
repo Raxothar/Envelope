@@ -14,13 +14,13 @@ $gutter: (
 
 $grid-breakpoints: (
 	xs: 0,
-	sm: 576px,
-	md: 768px,
+	//sm: 576px,
+	//md: 768px,
 	lg: 992px,
-	xl: 1200px,
-	xxl: 1400px,
-	3xl: 1600px,
-	4xl: 1920px
+	//xl: 1200px,
+	//xxl: 1400px,
+	//3xl: 1600px,
+	//4xl: 1920px
 ) !default;
 
 $container-max-widths: (
@@ -30,7 +30,7 @@ $container-max-widths: (
 
 $grid-collumns-counts: (
 	bs: 12,
-	sc: 7,
+	//sc: 7,
 	tc: 10,
 ) !default;
 

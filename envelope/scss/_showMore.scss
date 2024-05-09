@@ -1,0 +1,10 @@
+@include bp(xs, lg){
+	.showMore{
+		&__hide{
+			display: none;
+			&.open{
+				display: block;
+			}
+		}
+	}
+}

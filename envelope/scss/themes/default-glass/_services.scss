@@ -67,3 +67,35 @@
 		flex-wrap: wrap !important;
 	}
 }
+
+@include bp(xs, lg){
+	.services{
+		padding: px2rem(40) 0;
+		&::after{
+			display: none;
+		}
+		&__header{
+			margin-bottom: 0;
+			&--title, &--text{
+				padding-left: 0;
+				padding-right: 0;
+			}
+			&--title{
+				padding: px2rem(8) 0;
+			}
+		}
+		&__cards{
+			width: 100%;
+			& > .card{
+				margin-left: 0;
+				margin-right: $gap-grid-half;
+				width: calc(50% - #{$gap-grid-half});
+				margin-bottom: 0;
+			}
+
+		}
+		.carousel__button{
+			bottom: px2rem(-4);
+		}
+	}
+}
