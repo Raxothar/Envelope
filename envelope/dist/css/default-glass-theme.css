@@ -1215,51 +1215,51 @@ body.lock {
 }
 
 @font-face {
-  font-family: "DejaVu Serif";
-  src: local("DejaVu Serif"), local("DejaVuSerif"), url("dejavuserif.woff2") format("woff2"), url("dejavuserif.woff") format("woff"), url("dejavuserif.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Molot";
+  src: url("../../../../assets/fonts/molot/molot.otf") format("opentype");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "DejaVu Serif";
-  src: local("DejaVu Serif Italic"), local("DejaVuSerif-Italic"), url("dejavuserifitalic.woff2") format("woff2"), url("dejavuserifitalic.woff") format("woff"), url("dejavuserifitalic.ttf") format("truetype");
-  font-weight: 400;
+  src: url("../../../../assets/fonts/dejavu/dejavuserif.woff2") format("woff2"), url("../../../../assets/fonts/dejavu/dejavuserif.woff") format("woff"), url("../../../../assets/fonts/dejavu/dejavuserif.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DejaVu Serif";
+  src: url("../../../../assets/fonts/dejavu/dejavuserifitalic.woff2") format("woff2"), url("../../../../assets/fonts/dejavu/dejavuserifitalic.woff") format("woff"), url("../../../../assets/fonts/dejavu/dejavuserifitalic.ttf") format("truetype");
+  font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "Geometria";
-  src: local("Geometria Semi Bold"), url("geometria_medium.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: local("Inter Regular"), url("Inter-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: local("Inter Medium"), url("Inter-Medium.ttf") format("truetype");
+  src: url("../../../../assets/fonts/geometria/geometria_medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: local("Inter Semi Bold"), url("Inter-SemiBold.ttf") format("truetype");
+  src: url("../../../../assets/fonts/inter/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../../../assets/fonts/inter/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../../../assets/fonts/inter/Inter-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: local("Inter Bold"), url("Inter-Bold.ttf") format("truetype");
+  src: url("../../../../assets/fonts/inter/Inter-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Molot";
-  src: local("Molot Regular"), url("https://fonts-online.ru/sites/default/files/2021-07/Molot.otf") format("opentype");
-  font-weight: 400;
   font-style: normal;
 }
 @media (min-width: 0) {
