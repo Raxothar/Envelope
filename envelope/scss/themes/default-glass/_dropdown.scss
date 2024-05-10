@@ -1,6 +1,11 @@
 .dropdown{
 	position: relative;
 	background-color: var(--ev-color-mainWhite);
+	flex-wrap: wrap;
+
+	&:hover &__header-arrow{
+		transform: rotate(180deg);
+	}
 
 	&__header{
 		display: flex;
@@ -18,18 +23,16 @@
 			height: px2rem(24);
 			background-color: var(--ev-color-mainWhite);
 			mask-size: contain;
-			mask-image: url("../../../../assets/images/icons/chevron-down.svg");
+			mask-image: url("#{$iconPath}/chevron-down.svg");
 			mask-position: center;
 			mask-repeat: no-repeat;
-			-webkit-mask-image: url("../../../../assets/images/icons/chevron-down.svg");
+			-webkit-mask-image: url("#{$iconPath}/chevron-down.svg");
 			-webkit-mask-size: contain;
 			-webkit-mask-position: center;
 			transition: background-color 0.3s, transform 0.3s;
-		}
-
-		&:hover > &-arrow, &.open > &-arrow{
-			background-color: var(--ev-color-mainGray);
-			transform: rotate(180deg);
+			&.open, &:hover{
+				transform: rotate(180deg);
+			}
 		}
 	}
 
@@ -52,11 +55,6 @@
 	&.open > &__header{
 		color: var(--ev-color-mainGray) !important;
 		background: var(--ev-gradient-coldLightGray);
-	}
-
-	&.open > &__header > &__header-arrow{
-		background-color: var(--ev-color-mainGray);
-		transform: rotate(180deg);
 	}
 
 }

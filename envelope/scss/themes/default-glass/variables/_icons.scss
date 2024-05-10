@@ -1,4 +1,4 @@
-$iconPath: '../../../../assets/images/icons/';
+@import "vars";
 
 $iconSet: (
 	'cart': ('mask', "#111111"),
@@ -31,18 +31,18 @@ $iconSet: (
 		-webkit-mask-size: contain;
 		mask-position: center;
 		-webkit-mask-position: center;
-		mask-image: url("#{$iconPath}#{$icon}.svg");
-		-webkit-mask-image: url("#{$iconPath}#{$icon}.svg");
+		mask-image: url("#{$iconPath}/#{$icon}.svg");
+		-webkit-mask-image: url("#{$iconPath}/#{$icon}.svg");
 		background-color: #{$color};
 	} @else if($type == 'mask') {
 		mask-size: contain;
 		-webkit-mask-size: contain;
 		mask-position: center;
 		-webkit-mask-position: center;
-		mask-image: url("#{$iconPath}#{$icon}.svg");
-		-webkit-mask-image: url("#{$iconPath}#{$icon}.svg");
+		mask-image: url("#{$iconPath}/#{$icon}.svg");
+		-webkit-mask-image: url("#{$iconPath}/#{$icon}.svg");
 	} @else {
-		background-image: url("#{$iconPath}#{$icon}.svg");
+		background-image: url("#{$iconPath}/#{$icon}.svg");
 	}
 }
 

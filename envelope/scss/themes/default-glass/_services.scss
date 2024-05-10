@@ -38,11 +38,18 @@
 			padding: px2rem(8) px2rem(16);
 		}
 	}
+
 	&__cards{
+		width: 100%;
 		margin-bottom: calc(px2rem(36) - $gap-grid);
 		& > .card{
 			padding: px2rem(16);
 			margin-bottom: $gap-grid;
+
+			margin-left: 0;
+			margin-right: $gap-grid-half;
+			width: calc((100% / 6) - #{$gap-grid-half});
+
 			& > .card__body > .title{
 				width: 100%;
 				text-align: center;
@@ -92,7 +99,6 @@
 				width: calc(50% - #{$gap-grid-half});
 				margin-bottom: 0;
 			}
-
 		}
 		.carousel__button{
 			bottom: px2rem(-4);

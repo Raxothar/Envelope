@@ -41,35 +41,39 @@
 				display: flex;
 				align-items: center;
 				position: relative;
-				cursor: pointer;
-				&.open, & > .dropdown__header{
+				justify-content: space-between;
+				border-radius: px2rem(8);
+				padding: px2rem(11) px2rem(24);
+				.nav__link, .nav__link:hover{
+					cursor: pointer;
+				}
+				& .dropdown__header{
+					padding: 0;
+				}
+				&:hover, &:hover.dropdown__header{
+					cursor: pointer !important;
+					background-color: var(--ev-color-addColdWhite) !important;
+					transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+					box-shadow: px2rem(3) px2rem(7) px2rem(14) px2rem(0) var(--ev-color-mainGrayTransparent);
+				}
+
+				&.open, & > .dropdown__header {
 					background: unset;
+
+					&-arrow {
+						cursor: pointer;
+						background-color: var(--ev-color-mainDark);
+						margin-left: px2rem(8);
+						height: px2rem(18);
+						width: px2rem(18);
+						aspect-ratio: 1 / 1;
+						transition: background-color 0.3s ease-in-out;
+					}
 				}
 			}
 
 			.nav__link{
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				padding: px2rem(11) px2rem(24);
-				border-radius: px2rem(8);
-				cursor: pointer;
 
-				.dropdown__header-arrow{
-					cursor: pointer;
-					background-color: var(--ev-color-mainDark);
-					margin-left: px2rem(8);
-					height: px2rem(18);
-					width: px2rem(18);
-					aspect-ratio: 1 / 1;
-					transition: background-color 0.3s ease-in-out;
-				}
-
-				&:hover, &:hover.dropdown__header{
-					background-color: var(--ev-color-addColdWhite);
-					transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-					box-shadow: px2rem(3) px2rem(7) px2rem(14) px2rem(0) var(--ev-color-mainGrayTransparent);
-				}
 			}
 
 			.nav__item > ul.dropdown__content{
@@ -124,8 +128,6 @@
 			min-height: $mobileHeaderHeight;
 		}
 
-
-
 		& > .container > &__bottom{
 			display: none;
 			position: absolute;
@@ -157,11 +159,11 @@
 	}
 
 	.header__bottom .nav__list .nav__item.dropdown{
-		flex-direction: column;
-	}
-
-	.header__bottom .nav__list .nav__link{
-		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		.dropdown__header-arrow{
+			margin-right: $gap-grid-half;
+		}
 	}
 
 	.header__bottom .dropdown{
@@ -174,6 +176,8 @@
 
 	.nav__item:hover > ul.dropdown__content.open{
 		display: block !important;
+		background-color: transparent;
+		padding-top: $gap-grid-half;
 	}
 
 	.header__bottom-contacts{

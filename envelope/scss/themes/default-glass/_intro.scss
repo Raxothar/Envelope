@@ -39,11 +39,17 @@
 		justify-content: space-between;
 	}
 	&__labels{
+		position: fixed;
 		flex-direction: column;
 		right: px2rem(2);
 		top: 0;
 		height: 100%;
 		justify-content: center;
+		z-index: 3;
+		.label{
+			box-shadow: px2rem(3) px2rem(7) px2rem(14) px2rem(0) var(--ev-color-mainGrayTransparent);
+			border: px2rem(1) solid var(--ev-color-mainGrayTransparent);
+		}
 	}
 }
 

@@ -63,16 +63,23 @@
 			.nav__list {
 				padding: px2rem(16);
 				.nav__item{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					cursor: pointer;
 					background-color: transparent;
 					padding: px2rem(8) 0;
 					& > a{
 						padding: 0;
 						color: var(--ev-color-mainGray);
 						text-transform: uppercase;
+						cursor: pointer;
 					}
 					&.dropdown {
 						& > .dropdown__content{
 							display: none;
+							width: 100%;
+							padding-top: $gap-grid-half;
 							& > li{
 								padding: px2rem(16) px2rem(24);
 								& > a{
@@ -90,7 +97,7 @@
 					&.dropdown:hover > .dropdown__content{
 						display: block;
 					}
-					& .dropdown__header-arrow{
+					.dropdown__header-arrow{
 						width: 1em;
 						height: 100%;
 						aspect-ratio: 1 / 1;
@@ -168,6 +175,10 @@
 		}
 		&__menu{
 			margin-bottom: px2rem(24);
+			&-nav .nav__list .nav__item.dropdown.open>.dropdown__content,
+			&-nav .nav__list .nav__item.dropdown:hover>.dropdown__content{
+				display: block !important;
+			}
 		}
 	}
 }

@@ -32,6 +32,13 @@
 					margin-right: px2rem(16);
 				}
 			}
+			.carousel__slides{
+				margin: 0 calc(-1 * $gap-grid-half);
+			}
+			.carousel__slide{
+				width: calc(50% - calc(px2rem(6) * 2));
+				margin: 0 px2rem(6);
+			}
 			.carousel__button{
 				color: var(--ev-color-addColdBlue);
 				bottom: 0;
@@ -53,13 +60,6 @@
 		padding: px2rem(40) 0 px2rem(80) 0;
 		&__licences{
 			margin-top: px2rem(16);
-			.carousel__slides{
-				margin: 0 calc(-1 * $gap-grid-half);
-			}
-			.carousel__slide{
-				width: calc(50% - calc(px2rem(6) * 2));
-				margin: 0 px2rem(6);
-			}
 			.carousel__button{
 				bottom: px2rem(-4);
 			}

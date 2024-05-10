@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdowns.forEach((dropdown) => {
             let dropdownArrow = dropdown.querySelector('.dropdown__header-arrow');
             dropdownArrow.addEventListener('click', (e) => {
+                dropdownArrow.classList.toggle('open');
                 if (window.innerWidth < 990) {
                     dropdown.querySelector('.dropdown__content').classList.toggle('open');
                 }
@@ -112,6 +113,23 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
+    }
+
+    let modalTargetButtons = document.querySelectorAll('[data-ev-modal-target]');
+    if (modalTargetButtons.length > 0){
+        modalTargetButtons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                let target = button.getAttribute('data-ev-modal-target');
+                let modal = document.querySelector('.modal[data-ev-modal-id="'+target+'"]');
+                if (modal){
+                    modal.classList.add('open');
+                    let modalClose = modal.querySelector('.modal__close');
+                    modalClose.addEventListener('click', (e) => {
+                        modal.classList.remove('open');
+                    });
+                }
+            });
+        });
     }
 
 });
