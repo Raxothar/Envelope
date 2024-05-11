@@ -19,8 +19,9 @@
 
 	&__content{
 		width: 90%;
-		aspect-ratio: 1 / 1;
+		height: 90vh;
 		max-width: px2rem(600);
+		max-height: px2rem(600);
 		position: relative;
 		background-color: #fff;
 		box-shadow: 0px 0px px2rem(20) rgba(0, 0, 0, 0.25);

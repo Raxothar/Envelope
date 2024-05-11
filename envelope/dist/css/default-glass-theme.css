@@ -1155,8 +1155,9 @@ body.lock {
 }
 .modal__content {
   width: 90%;
-  aspect-ratio: 1/1;
+  height: 90vh;
   max-width: 37.5rem;
+  max-height: 37.5rem;
   position: relative;
   background-color: #fff;
   box-shadow: 0px 0px 1.25rem rgba(0, 0, 0, 0.25);
