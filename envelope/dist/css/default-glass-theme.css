@@ -1195,6 +1195,11 @@ body.lock {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+ul.breadcrumbs {
+  display: flex;
+  background-color: red;
+}
+
 .UIKit {
   background-color: rgba(243, 243, 243, 0.5);
 }
@@ -3469,6 +3474,13 @@ input, input::placeholder, .button, .tabs__items-item {
     bottom: -0.25rem;
   }
 }
+body.about .introAbout {
+  padding: 1.875rem 0 5rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .bf {
   padding: 3rem 0;
   background-repeat: no-repeat;
