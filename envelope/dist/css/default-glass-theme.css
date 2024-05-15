@@ -2578,6 +2578,9 @@ input, input::placeholder, .button, .tabs__items-item {
     margin-top: 1rem;
     width: fit-content;
   }
+  .header__top-contacts-item:not(:first-child) {
+    display: none !important;
+  }
 }
 .intro {
   position: relative;

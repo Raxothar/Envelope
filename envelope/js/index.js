@@ -25,33 +25,37 @@ document.addEventListener('DOMContentLoaded', function() {
     if(dropdowns.length){
         dropdowns.forEach((dropdown) => {
             let dropdownArrow = dropdown.querySelector('.dropdown__header-arrow');
-            dropdownArrow.addEventListener('click', (e) => {
-                dropdownArrow.classList.toggle('open');
-                if (window.innerWidth < 990) {
-                    dropdown.querySelector('.dropdown__content').classList.toggle('open');
-                }
-                else {
-                    if (dropdown.classList.contains('open') && dropdown.classList.contains('force-open')) {
-                        dropdown.classList.remove('open', 'force-open');
-                    } else {
-                        dropdown.classList.add('open', 'force-open');
-                    }
-                }
 
-            });
-            if (window.innerWidth > 990){
-                dropdown.addEventListener('mouseout', (e) => {
-                    // Закрываем дропдаун только если не установлен force-open
-                    if (!dropdown.classList.contains('force-open')) {
-                        dropdown.classList.remove('open');
+            if(dropdownArrow != null){
+                dropdownArrow.addEventListener('click', (e) => {
+                    dropdownArrow.classList.toggle('open');
+                    if (window.innerWidth < 990) {
+                        dropdown.querySelector('.dropdown__content').classList.toggle('open');
+                    }
+                    else {
+                        if (dropdown.classList.contains('open') && dropdown.classList.contains('force-open')) {
+                            dropdown.classList.remove('open', 'force-open');
+                        } else {
+                            dropdown.classList.add('open', 'force-open');
+                        }
                     }
                 });
-                dropdown.addEventListener('mouseover', (e) => {
-                    // Открываем дропдаун при наведении
-                    if (!dropdown.classList.contains('force-open')) {
-                        dropdown.classList.add('open');
-                    }
-                });
+
+
+                if (window.innerWidth > 990){
+                    dropdown.addEventListener('mouseout', (e) => {
+                        // Закрываем дропдаун только если не установлен force-open
+                        if (!dropdown.classList.contains('force-open')) {
+                            dropdown.classList.remove('open');
+                        }
+                    });
+                    dropdown.addEventListener('mouseover', (e) => {
+                        // Открываем дропдаун при наведении
+                        if (!dropdown.classList.contains('force-open')) {
+                            dropdown.classList.add('open');
+                        }
+                    });
+                }
             }
         });
     }

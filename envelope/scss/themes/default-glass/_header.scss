@@ -212,4 +212,8 @@
 		width: fit-content;
 	}
 
+	.header__top-contacts-item:not(:first-child){
+		display: none !important;
+	}
+
 }
