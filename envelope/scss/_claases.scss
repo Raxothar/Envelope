@@ -1,0 +1,75 @@
+// SCSS генератор классов
+
+// Justify Content
+$justify-content-values: (
+	'jcc': center,
+	'jcfs': flex-start,
+	'jcfe': flex-end,
+	'jcsb': space-between,
+	'jcsa': space-around,
+	'jcse': space-evenly
+);
+
+@each $short, $value in $justify-content-values {
+	.#{$short} {
+		justify-content: $value;
+	}
+}
+
+// Align Items
+$align-items-values: (
+	'aic': center,
+	'aifs': flex-start,
+	'aife': flex-end,
+	'aib': baseline,
+	'ais': stretch
+);
+
+@each $short, $value in $align-items-values {
+	.#{$short} {
+		align-items: $value;
+	}
+}
+
+// Align Self
+$align-self-values: (
+	'asc': center,
+	'asfs': flex-start,
+	'asfe': flex-end,
+	'asb': baseline,
+	'ass': stretch
+);
+
+@each $short, $value in $align-self-values {
+	.#{$short} {
+		align-self: $value;
+	}
+}
+
+// Flex Direction
+$flex-direction-values: (
+	'fdc': column,
+	'fdcr': column-reverse,
+	'fdr': row,
+	'fdrr': row-reverse
+);
+
+@each $short, $value in $flex-direction-values {
+	.#{$short} {
+		flex-direction: $value;
+	}
+}
+
+// Text Align
+$text-align-values: (
+	'tac': center,
+	'tal': left,
+	'tar': right,
+	'taj': justify
+);
+
+@each $short, $value in $text-align-values {
+	.#{$short} {
+		text-align: $value;
+	}
+}

@@ -939,6 +939,102 @@ body.lock {
   overflow: hidden;
 }
 
+.jcc {
+  justify-content: center;
+}
+
+.jcfs {
+  justify-content: flex-start;
+}
+
+.jcfe {
+  justify-content: flex-end;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.jcse {
+  justify-content: space-evenly;
+}
+
+.aic {
+  align-items: center;
+}
+
+.aifs {
+  align-items: flex-start;
+}
+
+.aife {
+  align-items: flex-end;
+}
+
+.aib {
+  align-items: baseline;
+}
+
+.ais {
+  align-items: stretch;
+}
+
+.asc {
+  align-self: center;
+}
+
+.asfs {
+  align-self: flex-start;
+}
+
+.asfe {
+  align-self: flex-end;
+}
+
+.asb {
+  align-self: baseline;
+}
+
+.ass {
+  align-self: stretch;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.fdcr {
+  flex-direction: column-reverse;
+}
+
+.fdr {
+  flex-direction: row;
+}
+
+.fdrr {
+  flex-direction: row-reverse;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
+.taj {
+  text-align: justify;
+}
+
 .image-fluid {
   width: 100%;
   height: auto;

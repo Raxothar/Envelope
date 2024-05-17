@@ -1,0 +1,20 @@
+.tabs{
+	&__items{
+		background-color: var(--ev-color-mainWhite);
+		border-radius: px2rem(32);
+		overflow: hidden;
+		&-item{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: px2rem(16) px2rem(32);
+			border-radius: px2rem(32);
+			color: var(--ev-color-mainGray);
+			transition: background-color 0.3s, color 0.3s;
+		}
+		&-item.active, &-item:hover{
+			background-color: var(--ev-color-mainGray);
+			color: var(--ev-color-mainWhite);
+		}
+	}
+}

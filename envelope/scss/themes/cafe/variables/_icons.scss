@@ -1,0 +1,61 @@
+@import "vars";
+
+$iconSet: (
+
+	'star': ('mask'),
+
+	'cart': ('mask', "#111111"),
+	'calc': ('mask', "#111111"),
+	'yandex': ('bg'),
+	'law': ('mask'),
+	'hand-palm': ('mask'),
+	'sale-box': ('mask'),
+	'tomb': ('mask'),
+	'funeral-services': ('mask'),
+	'embalming': ('mask'),
+	'cremation': ('mask'),
+	'agent': ('mask'),
+	'plane-car': ('mask'),
+	'tape': ('mask'),
+	'coffin': ('mask'),
+	'agreement': ('mask'),
+	'porters': ('mask'),
+	'social': ('mask'),
+	'vip': ('mask'),
+	'experience': ('mask'),
+	'quality': ('mask'),
+	'rub': ('mask'),
+	'info': ('mask'),
+);
+
+@mixin icon($icon, $type, $color: null) {
+	@if($type == 'mask' and $color != null) {
+		mask-size: contain;
+		-webkit-mask-size: contain;
+		mask-position: center;
+		-webkit-mask-position: center;
+		mask-image: url("#{$iconPath}/#{$icon}.svg");
+		-webkit-mask-image: url("#{$iconPath}/#{$icon}.svg");
+		background-color: #{$color};
+	} @else if($type == 'mask') {
+		mask-size: contain;
+		-webkit-mask-size: contain;
+		mask-position: center;
+		-webkit-mask-position: center;
+		mask-image: url("#{$iconPath}/#{$icon}.svg");
+		-webkit-mask-image: url("#{$iconPath}/#{$icon}.svg");
+	} @else {
+		background-image: url("#{$iconPath}/#{$icon}.svg");
+	}
+}
+
+@each $icon, $properties in $iconSet {
+	.icon.#{$icon} {
+		@if(length($properties) == 2) {
+			@include icon($icon, nth($properties, 1), nth($properties, 2));
+		} @else {
+			@include icon($icon, nth($properties, 1));
+		}
+	}
+}
+

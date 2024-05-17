@@ -1,0 +1,10 @@
+.accordeon{
+	&__item{
+		padding: px2rem(16) px2rem(24);
+		border-bottom: px2rem(1) solid var(--ev-color-addColdBlue);
+		margin-bottom: px2rem(16);
+		&--content{
+			padding-top: px2rem(16);
+		}
+	}
+}

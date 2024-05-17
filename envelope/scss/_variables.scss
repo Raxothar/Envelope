@@ -37,6 +37,8 @@ $grid-collumns-counts: (
 
 $gap-grid: map-get($gutter, 3);
 $gap-grid-half: $gap-grid * 0.5;
+$gap-grid-quarter: $gap-grid * 0.25;
+$gap-grid-octo: $gap-grid * 0.125;
 
 $container-padding-x: $gap-grid * .5;
 

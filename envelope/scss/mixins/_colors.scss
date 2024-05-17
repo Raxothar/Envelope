@@ -1,0 +1,13 @@
+@mixin ev-colors-generate($ev-colors, $ev-gradients:null) {
+	:root {
+		@each $name, $color in $ev-colors {
+			--ev-color-#{"" + $name}: #{$color};
+		}
+
+		@if $ev-gradients != null {
+			@each $name, $gradient in $ev-gradients {
+				--ev-gradient-#{"" + $name}: #{$gradient};
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.rating{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
+	width: 100%;
+	&__count{
+		margin-left: $gap-grid-octo;
+	}
+	&__rate{
+		display: flex;
+		align-items: center;
+		&::before{
+			width: px2rem(14);
+			height: px2rem(14);
+			content: "";
+			display: flex;
+			@include icon('star', 'mask');
+			background-color: var(--ev-color-accent);
+			margin-right: $gap-grid-octo;
+		}
+	}
+}

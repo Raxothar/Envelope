@@ -1,0 +1,20 @@
+html, body{
+	border-radius: unset;
+}
+
+body{
+	background-color: var(--ev-color-lightGray);
+}
+
+.rouble{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin-left: $gap-grid-quarter;
+	&::after{
+		content:" ₽";
+		display: inline-flex;
+		margin-left: $gap-grid-octo;
+	}
+}
+

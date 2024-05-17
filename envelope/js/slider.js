@@ -31,7 +31,6 @@ class Carousel {
     }
 
     init() {
-        // Проверяем, что .carousel__slides существует внутри элемента карусели
         let check = this.carouselElement.querySelector('.carousel__slides');
         if (check) {
             this.slides = this.carouselElement.querySelectorAll('.carousel__slide');
@@ -41,7 +40,6 @@ class Carousel {
             this.currentSlide = 0;
 
             if (this.options.arrows) {
-                // Создание и добавление кнопок навигации
                 const leftButton = document.createElement('button');
                 leftButton.className = 'carousel__button carousel__button--left';
                 leftButton.setAttribute('aria-label', 'Previous slide');
@@ -65,7 +63,7 @@ class Carousel {
             this.createIndicators();
             this.updateCarousel();
 
-            this.carouselElement.addEventListener('touchstart', this.handleTouchStart, { passive: true });
+            this.carouselElement.addEventListener('touchstart', this.handleTouchStart);
             this.carouselElement.addEventListener('mousedown', this.handleTouchStart);
         } else {
             console.warn("Carousel slides element is not found. Initialization aborted.");

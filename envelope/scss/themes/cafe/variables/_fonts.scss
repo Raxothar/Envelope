@@ -1,0 +1,9 @@
+@import "enable-fonts";
+
+@include fontObject('.globalNav__title', 'Inter', 700, normal, px2rem(26), px2rem(32), normal, var(--ev-color-accent));
+@include fontObject('.rating > .rating__rate, .worktime__date', 'Inter', 700, normal, px2rem(13), px2rem(20), normal, var(--ev-color-black));
+@include fontObject('.rating > .rating__count, .averageTicket__text', 'Inter', 500, normal, px2rem(13), px2rem(20), normal, var(--ev-color-mainGray));
+@include fontObject('.globalNav__text, .worktime__time', 'Inter', 400, normal, px2rem(13), px2rem(18.2), normal, var(--ev-color-mainGray));
+@include fontObject('.averageTicket__price', 'Inter', 600, normal, px2rem(13), px2rem(20), normal, var(--ev-color-black));
+
+@include fontObject('.tags__item', 'Inter', 500, normal, px2rem(12), px2rem(20), normal, var(--ev-color-black));
