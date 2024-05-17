@@ -1195,9 +1195,22 @@ body.lock {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-ul.breadcrumbs {
+.breadcrumbs {
   display: flex;
-  background-color: red;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.breadcrumbs__item {
+  padding: 0.5rem 0.25rem;
+}
+.breadcrumbs__item::before {
+  content: "→";
+  display: inline-flex;
+  margin-right: 0.25rem;
+  font-weight: 400;
+}
+.breadcrumbs__item:first-child::before {
+  display: none;
 }
 
 .UIKit {
@@ -1503,6 +1516,26 @@ input, input::placeholder, .button, .tabs__items-item {
   line-height: 1rem;
   letter-spacing: 0.03125rem;
   color: var(--ev-color-mainGray);
+}
+
+.breadcrumbs__item {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.03125rem;
+  color: var(--ev-color-mainBlue);
+}
+
+.breadcrumbs__item.active {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.03125rem;
+  color: var(--ev-color-mainBlue);
 }
 
 @media (min-width: 0) and (max-width: 992px) {
@@ -3474,11 +3507,17 @@ input, input::placeholder, .button, .tabs__items-item {
     bottom: -0.25rem;
   }
 }
-body.about .introAbout {
+.introAbout {
   padding: 1.875rem 0 5rem 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.introAbout__title {
+  text-transform: uppercase;
+  color: var(--ev-color-mainGray);
+  margin-top: 1rem;
+  margin-left: 0;
 }
 
 .bf {

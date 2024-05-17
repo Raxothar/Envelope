@@ -1,4 +1,17 @@
-ul.breadcrumbs{
+.breadcrumbs{
 	display: flex;
-	background-color: red;
+	align-items: center;
+	margin: px2rem(8) 0;
+	&__item{
+		padding: px2rem(8) px2rem(4);
+		&::before{
+			content: "→";
+			display: inline-flex;
+			margin-right: px2rem(4);
+			font-weight: 400;
+		}
+		&:first-child::before{
+			display: none;
+		}
+	}
 }

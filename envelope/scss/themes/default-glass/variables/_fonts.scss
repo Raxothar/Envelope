@@ -31,6 +31,10 @@
 @include fontObject('.label', 'Inter', 700, normal, px2rem(12), px2rem(16.8), px2rem(1), var(--ev-color-mainWhite));
 @include fontObject('.logoSubtitle', 'Inter', 400, italic, px2rem(16), px2rem(16), px2rem(0.5), var(--ev-color-mainGray));
 
+@include fontObject('.breadcrumbs__item', 'Inter', 400, normal, px2rem(16), px2rem(20.8), px2rem(0.5), var(--ev-color-mainBlue));
+@include fontObject('.breadcrumbs__item.active', 'Inter', 600, normal, px2rem(16), px2rem(17.6), px2rem(0.5), var(--ev-color-mainBlue));
+
+
 @include bp(xs, lg){
 	@include fontObject('.colorCard__text', 'Inter', 400, normal, px2rem(12), px2rem(16.8), px2rem(1), var(--ev-color-mainWhite));
 	@include fontObject('.notes__cards--item-title', 'Inter', 600, normal, px2rem(16), px2rem(17.6), px2rem(0.5), var(--ev-color-mainGray));

@@ -1,9 +1,14 @@
-body.about .introAbout{
+.introAbout{
 	padding: px2rem(30) 0 px2rem(80) 0;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
-
+	&__title{
+		text-transform: uppercase;
+		color: var(--ev-color-mainGray);
+		margin-top: px2rem(16);
+		margin-left: 0;
+	}
 
 }
