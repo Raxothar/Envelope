@@ -1,10 +1,47 @@
 .accordeon{
+	width: 100%;
 	&__item{
-		padding: px2rem(16) px2rem(24);
-		border-bottom: px2rem(1) solid var(--ev-color-addColdBlue);
-		margin-bottom: px2rem(16);
+		padding: 0;
+		margin-bottom: $gap-grid-half;
+		&--header{
+			padding-bottom: $gap-grid-quarter;
+			border-bottom: px2rem(1) solid var(--ev-color-secondGray);
+			&::after{
+				width: px2rem(24);
+				height: px2rem(24);
+				font-size: px2rem(20);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: var(--ev-color-mainGray);
+			}
+		}
 		&--content{
-			padding-top: px2rem(16);
+			margin-top: $gap-grid-quarter;
+			padding: $gap-grid-quarter 0;
+			.h3{
+				margin-bottom: $gap-grid-quarter;
+			}
+			ul{
+				list-style: disc;
+				padding-left: $gap-grid-half;
+				li{
+					padding: $gap-grid-quarter;
+					display: flex;
+					&::before{
+						display: flex;
+						content: '•';
+						width: 5%;
+					}
+					span.content{
+						width: 60%;
+					}
+					span.price{
+						width: 35%;
+						text-align: right;
+					}
+				}
+			}
 		}
 	}
 }

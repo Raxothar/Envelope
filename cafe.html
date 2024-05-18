@@ -8,18 +8,17 @@
     <title>Кафе</title>
     <link rel="stylesheet" href="envelope/dist/css/cafe.min.css">
 </head>
-<body>
-    <header class="header"></header>
-    <section class="globalNav">
+<body class="ItemPage">
+    <section class="ItemPage__global">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="h1 globalNav__title">Бар "Сотый этаж"</h1>
+                    <h1 class="h1 ItemPage__global__title">Бар "Сотый этаж"</h1>
                 </div>
             </div>
             <div class="row ais jcsb">
                 <div class="col-xs-8">
-                    <p class="globalNav__text">Бар, Кафе, Ресторан, Паб</p>
+                    <p class="ItemPage__global__text">Бар, Кафе, Ресторан, Паб</p>
                 </div>
                 <div class="col-xs-4">
                     <div class="rating">
@@ -51,19 +50,361 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container carousel globalNav__slider">
-            <div class="carousel__slides row">
-                <div class="col-xs-12 carousel__slide">
-                    <img src="assets/images/cafe-1.jpeg" alt="Кафе">
+            <div class="container ItemPage__global__slider">
+                <div class="row slider">
+                    <div class="col-xs-12 ItemPage__global__slider__item">
+                        <img src="assets/images/cafe-1.jpeg">
+                    </div>
+                    <div class="col-xs-12 ItemPage__global__slider__item">
+                        <img src="assets/images/cafe-1.jpeg">
+                    </div>
                 </div>
-                <div class="col-xs-12 carousel__slide">
-                    <img src="assets/images/cafe-1.jpeg" alt="Кафе">
-                </div>
+                <div class="favorite"></div>
             </div>
-            <div class="slider__indicators"></div>
         </div>
     </section>
+
+    <section class="ItemPage__Nav" >
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#description">Описание</a></li>
+                            <li><a href="#menu">Меню</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ItemPage__Description" id="description">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="content">
+                        <p>Видовое кафе площадью более полутора тысяч квадратных метров на  верхнем этаже бизнес-центра Leader Tower. Оформлением интерьера  занималась известная московская команда Archpoint. В меню сочетаются  европейские и азиатские хиты в любопытной интерпретации. Цены в  заведении выше среднего, что вполне ожидаемо в ресторане, где встречей  одного гостя занимаются три специально обученные хостес, а с 40 на 41  этаж и обратно ходит золотой лифт (до 40 придется ехать на обычном).</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tags__item">Подарочные сертификаты</span>
+                        <span class="tags__item">Шоу-программа</span>
+                        <span class="tags__item">Парковка</span>
+                        <span class="tags__item">Красивый вид</span>
+                        <span class="tags__item">Живая музыка</span>
+                        <span class="tags__item">Кальян</span>
+                        <span class="tags__item">Акции на ДР</span>
+                        <span class="tags__item">Коктейли</span>
+                        <span class="tags__item">Караоке</span>
+                        <span class="tags__item">Винная карта</span>
+                        <span class="tags__item">Банкетное меню</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ItemPage__Popular">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="h2">Популярные блюда</div>
+                </div>
+            </div>
+            <div class="row cards cards-cafe">
+                <div class="col-xs-6 card">
+                    <div class="card__img"><img src="assets/images/eat-1.jpeg" alt="Глазунья с печеным авокадо и семенами льна"></div>
+                    <div class="card__title">Глазунья с печеным авокадо и семенами льна</div>
+                    <div class="card__price">400 ₽</div>
+                </div>
+                <div class="col-xs-6 card">
+                    <div class="card__img"><img src="assets/images/eat-1.jpeg" alt="Глазунья с печеным авокадо и семенами льна"></div>
+                    <div class="card__title">Глазунья с печеным авокадо и семенами льна</div>
+                    <div class="card__price">400 ₽</div>
+                </div>
+                <div class="col-xs-6 card">
+                    <div class="card__img"><img src="assets/images/eat-1.jpeg" alt="Глазунья с печеным авокадо и семенами льна"></div>
+                    <div class="card__title">Глазунья с печеным авокадо и семенами льна</div>
+                    <div class="card__price">400 ₽</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ItemPage__Menu" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="accordeon ItemPage__Menu__accordeon">
+                        <div class="accordeon__item open">
+                            <div class="accordeon__item--header h3">Основное меню</div>
+                            <div class="accordeon__item--content">
+                                <div class="h3">Закуски</div>
+                                <ul>
+                                    <li>
+                                        <span class="content">Севиче из сибаса с сельдереем и фенхелем</span>
+                                        <span class="price">500 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                    <li>
+                                        <span class="content">Карпаччо из сельдерея с пекорино и черным трюфелем</span>
+                                        <span class="price">980 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                </ul>
+                                <div class="h3">Супы</div>
+                                <ul>
+                                    <li>
+                                        <span class="content">Том-ям с морепродуктами</span>
+                                        <span class="price">500 ₽ <span class="weight">(420 г)</span></span>
+                                    </li>
+                                    <li>
+                                        <span class="content">Уха</span>
+                                        <span class="price">300 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordeon__item">
+                            <div class="accordeon__item--header h3">Алкоголь и безалкогольные напитки</div>
+                            <div class="accordeon__item--content">
+                                <div class="h3">Закуски</div>
+                                <ul>
+                                    <li>
+                                        <span class="content">Севиче из сибаса с сельдереем и фенхелем</span>
+                                        <span class="price">500 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                    <li>
+                                        <span class="content">Карпаччо из сельдерея с пекорино и черным трюфелем</span>
+                                        <span class="price">980 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordeon__item">
+                            <div class="accordeon__item--header h3">Бизнес-ланч</div>
+                            <div class="accordeon__item--content">
+                                <div class="h3">Закуски</div>
+                                <ul>
+                                    <li>
+                                        <span class="content">Севиче из сибаса с сельдереем и фенхелем</span>
+                                        <span class="price">500 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                    <li>
+                                        <span class="content">Карпаччо из сельдерея с пекорино и черным трюфелем</span>
+                                        <span class="price">980 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                </ul>
+                                <div class="h3">Супы</div>
+                                <ul>
+                                    <li>
+                                        <span class="content">Том-ям с морепродуктами</span>
+                                        <span class="price">500 ₽ <span class="weight">(420 г)</span></span>
+                                    </li>
+                                    <li>
+                                        <span class="content">Уха</span>
+                                        <span class="price">300 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordeon__item">
+                            <div class="accordeon__item--header h3">Завтрак</div>
+                            <div class="accordeon__item--content">
+                                <div class="h3">Закуски</div>
+                                <ul>
+                                    <li>
+                                        <span class="content">Севиче из сибаса с сельдереем и фенхелем</span>
+                                        <span class="price">500 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                    <li>
+                                        <span class="content">Карпаччо из сельдерея с пекорино и черным трюфелем</span>
+                                        <span class="price">980 ₽ <span class="weight">(230 г)</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ItemPage__Reviews" id="reviews">
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col-xs-8">
+                    <div class="h2">Отзывы</div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="rating">
+                        <div class="rating__rate">4.8</div>
+                        <div class="rating__count">(2)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row reviews">
+                <div class="col-xs-12 reviews__item pb-3 mb-3">
+                    <div class="h3">Анастасия Никифоровна</div>
+                    <div class="flex-xs jcsb pb-3 pt-3">
+                        <div class="dateRate flex-xs aic">
+                            <div class="dateRate__text mr-2">5</div>
+                            <div class="dateRate__icons">
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                            </div>
+                        </div>
+                        <div class="date">22 апреля 2024</div>
+                    </div>
+                    <div class="content">В целом отличное место. Мы с подружками поели салатики и отлично посидели с коктейлями. Хороший кофе со сливками. Карпачо из говядины просто таял во рту.</div>
+                </div>
+                <div class="col-xs-12 reviews__item pb-3 mb-3">
+                    <div class="h3">Ирина Икуч</div>
+                    <div class="flex-xs jcsb pb-3 pt-3">
+                        <div class="dateRate flex-xs aic">
+                            <div class="dateRate__text mr-2">4.2</div>
+                            <div class="dateRate__icons">
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                                <div class="icon star hidden"></div>
+                            </div>
+                        </div>
+                        <div class="date">19 апреля 2024</div>
+                    </div>
+                    <div class="content">Еда вкусная, но порции маленькие. Приятная музыка. Морепродукты свежие.</div>
+                </div>
+                <div class="col-xs-12 reviews__item pb-3 mb-3">
+                    <div class="h3">Сергей Б.</div>
+                    <div class="flex-xs jcsb pb-3 pt-3">
+                        <div class="dateRate flex-xs aic">
+                            <div class="dateRate__text mr-2">4.4</div>
+                            <div class="dateRate__icons">
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                                <div class="icon star"></div>
+                                <div class="icon star hidden"></div>
+                            </div>
+                        </div>
+                        <div class="date">02 апреля 2024</div>
+                    </div>
+                    <div class="content">Всё норм. </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 button__wrap">
+                    <a href="#" class="button">Показать больше отзывов</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ItemPage__contacts" id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="h2">Контакты</div>
+                </div>
+                <div class="col-xs-12 addressItem mt-3">
+                    <div class="addressItem__title">Телефон для справок:</div>
+                    <div class="addressItem__text flex-xs aic pt-2 mt-1"><span class="icon mapobject"></span>+7 (999) 888 - 77 - 66</div>
+                </div>
+                <div class="col-xs-12 addressItem mt-3">
+                    <div class="addressItem__title">Адрес:</div>
+                    <div class="addressItem__text flex-xs aic pt-2 mt-1"><span class="icon mapobject"></span>ул. Казанская 3А</div>
+                </div>
+                <div class="col-xs-12 mapBlock mt-3 mb-3">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5a7edb07df104af1cb5922bd86d4e73ed34a450300d58bfc023a848e13d566d9&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="places ItemPage__places">
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col-xs-12">
+                    <div class="h2">Похожие места</div>
+                </div>
+            </div>
+            <div class="row cards-places">
+                <div class="col-xs-10 card">
+                    <div class="card__img">
+                        <img src="assets/images/cafe-eat.jpeg" alt="Кафе “Серпантин”">
+                    </div>
+                    <div class="h3 mt-1">Кафе “Серпантин”</div>
+                    <div class="content mt-1">Короткое описание кафе</div>
+                    <div class="tags mt-1">
+                        <div class="tags__item">Европейская кухня</div>
+                        <div class="tags__item">Азиатская кухня</div>
+                    </div>
+                </div>
+                <div class="col-xs-10 card">
+                    <div class="card__img">
+                        <img src="assets/images/cafe-eat.jpeg" alt="Кафе “Серпантин”">
+                    </div>
+                    <div class="h3 mt-1">Кафе “Серпантин”</div>
+                    <div class="content mt-1">Короткое описание кафе</div>
+                    <div class="tags mt-1">
+                        <div class="tags__item">Европейская кухня</div>
+                        <div class="tags__item">Азиатская кухня</div>
+                    </div>
+                </div>
+                <div class="col-xs-10 card">
+                    <div class="card__img">
+                        <img src="assets/images/cafe-eat.jpeg" alt="Кафе “Серпантин”">
+                    </div>
+                    <div class="h3 mt-1">Кафе “Серпантин”</div>
+                    <div class="content mt-1">Короткое описание кафе</div>
+                    <div class="tags mt-1">
+                        <div class="tags__item">Европейская кухня</div>
+                        <div class="tags__item">Азиатская кухня</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__menu">
+                <ul class="row">
+                    <li class="col-xs-3 footer__menu--item">
+                        <a href="#">
+                            <span class="overline">Главная</span>
+                            <span class="icon menu-1"></span>
+                        </a>
+                    </li>
+                    <li class="col-xs-3 footer__menu--item">
+                        <a href="#">
+                            <span class="overline">Каталог</span>
+                            <span class="icon menu-2"></span>
+                        </a>
+                    </li>
+                    <li class="col-xs-3 footer__menu--item">
+                        <a href="#">
+                            <span class="overline">Избранное</span>
+                            <span class="icon menu-3"></span>
+                        </a>
+                    </li>
+                    <li class="col-xs-3 footer__menu--item">
+                        <a href="#">
+                            <span class="overline">Профиль</span>
+                            <span class="icon menu-4"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="footer__line"></div>
+            </div>
+        </div>
+    </footer>
 
     <script src="envelope/js/index.js"></script>
     <script src="envelope/js/slider.js"></script>

@@ -4,6 +4,8 @@ html, body{
 
 body{
 	background-color: var(--ev-color-lightGray);
+	position: relative;
+	padding-bottom: px2rem(115);
 }
 
 .rouble{
@@ -18,3 +20,31 @@ body{
 	}
 }
 
+.dateRate__icons{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	& > .icon.star{
+		width: calc($gap-grid-half - px2rem(2));
+		height: calc($gap-grid-half - px2rem(2));
+		background-color: var(--ev-color-accent);
+		margin-right: $gap-grid-octo;
+		&.hidden{
+			background-color: var(--ev-color-mainGray);
+		}
+	}
+}
+
+.addressItem{
+	padding: $gap-grid-quarter;
+}
+
+.mapBlock{
+	aspect-ratio: 1 / 1;
+	& > *{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: $gap-grid-quarter;
+	}
+}

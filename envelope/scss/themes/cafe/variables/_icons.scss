@@ -3,29 +3,11 @@
 $iconSet: (
 
 	'star': ('mask'),
-
-	'cart': ('mask', "#111111"),
-	'calc': ('mask', "#111111"),
-	'yandex': ('bg'),
-	'law': ('mask'),
-	'hand-palm': ('mask'),
-	'sale-box': ('mask'),
-	'tomb': ('mask'),
-	'funeral-services': ('mask'),
-	'embalming': ('mask'),
-	'cremation': ('mask'),
-	'agent': ('mask'),
-	'plane-car': ('mask'),
-	'tape': ('mask'),
-	'coffin': ('mask'),
-	'agreement': ('mask'),
-	'porters': ('mask'),
-	'social': ('mask'),
-	'vip': ('mask'),
-	'experience': ('mask'),
-	'quality': ('mask'),
-	'rub': ('mask'),
-	'info': ('mask'),
+	'mapobject': ('mask'),
+	'menu-1': ('mask'),
+	'menu-2': ('mask'),
+	'menu-3': ('mask'),
+	'menu-4': ('mask'),
 );
 
 @mixin icon($icon, $type, $color: null) {

@@ -170,7 +170,7 @@ class Carousel {
         document.removeEventListener('mouseup', this.handleTouchEnd);
 
         let shift = this.startX - this.currentX;
-        if (Math.abs(shift) > 30) {
+        if (Math.abs(shift) > 32) {
             this.moveSlide(shift > 0 ? 1 : -1);
         }
     }

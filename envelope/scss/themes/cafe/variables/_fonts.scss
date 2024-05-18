@@ -1,9 +1,21 @@
 @import "enable-fonts";
 
-@include fontObject('.globalNav__title', 'Inter', 700, normal, px2rem(26), px2rem(32), normal, var(--ev-color-accent));
+@include fontObject('.ItemPage__global__title', 'Inter', 700, normal, px2rem(26), px2rem(32), normal, var(--ev-color-accent));
 @include fontObject('.rating > .rating__rate, .worktime__date', 'Inter', 700, normal, px2rem(13), px2rem(20), normal, var(--ev-color-black));
 @include fontObject('.rating > .rating__count, .averageTicket__text', 'Inter', 500, normal, px2rem(13), px2rem(20), normal, var(--ev-color-mainGray));
-@include fontObject('.globalNav__text, .worktime__time', 'Inter', 400, normal, px2rem(13), px2rem(18.2), normal, var(--ev-color-mainGray));
+@include fontObject('.date, .weight, .ItemPage__global__text, .worktime__time', 'Inter', 400, normal, px2rem(13), px2rem(18.2), normal, var(--ev-color-mainGray));
 @include fontObject('.averageTicket__price', 'Inter', 600, normal, px2rem(13), px2rem(20), normal, var(--ev-color-black));
-
 @include fontObject('.tags__item', 'Inter', 500, normal, px2rem(12), px2rem(20), normal, var(--ev-color-black));
+@include fontObject('.nav > ul > li > a', 'Inter', 700, normal, px2rem(14), px2rem(20), normal, var(--ev-color-mainGray));
+@include fontObject('.nav > ul > li > a.active, .nav > ul > li > a:target, .nav > ul > li > a:hover', 'Inter', 700, normal, px2rem(14), px2rem(20), normal, var(--ev-color-accent));
+@include fontObject('.ItemPage__Description .tags__item', 'Inter', 500, normal, px2rem(10), px2rem(20), normal, var(--ev-color-light));
+@include fontObject('.content, .content > *, .card__title', 'Inter', 400, normal, px2rem(13), px2rem(18.2), normal, var(--ev-color-black));
+@include fontObject('.ItemPage__Popular .h2', 'Inter', 700, normal, px2rem(26), px2rem(32), normal, var(--ev-color-black));
+@include fontObject('.dateRate__text, .card__price, .price', 'Inter', 700, normal, px2rem(16), px2rem(20), normal, var(--ev-color-accent));
+@include fontObject('.h3', 'Inter', 600, normal, px2rem(16), px2rem(20), normal, var(--ev-color-black));
+@include fontObject('.h2', 'Inter', 600, normal, px2rem(20), px2rem(20), normal, var(--ev-color-black));
+@include fontObject('.button', 'Inter', 700, normal, px2rem(14), px2rem(16.8), 5%, var(--ev-color-light));
+@include fontObject('.addressItem__title', 'Inter', 400, normal, px2rem(13), px2rem(13), normal, var(--ev-color-mainGray));
+@include fontObject('.addressItem__text', 'Inter', 500, normal, px2rem(18), px2rem(20), normal, var(--ev-color-black));
+@include fontObject('.cards-places .h3', 'Inter', 700, normal, px2rem(16), px2rem(20), normal, var(--ev-color-black));
+@include fontObject('.overline', 'Inter', 400, normal, px2rem(10), px2rem(12.1), normal, var(--ev-color-mainGray));

@@ -1,0 +1,14 @@
+nav.nav{
+	padding: $gap-grid-half 0;
+	ul{
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		li{
+			padding: 0 $gap-grid-octo;
+			&:not(:last-child){
+				margin-right: $gap-grid-half;
+			}
+		}
+	}
+}
