@@ -4,6 +4,7 @@
 	margin-top: $gap-grid-half;
 	& > .card{
 		.card__img{
+			position: relative;
 			width: 100%;
 			aspect-ratio: 1 / 1;
 			& > img{
@@ -28,7 +29,6 @@
 	overflow-x: auto;
 	.card{
 		.card__img{
-
 			width: 100%;
 			aspect-ratio: 285 / 142;
 			overflow: hidden;
@@ -39,6 +39,22 @@
 				object-fit: cover;
 				border-top-left-radius: $gap-grid-quarter;
 				border-top-right-radius: $gap-grid-quarter;
+			}
+		}
+		.card__rating{
+			position: absolute;
+			top: px2rem(10);
+			left: px2rem(10);
+			padding: px2rem(2) px2rem(8) px2rem(2) px2rem(8);
+			background-color: var(--ev-color-light);
+			border-radius: $gap-grid-half;
+			display: flex;
+			align-items: center;
+			.icon.star{
+				width: px2rem(20);
+				height: px2rem(20);
+				background-color: var(--ev-color-black);
+				margin-right: px2rem(4);
 			}
 		}
 	}
