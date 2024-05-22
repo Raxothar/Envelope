@@ -1,3 +1,23 @@
+.cards-popular{
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	.card{
+		width: calc(30% - $gap-grid-half);
+		display: flex;
+		align-items: center;
+		&:not(:first-child){
+			margin-left: 0;
+		}
+		&__title{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			min-height: 2em;
+			margin-top: px2rem(4);
+		}
+	}
+}
 .cards-cafe{
 	flex-wrap: nowrap;
 	overflow-x: auto;

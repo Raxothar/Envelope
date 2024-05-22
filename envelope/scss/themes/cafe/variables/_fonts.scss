@@ -20,3 +20,5 @@
 @include fontObject('.cards-places .h3', 'Inter', 700, normal, px2rem(16), px2rem(20), normal, var(--ev-color-black));
 @include fontObject('.overline', 'Inter', 400, normal, px2rem(10), px2rem(12.1), normal, var(--ev-color-mainGray));
 @include fontObject('.card__rating--text', 'Inter', 500, normal, px2rem(13), px2rem(20), normal, var(--ev-color-black));
+@include fontObject('.cards-popular .card__title', 'Inter', 600, normal, px2rem(12), px2rem(14.4), normal, var(--ev-color-black));
+@include fontObject('.popular__title', 'Inter', 500, normal, px2rem(18), px2rem(20), normal, var(--ev-color-black));

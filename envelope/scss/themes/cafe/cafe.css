@@ -1601,6 +1601,26 @@ body.lock {
   color: var(--ev-color-black);
 }
 
+.cards-popular .card__title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+  letter-spacing: normal;
+  color: var(--ev-color-black);
+}
+
+.popular__title {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  color: var(--ev-color-black);
+}
+
 :root {
   --ev-color-mainGray: #809099;
   --ev-color-accent: #E4583E;
@@ -1617,6 +1637,8 @@ body.lock {
   -webkit-mask-position: center;
   mask-image: url("../../../../assets/images/icons/star.svg");
   -webkit-mask-image: url("../../../../assets/images/icons/star.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 .icon.mapobject {
@@ -1626,6 +1648,8 @@ body.lock {
   -webkit-mask-position: center;
   mask-image: url("../../../../assets/images/icons/mapobject.svg");
   -webkit-mask-image: url("../../../../assets/images/icons/mapobject.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 .icon.menu-1 {
@@ -1635,6 +1659,8 @@ body.lock {
   -webkit-mask-position: center;
   mask-image: url("../../../../assets/images/icons/menu-1.svg");
   -webkit-mask-image: url("../../../../assets/images/icons/menu-1.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 .icon.menu-2 {
@@ -1644,6 +1670,8 @@ body.lock {
   -webkit-mask-position: center;
   mask-image: url("../../../../assets/images/icons/menu-2.svg");
   -webkit-mask-image: url("../../../../assets/images/icons/menu-2.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 .icon.menu-3 {
@@ -1653,6 +1681,8 @@ body.lock {
   -webkit-mask-position: center;
   mask-image: url("../../../../assets/images/icons/menu-3.svg");
   -webkit-mask-image: url("../../../../assets/images/icons/menu-3.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 .icon.menu-4 {
@@ -1662,6 +1692,19 @@ body.lock {
   -webkit-mask-position: center;
   mask-image: url("../../../../assets/images/icons/menu-4.svg");
   -webkit-mask-image: url("../../../../assets/images/icons/menu-4.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.icon.chevron-down {
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-image: url("../../../../assets/images/icons/chevron-down.svg");
+  -webkit-mask-image: url("../../../../assets/images/icons/chevron-down.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 html, body {
@@ -1836,6 +1879,27 @@ body {
   border-radius: 0.5rem;
   padding: 1rem;
   background-color: var(--ev-color-mainGray);
+}
+
+.cards-popular {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.cards-popular .card {
+  width: calc(30% - 1rem);
+  display: flex;
+  align-items: center;
+}
+.cards-popular .card:not(:first-child) {
+  margin-left: 0;
+}
+.cards-popular .card__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 2em;
+  margin-top: 0.25rem;
 }
 
 .cards-cafe {
@@ -2141,6 +2205,8 @@ body {
   -webkit-mask-position: center;
   mask-image: url("../../../../assets/images/icons/star.svg");
   -webkit-mask-image: url("../../../../assets/images/icons/star.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   background-color: var(--ev-color-accent);
   margin-right: 0.25rem;
 }
@@ -2189,6 +2255,8 @@ body {
   -webkit-mask-position: center;
   mask-image: url("../../../../assets/images/icons/favorite.svg");
   -webkit-mask-image: url("../../../../assets/images/icons/favorite.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   background-color: var(--ev-color-accent);
   width: 1.3125rem;
   height: 1.1875rem;
@@ -2207,6 +2275,30 @@ nav.nav ul li {
 }
 nav.nav ul li:not(:last-child) {
   margin-right: 1rem;
+}
+
+.popular {
+  background-color: var(--ev-color-light);
+}
+.popular__title {
+  padding: 0.75rem 0;
+}
+.popular__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  aspect-ratio: 1/1;
+  background-color: var(--ev-color-accent);
+}
+.popular__icon .icon {
+  background-color: var(--ev-color-light);
+  width: 0.8125rem;
+  height: 0.8125rem;
+  transform: rotate(270deg);
 }
 
 .header {
@@ -2314,6 +2406,10 @@ nav.nav ul li:not(:last-child) {
   margin-top: 2rem;
   padding: 1rem 0 0 0;
   background-color: var(--ev-color-light);
+}
+
+.mainPage__popular {
+  padding: 1rem 0;
 }
 
 .footer {

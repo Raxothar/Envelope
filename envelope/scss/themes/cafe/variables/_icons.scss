@@ -8,6 +8,7 @@ $iconSet: (
 	'menu-2': ('mask'),
 	'menu-3': ('mask'),
 	'menu-4': ('mask'),
+	'chevron-down': ('mask'),
 );
 
 @mixin icon($icon, $type, $color: null) {
@@ -18,6 +19,8 @@ $iconSet: (
 		-webkit-mask-position: center;
 		mask-image: url("#{$iconPath}/#{$icon}.svg");
 		-webkit-mask-image: url("#{$iconPath}/#{$icon}.svg");
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
 		background-color: #{$color};
 	} @else if($type == 'mask') {
 		mask-size: contain;
@@ -26,6 +29,8 @@ $iconSet: (
 		-webkit-mask-position: center;
 		mask-image: url("#{$iconPath}/#{$icon}.svg");
 		-webkit-mask-image: url("#{$iconPath}/#{$icon}.svg");
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
 	} @else {
 		background-image: url("#{$iconPath}/#{$icon}.svg");
 	}
