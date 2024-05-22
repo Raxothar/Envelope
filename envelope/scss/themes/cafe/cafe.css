@@ -2335,4 +2335,8 @@ nav.nav ul li:not(:last-child) {
   justify-content: flex-start;
 }
 
+body {
+  background-color: red;
+}
+
 /*# sourceMappingURL=cafe.css.map */
