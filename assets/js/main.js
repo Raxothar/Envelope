@@ -51,4 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (faqSlider) {
         new Carousel(faqSlider, {0: 2}, {arrows: true, nav: true});
     }
+
+    let requisitesLicensesSlider = document.querySelector(".requisites__licenses--slider");
+    if (requisitesLicensesSlider) {
+        new Carousel(requisitesLicensesSlider, {0: 2}, {arrows: true, nav: true});
+    }
+
 });

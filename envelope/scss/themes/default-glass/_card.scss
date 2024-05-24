@@ -121,5 +121,28 @@
 			margin-bottom: px2rem(16);
 		}
 	}
+}
 
+.cards-icon{
+	margin-bottom: px2rem(50);
+	.card{
+		background-color: unset;
+		background: var(--ev-gradient-gray) !important;
+		box-shadow: 0 px2rem(20) px2rem(30) 0 var(--ev-color-mainDarkTransparent);
+		.icon{
+			background-color: var(--ev-color-addColdBlue);
+			width: px2rem(60);
+			height: px2rem(60);
+			margin-bottom: px2rem(20);
+		}
+	}
+}
+
+@include bp(xs, lg){
+	.cards-icon{
+		margin-bottom: px2rem(00);
+		.card{
+			margin-bottom: px2rem(20);
+		}
+	}
 }

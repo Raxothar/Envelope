@@ -9,6 +9,27 @@
 		color: var(--ev-color-mainGray);
 		margin-top: px2rem(16);
 		margin-left: 0;
+		margin-bottom: px2rem(40);
+	}
+
+	&__text{
+		margin-bottom: px2rem(40);
+		&--title{
+			padding: px2rem(8);
+		}
+		&--list{
+			padding: px2rem(16) px2rem(24);
+		}
+	}
+
+	&__dark{
+		border-radius: $gap-grid;
+		background: var(--ev-gradient-grayBlueGray);
+		padding: px2rem(24) px2rem(32) px2rem(24) px2rem(32);
+		margin-bottom: px2rem(40);
+		*{
+			color: var(--ev-color-mainWhite);
+		}
 	}
 
 }

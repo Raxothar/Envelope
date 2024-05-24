@@ -1634,6 +1634,36 @@ input, input::placeholder, .button, .tabs__items-item {
   color: var(--ev-color-mainBlue);
 }
 
+.introAbout__text--title {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.375rem;
+  line-height: 1.375rem;
+  letter-spacing: normal;
+  color: var(--ev-color-mainGray);
+}
+
+.introAbout__text--list, .introAbout__text--list * {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  letter-spacing: normal;
+  color: var(--ev-color-mainGray);
+}
+
+.introAbout__cards--text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  letter-spacing: normal;
+  color: var(--ev-color-mainGray);
+}
+
 @media (min-width: 0) and (max-width: 992px) {
   .colorCard__text {
     font-family: "Inter";
@@ -2084,6 +2114,15 @@ input, input::placeholder, .button, .tabs__items-item {
   -webkit-mask-image: url("../../../../assets/images/icons/info.svg");
 }
 
+.icon.time {
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-image: url("../../../../assets/images/icons/time.svg");
+  -webkit-mask-image: url("../../../../assets/images/icons/time.svg");
+}
+
 .glass {
   width: 100%;
   height: 100%;
@@ -2346,6 +2385,29 @@ input, input::placeholder, .button, .tabs__items-item {
   margin-bottom: 1rem;
 }
 
+.cards-icon {
+  margin-bottom: 3.125rem;
+}
+.cards-icon .card {
+  background-color: unset;
+  background: var(--ev-gradient-gray) !important;
+  box-shadow: 0 1.25rem 1.875rem 0 var(--ev-color-mainDarkTransparent);
+}
+.cards-icon .card .icon {
+  background-color: var(--ev-color-addColdBlue);
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .cards-icon {
+    margin-bottom: 0rem;
+  }
+  .cards-icon .card {
+    margin-bottom: 1.25rem;
+  }
+}
 .tabs__items {
   background-color: var(--ev-color-mainWhite);
   border-radius: 2rem;
@@ -3614,6 +3676,25 @@ input, input::placeholder, .button, .tabs__items-item {
   color: var(--ev-color-mainGray);
   margin-top: 1rem;
   margin-left: 0;
+  margin-bottom: 2.5rem;
+}
+.introAbout__text {
+  margin-bottom: 2.5rem;
+}
+.introAbout__text--title {
+  padding: 0.5rem;
+}
+.introAbout__text--list {
+  padding: 1rem 1.5rem;
+}
+.introAbout__dark {
+  border-radius: 2rem;
+  background: var(--ev-gradient-grayBlueGray);
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+}
+.introAbout__dark * {
+  color: var(--ev-color-mainWhite);
 }
 
 .bf {
