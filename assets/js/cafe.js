@@ -18,4 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    let filterButton = document.querySelector('.filter__button');
+    let filterButtonClose = document.querySelector('.filter__back--title--close');
+    if(filterButton){
+        filterButton.addEventListener('click', function(){
+            document.querySelector('.filter__back').classList.toggle('active');
+        });
+    }
+    if(filterButtonClose){
+        filterButtonClose.addEventListener('click', function(){
+            document.querySelector('.filter__back').classList.remove('active');
+        });
+    }
+
 });

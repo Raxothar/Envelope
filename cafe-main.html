@@ -52,16 +52,74 @@
 </section>
 
 <section class="mainPage__filter filter">
-    <div class="filter__front">
+    <form class="filter__front searchForm" action="#">
         <div class="container">
             <div class="row">
-
+                <div class="h1 filter__front--title">Все кафе в одном месте</div>
             </div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="row">
+                <div class="inputbox">
+                    <div class="icon search"></div>
+                    <input class="searchForm__input" type="text" name="search" id="search" value="Поиск кафе или еды">
+                    <button class="icon filter input filter__button" type="submit"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="tags tags-filled">
+                    <input type="checkbox" name="search_tag-1" id="search_tag-1" class="search_input">
+                    <label for="search_tag-1" class="search_tag tags__item">Актуальное</label>
+                    <input type="checkbox" name="search_tag-2" id="search_tag-2" class="search_input">
+                    <label for="search_tag-2" class="search_tag tags__item">Постное меню</label>
+                    <input type="checkbox" name="search_tag-3" id="search_tag-3" class="search_input">
+                    <label for="search_tag-3" class="search_tag tags__item">Караоке</label>
+                    <input type="checkbox" name="search_tag-4" id="search_tag-4" class="search_input">
+                    <label for="search_tag-4" class="search_tag tags__item">Для свадьбы</label>
+                </div>
+            </div>
         </div>
+    </form>
+    <div class="filter__back">
+        <section class="filter__back--title">
+            <div class="container">
+                <div class="row jcsb aic">
+                    <div class="col-xs-10 ">
+                        <div class="h2">Поиск по параметрам</div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="icon close filter__back--title--close"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="filter__back--form">
+            <div class="container">
+                <div class="row">
+                    <div class="tags tags-filled">
+                        <input type="checkbox" name="all_search_tag-1" id="all_search_tag-1" class="search_input">
+                        <label for="all_search_tag-1" class="search_tag tags__item">Все</label>
+                        <input type="checkbox" name="all_search_tag-2" id="all_search_tag-2" class="search_input">
+                        <label for="all_search_tag-2" class="search_tag tags__item">День рождения</label>
+                        <input type="checkbox" name="all_search_tag-3" id="all_search_tag-3" class="search_input">
+                        <label for="all_search_tag-3" class="search_tag tags__item">Живая музыка</label>
+                        <input type="checkbox" name="all_search_tag-4" id="all_search_tag-4" class="search_input">
+                        <label for="all_search_tag-4" class="search_tag tags__item">Свадьба</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="accordeon">
+                            <div class="accordeon__item open">
+                                <div class="accordeon__item--header h3">Основное меню</div>
+                                <div class="accordeon__item--content">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="filter__back"></div>
 </section>
 
 <footer class="footer">

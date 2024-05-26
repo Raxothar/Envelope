@@ -9,6 +9,9 @@ $iconSet: (
 	'menu-3': ('mask'),
 	'menu-4': ('mask'),
 	'chevron-down': ('mask'),
+	'search': ('mask'),
+	'filter': ('mask'),
+	'close': ('mask'),
 );
 
 @mixin icon($icon, $type, $color: null) {

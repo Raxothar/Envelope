@@ -12,4 +12,24 @@
 			margin-right: $gap-grid-quarter;
 		}
 	}
+
+	&-filled{
+		padding: 0;
+		.search_input{
+			display: none;
+		}
+		.search_tag{
+			padding: px2rem(4) px2rem(12);
+			border-radius: px2rem(8);
+			background-color: transparent;
+			transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+			margin-right: 0;
+		}
+		.search_input:checked + .search_tag{
+			background-color: var(--ev-color-accent);
+			color: var(--ev-color-light);
+		}
+	}
+
 }
+
