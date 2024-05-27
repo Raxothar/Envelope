@@ -38,3 +38,22 @@
     background-color: var(--ev-color-accent);
   }
 }
+
+.inputbox.textarea{
+  textarea{
+    width: 100%;
+    height: 6em;
+    border-radius: px2rem(8);
+    border: px2rem(1.5) solid var(--ev-color-secondGray);
+    padding: px2rem(8);
+  }
+}
+
+.reviewForm{
+  &__rating{
+    width: 100%;
+    &--select{
+      width: 100%;
+    }
+  }
+}

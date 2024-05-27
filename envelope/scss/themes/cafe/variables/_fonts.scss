@@ -2,7 +2,6 @@
 
 @include fontObject('.h1.ItemPage__global__title', 'Inter', 700, normal, px2rem(26), px2rem(32), normal, var(--ev-color-accent));
 @include fontObject('.catalogPage .filter__front--title', 'Inter', 600, normal, px2rem(20), px2rem(20), normal, var(--ev-color-black));
-
 @include fontObject('.rating > .rating__rate, .worktime__date', 'Inter', 700, normal, px2rem(13), px2rem(20), normal, var(--ev-color-black));
 @include fontObject('.rating > .rating__count, .averageTicket__text', 'Inter', 500, normal, px2rem(13), px2rem(20), normal, var(--ev-color-mainGray));
 @include fontObject('.date, .weight, .ItemPage__global__text, .worktime__time', 'Inter', 400, normal, px2rem(13), px2rem(18.2), normal, var(--ev-color-mainGray));
@@ -11,7 +10,7 @@
 @include fontObject('.nav > ul > li > a', 'Inter', 700, normal, px2rem(14), px2rem(20), normal, var(--ev-color-mainGray));
 @include fontObject('.nav > ul > li > a.active, .nav > ul > li > a:target, .nav > ul > li > a:hover', 'Inter', 700, normal, px2rem(14), px2rem(20), normal, var(--ev-color-accent));
 @include fontObject('.ItemPage__Description .tags__item', 'Inter', 500, normal, px2rem(10), px2rem(20), normal, var(--ev-color-light));
-@include fontObject('.content, .content > *, .card__title', 'Inter', 400, normal, px2rem(13), px2rem(18.2), normal, var(--ev-color-black));
+@include fontObject('.content, .content > *, .card__title, select, option', 'Inter', 400, normal, px2rem(13), px2rem(18.2), normal, var(--ev-color-black));
 @include fontObject('.ItemPage__Popular .h2', 'Inter', 700, normal, px2rem(26), px2rem(32), normal, var(--ev-color-black));
 @include fontObject('.dateRate__text, .card__price, .price', 'Inter', 700, normal, px2rem(16), px2rem(20), normal, var(--ev-color-accent));
 @include fontObject('.h3', 'Inter', 600, normal, px2rem(16), px2rem(20), normal, var(--ev-color-black));
@@ -27,8 +26,8 @@
 @include fontObject('.h1', 'Inter', 600, normal, px2rem(26), px2rem(32), normal, var(--ev-color-black));
 @include fontObject('.searchForm__input', 'Inter', 400, normal, px2rem(16), px2rem(20), normal, var(--ev-color-black--op-30));
 @include fontObject('.search_tag', 'Inter', 700, normal, px2rem(14), px2rem(20), normal, var(--ev-color-mainGray));
-@include fontObject('.accordeon__item--content *', 'Inter', 400, normal, px2rem(16), px2rem(24), normal, var(--ev-color-black));
-
+@include fontObject('.accordeon__item--content *:not(.h3, .price, .weight, li>span.content)', 'Inter', 400, normal, px2rem(16), px2rem(24), normal, var(--ev-color-black));
 @include fontObject('.promotion__item--upTitle', 'Inter', 400, normal, px2rem(16), px2rem(20), normal, var(--ev-color-light));
 @include fontObject('.promotion__item--title', 'Inter', 400, normal, px2rem(32), px2rem(32), normal, var(--ev-color-light));
 @include fontObject('.promotion__item--cafe', 'Inter', 600, normal, px2rem(16), px2rem(20), normal, var(--ev-color-light));
+@include fontObject('textarea', 'Inter', 400, normal, px2rem(13), px2rem(18.2), normal, var(--ev-color-secondGray));
