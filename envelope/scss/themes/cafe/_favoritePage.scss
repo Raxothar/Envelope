@@ -1,0 +1,33 @@
+.favoritePage{
+  &__title{
+    background-color: var(--ev-color-light);
+    padding: $gap-grid-half 0;
+    margin-bottom: $gap-grid-half;
+  }
+  &__notFound{
+    background-color: var(--ev-color-light);
+    .content{
+      padding: px2rem(8);
+      p:first-child{
+        padding: px2rem(8) 0;
+        border-bottom: px2rem(1) solid var(--ev-color-secondGray);
+      }
+      p:last-child{
+        padding-bottom: px2rem(8);
+        margin: px2rem(8) 0;
+      }
+    }
+  }
+
+  &__filter{
+    background-color: var(--ev-color-light);
+    margin-top: $gap-grid-half;
+    padding: $gap-grid-half 0;
+  }
+
+  &__items{
+    margin-top: $gap-grid-half;
+  }
+
+}
+

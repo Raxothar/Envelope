@@ -2758,6 +2758,34 @@ nav.nav ul li:not(:last-child) {
   width: calc(45% - 1rem);
 }
 
+.favoritePage__title {
+  background-color: var(--ev-color-light);
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.favoritePage__notFound {
+  background-color: var(--ev-color-light);
+}
+.favoritePage__notFound .content {
+  padding: 0.5rem;
+}
+.favoritePage__notFound .content p:first-child {
+  padding: 0.5rem 0;
+  border-bottom: 0.0625rem solid var(--ev-color-secondGray);
+}
+.favoritePage__notFound .content p:last-child {
+  padding-bottom: 0.5rem;
+  margin: 0.5rem 0;
+}
+.favoritePage__filter {
+  background-color: var(--ev-color-light);
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+.favoritePage__items {
+  margin-top: 1rem;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
