@@ -1,6 +1,8 @@
 @import "enable-fonts";
 
-@include fontObject('.ItemPage__global__title', 'Inter', 700, normal, px2rem(26), px2rem(32), normal, var(--ev-color-accent));
+@include fontObject('.h1.ItemPage__global__title', 'Inter', 700, normal, px2rem(26), px2rem(32), normal, var(--ev-color-accent));
+@include fontObject('.catalogPage .filter__front--title', 'Inter', 600, normal, px2rem(20), px2rem(20), normal, var(--ev-color-black));
+
 @include fontObject('.rating > .rating__rate, .worktime__date', 'Inter', 700, normal, px2rem(13), px2rem(20), normal, var(--ev-color-black));
 @include fontObject('.rating > .rating__count, .averageTicket__text', 'Inter', 500, normal, px2rem(13), px2rem(20), normal, var(--ev-color-mainGray));
 @include fontObject('.date, .weight, .ItemPage__global__text, .worktime__time', 'Inter', 400, normal, px2rem(13), px2rem(18.2), normal, var(--ev-color-mainGray));

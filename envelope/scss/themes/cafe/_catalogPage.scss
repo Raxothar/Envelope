@@ -3,4 +3,32 @@
     padding: $gap-grid-half 0;
     background-color: var(--ev-color-light);
   }
+  &__items{
+    margin-top: $gap-grid-half;
+    & > .card{
+      padding: px2rem(24) px2rem(8) px2rem(16) px2rem(8);
+      margin-bottom: $gap-grid-half;
+      .container{
+        width: 100%;
+        .content.description{
+          margin: px2rem(8) 0;
+          border-bottom: px2rem(1) solid var(--ev-color-lightGray);
+        }
+        .address.content{
+          display: flex;
+          margin: px2rem(8) 0;
+          .icon.mapobject{
+            display: block;
+            width: px2rem(16);
+            height: px2rem(16);
+            margin-right: px2rem(8);
+            background-color: var(--ev-color-mainGray);
+          }
+        }
+      }
+      .row.slider > .col-xs-12{
+        width: calc(45% - $gap-grid-half);
+      }
+    }
+  }
 }

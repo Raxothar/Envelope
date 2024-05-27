@@ -1408,7 +1408,7 @@ body *:not(.filter__back)::-webkit-scrollbar {
   font-weight: 700;
   font-style: normal;
 }
-.ItemPage__global__title {
+.h1.ItemPage__global__title {
   font-family: "Inter";
   font-weight: 700;
   font-style: normal;
@@ -1416,6 +1416,16 @@ body *:not(.filter__back)::-webkit-scrollbar {
   line-height: 2rem;
   letter-spacing: normal;
   color: var(--ev-color-accent);
+}
+
+.catalogPage .filter__front--title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  color: var(--ev-color-black);
 }
 
 .rating > .rating__rate, .worktime__date {
@@ -2718,6 +2728,34 @@ nav.nav ul li:not(:last-child) {
 .catalogPage__filter {
   padding: 1rem 0;
   background-color: var(--ev-color-light);
+}
+.catalogPage__items {
+  margin-top: 1rem;
+}
+.catalogPage__items > .card {
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  margin-bottom: 1rem;
+}
+.catalogPage__items > .card .container {
+  width: 100%;
+}
+.catalogPage__items > .card .container .content.description {
+  margin: 0.5rem 0;
+  border-bottom: 0.0625rem solid var(--ev-color-lightGray);
+}
+.catalogPage__items > .card .container .address.content {
+  display: flex;
+  margin: 0.5rem 0;
+}
+.catalogPage__items > .card .container .address.content .icon.mapobject {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  background-color: var(--ev-color-mainGray);
+}
+.catalogPage__items > .card .row.slider > .col-xs-12 {
+  width: calc(45% - 1rem);
 }
 
 .footer {
