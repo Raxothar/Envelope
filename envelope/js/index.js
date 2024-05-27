@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Path: tabs.js
     let evTabs = document.querySelectorAll('.tabs');
     if (evTabs.length){
         evTabs.forEach((tabsContainer) => {

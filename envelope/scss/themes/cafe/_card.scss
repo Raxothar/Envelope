@@ -17,6 +17,31 @@
 			margin-top: px2rem(4);
 		}
 	}
+	&.cards-catalogTabs{
+		margin-top: $gap-grid;
+		flex-wrap: wrap;
+		overflow-x: unset;
+		justify-content: space-between;
+		.card{
+			width: calc(50% - $gap-grid-half);
+			margin: 0;
+			box-shadow: 0 px2rem(2) px2rem(10) 0 #8090991A;
+			&__img{
+				aspect-ratio: 2 / 1;
+				width: 100%;
+				max-height: px2rem(80);
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+			&__title{
+				padding: px2rem(8);
+				text-align: center;
+			}
+		}
+	}
 }
 .cards-cafe{
 	flex-wrap: nowrap;
