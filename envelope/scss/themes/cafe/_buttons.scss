@@ -4,5 +4,9 @@
 	border-radius: $gap-grid-quarter;
 	padding: $gap-grid-half;
 	background-color: var(--ev-color-mainGray);
+	&.button--accent{
+		background-color: var(--ev-color-accent);
+	}
 }
+
 

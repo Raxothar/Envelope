@@ -25,3 +25,8 @@
 @include fontObject('.h1', 'Inter', 600, normal, px2rem(26), px2rem(32), normal, var(--ev-color-black));
 @include fontObject('.searchForm__input', 'Inter', 400, normal, px2rem(16), px2rem(20), normal, var(--ev-color-black--op-30));
 @include fontObject('.search_tag', 'Inter', 700, normal, px2rem(14), px2rem(20), normal, var(--ev-color-mainGray));
+@include fontObject('.accordeon__item--content *', 'Inter', 400, normal, px2rem(16), px2rem(24), normal, var(--ev-color-black));
+
+@include fontObject('.promotion__item--upTitle', 'Inter', 400, normal, px2rem(16), px2rem(20), normal, var(--ev-color-light));
+@include fontObject('.promotion__item--title', 'Inter', 400, normal, px2rem(32), px2rem(32), normal, var(--ev-color-light));
+@include fontObject('.promotion__item--cafe', 'Inter', 600, normal, px2rem(16), px2rem(20), normal, var(--ev-color-light));

@@ -61,7 +61,7 @@
                 <div class="inputbox">
                     <div class="icon search"></div>
                     <input class="searchForm__input" type="text" name="search" id="search" value="Поиск кафе или еды">
-                    <button class="icon filter input filter__button" type="submit"></button>
+                    <span class="icon filter input filter__button"></span>
                 </div>
             </div>
             <div class="row">
@@ -78,7 +78,7 @@
             </div>
         </div>
     </form>
-    <div class="filter__back">
+    <form class="filter__back" action="#">
         <section class="filter__back--title">
             <div class="container">
                 <div class="row jcsb aic">
@@ -108,10 +108,49 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="accordeon">
-                            <div class="accordeon__item open">
-                                <div class="accordeon__item--header h3">Основное меню</div>
+                            <div class="accordeon__item">
+                                <div class="accordeon__item--header h3">Расположение</div>
                                 <div class="accordeon__item--content">
-
+                                    <p>Вставить текст</p>
+                                </div>
+                            </div>
+                            <div class="accordeon__item">
+                                <div class="accordeon__item--header h3">Кухня</div>
+                                <div class="accordeon__item--content">
+                                    <p>Вставить текст</p>
+                                </div>
+                            </div>
+                            <div class="accordeon__item">
+                                <div class="accordeon__item--header h3">Тип заведения</div>
+                                <div class="accordeon__item--content">
+                                    <p>Вставить текст</p>
+                                </div>
+                            </div>
+                            <div class="accordeon__item">
+                                <div class="accordeon__item--header h3">Особенности</div>
+                                <div class="accordeon__item--content">
+                                    <p>Вставить текст</p>
+                                </div>
+                            </div>
+                            <div class="accordeon__item open">
+                                <div class="accordeon__item--header h3">Средний чек</div>
+                                <div class="accordeon__item--content">
+                                    <div class="inputbox checkbox">
+                                        <input type="checkbox" name="filter_back_1" id="filter_back_1">
+                                        <label for="filter_back_1">Менее 1000</label>
+                                    </div>
+                                    <div class="inputbox checkbox">
+                                        <input type="checkbox" name="filter_back_2" id="filter_back_2">
+                                        <label for="filter_back_2">1000 - 2000</label>
+                                    </div>
+                                    <div class="inputbox checkbox">
+                                        <input type="checkbox" name="filter_back_3" id="filter_back_3">
+                                        <label for="filter_back_3">2000 - 3000</label>
+                                    </div>
+                                    <div class="inputbox checkbox">
+                                        <input type="checkbox" name="filter_back_4" id="filter_back_4">
+                                        <label for="filter_back_4">Более 3000</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -119,6 +158,202 @@
                 </div>
             </div>
         </section>
+        <section class="filter__back--button">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="button button button--accent" type="submit">Найти</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</section>
+
+<section class="promotion">
+    <div class="container">
+        <div class="row">
+            <a class="col-xs-10 promotion__item" style="background-image: url('assets/images/cafe-1.jpeg')">
+                <div class="promotion__item--upTitle">Бизнес -ланчи</div>
+                <div class="promotion__item--title">скидка 20%</div>
+                <div class="promotion__item--cafe">кафе “Березка”</div>
+            </a>
+            <a class="col-xs-10 promotion__item" style="background-image: url('assets/images/cafe-1.jpeg')">
+                <div class="promotion__item--upTitle">Бизнес -ланчи</div>
+                <div class="promotion__item--title">скидка 20%</div>
+                <div class="promotion__item--cafe">кафе “Березка”</div>
+            </a>
+            <a class="col-xs-10 promotion__item" style="background-image: url('assets/images/cafe-1.jpeg')">
+                <div class="promotion__item--upTitle">Бизнес -ланчи</div>
+                <div class="promotion__item--title">скидка 20%</div>
+                <div class="promotion__item--cafe">кафе “Березка”</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="places mainPage__places">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col-xs-12">
+                <div class="h2">Популярне места</div>
+            </div>
+        </div>
+        <div class="row cards-places">
+            <div class="col-xs-10 card">
+                <div class="card__img">
+                    <img src="assets/images/cafe-eat.jpeg" alt="Кафе “Серпантин”">
+                    <div class="card__rating">
+                        <div class="icon star"></div>
+                        <div class="span card__rating--text">4.2</div>
+                    </div>
+                </div>
+                <div class="h3 mt-1">Кафе “Серпантин”</div>
+                <div class="content mt-1">Короткое описание кафе</div>
+                <div class="tags mt-1">
+                    <div class="tags__item">Европейская кухня</div>
+                    <div class="tags__item">Азиатская кухня</div>
+                </div>
+            </div>
+            <div class="col-xs-10 card">
+                <div class="card__img">
+                    <img src="assets/images/cafe-eat.jpeg" alt="Кафе “Серпантин”">
+                    <div class="card__rating">
+                        <div class="icon star"></div>
+                        <div class="span card__rating--text">4.2</div>
+                    </div>
+                </div>
+                <div class="h3 mt-1">Кафе “Серпантин”</div>
+                <div class="content mt-1">Короткое описание кафе</div>
+                <div class="tags mt-1">
+                    <div class="tags__item">Европейская кухня</div>
+                    <div class="tags__item">Азиатская кухня</div>
+                </div>
+            </div>
+            <div class="col-xs-10 card">
+                <div class="card__img">
+                    <img src="assets/images/cafe-eat.jpeg" alt="Кафе “Серпантин”">
+                    <div class="card__rating">
+                        <div class="icon star"></div>
+                        <div class="span card__rating--text">4.2</div>
+                    </div>
+                </div>
+                <div class="h3 mt-1">Кафе “Серпантин”</div>
+                <div class="content mt-1">Короткое описание кафе</div>
+                <div class="tags mt-1">
+                    <div class="tags__item">Европейская кухня</div>
+                    <div class="tags__item">Азиатская кухня</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mainPage__mapButton">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a class="button button--accent"> <span class="icon mapobject"></span> Найти на карте</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mainPage__popular popular">
+    <div class="container">
+        <div class="row jcsb aic">
+            <div class="col-xs-10">
+                <div class="h2 popular__title">Актуальные подборки</div>
+            </div>
+            <div class="col-xs-2">
+                <a href="#" class="popular__icon">
+                    <span class="icon chevron-down"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row cards cards-popular">
+            <a class="col-xs-4 card" href="#">
+                <div class="card__img">
+                    <img src="assets/images/popular-item.png" alt="">
+                </div>
+                <div class="card__title">Семейное</div>
+            </a>
+            <a class="col-xs-4 card" href="#">
+                <div class="card__img">
+                    <img src="assets/images/popular-item.png" alt="">
+                </div>
+                <div class="card__title">Тихое место</div>
+            </a>
+            <a class="col-xs-4 card" href="#">
+                <div class="card__img">
+                    <img src="assets/images/popular-item.png" alt="">
+                </div>
+                <div class="card__title">Online трансляции</div>
+            </a>
+            <a class="col-xs-4 card" href="#">
+                <div class="card__img">
+                    <img src="assets/images/popular-item.png" alt="">
+                </div>
+                <div class="card__title">Online трансляции</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="places mainPage__interesting">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col-xs-12">
+                <div class="h2">Недавно вы интересовались</div>
+            </div>
+        </div>
+        <div class="row cards-places">
+            <div class="col-xs-10 card">
+                <div class="card__img">
+                    <img src="assets/images/cafe-eat.jpeg" alt="Кафе “Серпантин”">
+                    <div class="card__rating">
+                        <div class="icon star"></div>
+                        <div class="span card__rating--text">4.2</div>
+                    </div>
+                </div>
+                <div class="h3 mt-1">Кафе “Серпантин”</div>
+                <div class="content mt-1">Короткое описание кафе</div>
+                <div class="tags mt-1">
+                    <div class="tags__item">Европейская кухня</div>
+                    <div class="tags__item">Азиатская кухня</div>
+                </div>
+            </div>
+            <div class="col-xs-10 card">
+                <div class="card__img">
+                    <img src="assets/images/cafe-eat.jpeg" alt="Кафе “Серпантин”">
+                    <div class="card__rating">
+                        <div class="icon star"></div>
+                        <div class="span card__rating--text">4.2</div>
+                    </div>
+                </div>
+                <div class="h3 mt-1">Кафе “Серпантин”</div>
+                <div class="content mt-1">Короткое описание кафе</div>
+                <div class="tags mt-1">
+                    <div class="tags__item">Европейская кухня</div>
+                    <div class="tags__item">Азиатская кухня</div>
+                </div>
+            </div>
+            <div class="col-xs-10 card">
+                <div class="card__img">
+                    <img src="assets/images/cafe-eat.jpeg" alt="Кафе “Серпантин”">
+                    <div class="card__rating">
+                        <div class="icon star"></div>
+                        <div class="span card__rating--text">4.2</div>
+                    </div>
+                </div>
+                <div class="h3 mt-1">Кафе “Серпантин”</div>
+                <div class="content mt-1">Короткое описание кафе</div>
+                <div class="tags mt-1">
+                    <div class="tags__item">Европейская кухня</div>
+                    <div class="tags__item">Азиатская кухня</div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

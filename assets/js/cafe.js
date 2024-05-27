@@ -24,11 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if(filterButton){
         filterButton.addEventListener('click', function(){
             document.querySelector('.filter__back').classList.toggle('active');
+            document.querySelector('body').classList.toggle('lock');
         });
     }
     if(filterButtonClose){
         filterButtonClose.addEventListener('click', function(){
             document.querySelector('.filter__back').classList.remove('active');
+            document.querySelector('body').classList.remove('lock');
         });
     }
 

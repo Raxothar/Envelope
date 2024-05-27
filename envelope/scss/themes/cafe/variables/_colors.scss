@@ -8,5 +8,8 @@ $ev-colors: (
 	secondGray: #DADFE2,
 );
 
+$ev-gradients:(
+	black-half: linear-gradient(269.45deg, rgba(0, 0, 0, 0) 0.44%, #000000 99.52%),
+);
 
-@include ev-colors-generate($ev-colors, null);
+@include ev-colors-generate($ev-colors, $ev-gradients);
