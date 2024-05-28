@@ -2477,7 +2477,7 @@ body {
   border-radius: 0.5rem;
   background-color: transparent;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  margin-right: 0;
+  margin-right: 0.25rem;
 }
 .tags-filled .search_input:checked + .search_tag, .tags-filled .search_tag.active {
   background-color: var(--ev-color-accent);
