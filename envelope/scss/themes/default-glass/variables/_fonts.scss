@@ -37,7 +37,9 @@
 @include fontObject('.introAbout__text--list, .introAbout__text--list *', 'Inter', 400, normal, px2rem(20), px2rem(27), normal, var(--ev-color-mainGray));
 @include fontObject('.introAbout__cards--text', 'Inter', 400, normal, px2rem(16), px2rem(20.8), normal, var(--ev-color-mainGray));
 
-
+@include fontObject('.requisites__content--title', 'Inter', 600, normal, px2rem(32), 100%, px2rem(0.5), var(--ev-color-mainGray));
+@include fontObject('.requisites__content--table--item > .key', 'Inter', 400, normal, px2rem(16), px2rem(20.8), px2rem(0.5), var(--ev-color-mainGray));
+@include fontObject('.requisites__content--table--item > .value', 'Inter', 700, normal, px2rem(18), px2rem(19.8), px2rem(0.5), var(--ev-color-mainGray));
 
 @include bp(xs, lg){
 	@include fontObject('.colorCard__text', 'Inter', 400, normal, px2rem(12), px2rem(16.8), px2rem(1), var(--ev-color-mainWhite));
