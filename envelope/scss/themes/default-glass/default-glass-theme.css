@@ -3844,6 +3844,62 @@ input, input::placeholder, .button, .tabs__items-item {
     background-color: var(--ev-color-mainWhite);
   }
 }
+.contractIntro {
+  background-color: var(--ev-color-mainWhite);
+  padding: 1.875rem 0 5rem 0;
+}
+.contractIntro .content {
+  color: var(--ev-color-mainGray);
+  margin-bottom: 2.5rem;
+}
+.contractIntro__note {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 0.0625rem solid var(--ev-color-addGray);
+}
+.contractIntro__note .title {
+  margin-bottom: 1rem;
+}
+.contractIntro__note--list {
+  margin-top: 1rem;
+  column-count: 4;
+  column-gap: 1.875rem;
+}
+.contractIntro__plus {
+  margin-top: 2.5rem;
+}
+.contractIntro__plus .icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: var(--ev-color-addColdBlue);
+}
+.contractIntro__plus .text {
+  color: var(--ev-color-mainGray);
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .contractIntro {
+    padding: 1rem 0;
+  }
+  .contractIntro .breadcrumbs {
+    display: none;
+  }
+  .contractIntro__note {
+    margin: 1rem auto;
+    width: calc(100% - 2rem);
+  }
+  .contractIntro__note--list {
+    column-count: unset;
+    column-gap: unset;
+  }
+}
+.contractInfo {
+  padding: 5.5rem 0 5.0625rem 0;
+  background-color: var(--ev-color-addColdWhite);
+}
+
 .bf {
   padding: 3rem 0;
   background-repeat: no-repeat;
