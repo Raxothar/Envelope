@@ -1,0 +1,16 @@
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  &-item{
+    display: flex;
+    padding: $gap-grid-quarter;
+    border-radius: $gap-grid;
+    border: px2rem(1) solid var(--ev-color-light-op-03);
+    box-shadow: 0 px2rem(2) px2rem(3) var(--ev-color-light-op-01);
+    background-color: var(--ev-color-first-accent-op-30);
+    margin-bottom: $gap-grid-quarter;
+    &:not(:last-child){
+      margin-right: $gap-grid-quarter;
+    }
+  }
+}

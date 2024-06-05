@@ -1,0 +1,44 @@
+body{
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  &::before, &::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &::before{
+    background-image: url("#{$assetsPath}/images/bg-cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+  }
+  &::after{
+    z-index: 2;
+    background-color: var(--ev-color-dark-op-85);
+    filter: blur($default-blur);
+  }
+}
+
+.wrapper{
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  padding: $gap-grid-half;
+}
+
+.glass {
+  backdrop-filter: blur($default-blur);
+  background: var(--ev-color-light-op-01);
+  border-radius: $gap-grid-half;
+  border: 1px solid var(--ev-color-light-op-03);
+  box-shadow: 0 px2rem(4) px2rem(6) var(--ev-color-light-op-01);
+  padding: $gap-grid-half;
+}
+

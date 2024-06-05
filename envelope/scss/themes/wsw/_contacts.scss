@@ -1,0 +1,32 @@
+.contacts{
+  margin-top: $gap-grid;
+  &__items{
+    display: flex;
+    &--link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--ev-color-light);
+      border-radius: 50%;
+      font-size: $gap-grid;
+      width: $gap-grid;
+      height: $gap-grid;
+      text-align: center;
+      i{
+        font-size: px2rem(22);
+      }
+      &:not(:first-child){
+        margin-left: $gap-grid-half;
+      }
+    }
+  }
+}
+
+@include bp(xs, lg){
+  .contacts{
+    &__section:not(:first-child){
+      margin-top: $gap-grid;
+    }
+  }
+}
+

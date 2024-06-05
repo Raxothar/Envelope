@@ -1,0 +1,11 @@
+@import "enable-fonts";
+
+@include fontObject('.h2', 'Noto Sans', 700, normal, px2rem(32), 125%, normal, var(--ev-color-light));
+@include fontObject('.h3', 'Noto Sans', 600, normal, px2rem(22), 125%, normal, var(--ev-color-light));
+
+@include fontObject('.text, .content ul > li', 'Noto Sans', 400, normal, px2rem(16), 125%, normal, var(--ev-color-sub-light));
+@include fontObject('.button', 'Noto Sans', 500, normal, px2rem(16), 125%, normal, var(--ev-color-light));
+@include fontObject('.tags-item', 'Noto Sans', 500, normal, px2rem(14), 125%, normal, var(--ev-color-sub-light));
+@include fontObject('.card-title', 'Noto Sans', 500, normal, px2rem(20), 125%, normal, var(--ev-color-light));
+@include fontObject('.card-text', 'Noto Sans', 300, normal, px2rem(14), 125%, normal, var(--ev-color-light));
+

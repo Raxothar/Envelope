@@ -126,14 +126,73 @@ document.addEventListener('DOMContentLoaded', function() {
                 let modal = document.querySelector('.modal[data-ev-modal-id="'+target+'"]');
                 if (modal){
                     modal.classList.add('open');
+                    document.body.classList.add("lock");
                     let modalClose = modal.querySelector('.modal__close');
                     modalClose.addEventListener('click', (e) => {
                         modal.classList.remove('open');
+                        document.body.classList.remove("lock");
                     });
                 }
             });
         });
     }
+
+
+    // Находим все элементы с классом "popup-image"
+    // Находим все элементы с классом "popup-image"
+    let popupImages = document.querySelectorAll('.popup-image');
+
+// Проходимся по каждому изображению
+    popupImages.forEach(function(image) {
+        // Добавляем обработчик события клика
+        image.addEventListener('click', function() {
+            // Создаем элемент попапа
+            let popupModal = document.createElement('div');
+            popupModal.classList.add('popup-img-modal');
+
+            // Создаем содержимое попапа
+            let popupModalContent = document.createElement('div');
+            popupModalContent.classList.add('popup-img-modal-content');
+
+            // Создаем кнопку для закрытия попапа
+            let closeButton = document.createElement('div');
+            closeButton.classList.add('popup-img-modal-close');
+            closeButton.innerHTML = '<i class="fa-solid fa-xmark"></i>'; // Добавляем текст в кнопку закрытия
+            closeButton.style.cursor = 'pointer';
+
+            // Создаем элемент для изображения
+            let popupImgContainer = document.createElement('div');
+            popupImgContainer.classList.add('popup-img-modal-image');
+            let popupImg = document.createElement('img');
+            popupImg.src = image.src;
+            popupImg.alt = image.alt;
+
+            // Добавляем изображение и кнопку закрытия в содержимое попапа
+            popupImgContainer.appendChild(popupImg);
+            popupModalContent.appendChild(closeButton);
+            popupModalContent.appendChild(popupImgContainer);
+
+            // Добавляем содержимое попапа в попап
+            popupModal.appendChild(popupModalContent);
+
+            // Добавляем попап на страницу
+            document.body.appendChild(popupModal);
+
+            // Добавляем обработчик события клика для закрытия попапа при клике вне изображения
+            popupModal.addEventListener('click', function(event) {
+                if (event.target === popupModal) {
+                    // Удаляем попап при клике вне изображения
+                    document.body.removeChild(popupModal);
+                }
+            });
+
+            // Добавляем обработчик события клика для закрытия попапа при клике на кнопку закрытия
+            closeButton.addEventListener('click', function() {
+                // Удаляем попап при клике на кнопку закрытия
+                document.body.removeChild(popupModal);
+            });
+        });
+    });
 
 });
 

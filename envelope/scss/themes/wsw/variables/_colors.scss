@@ -1,0 +1,15 @@
+$ev-colors: (
+	dark: #0B071B,
+	first-accent: #F50415,
+	light: #ffffff,
+	gray: rgba(131, 137, 150, 1),
+	sub-light:rgba(255, 255, 255, 0.85),
+
+	dark-op-85: rgba(11, 7, 27, 0.85),
+	dark-op-50: rgba(11, 7, 27, 0.50),
+	first-accent-op-30: rgba(245, 4, 21, 0.3),
+	light-op-01: rgba(255, 255, 255, 0.1),
+	light-op-03: rgba(255, 255, 255, 0.3),
+);
+
+@include ev-colors-generate($ev-colors, null);

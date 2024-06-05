@@ -1,0 +1,29 @@
+.button{
+  background-color: var(--ev-color-first-accent);
+  padding: $gap-grid-quarter $gap-grid-half;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $gap-grid-quarter;
+  border: px2rem(1) solid var(--ev-color-light-op-03);
+  box-shadow: 0 px2rem(2) px2rem(3) var(--ev-color-light-op-01);
+  transition: background-color 0.3s ease-in-out;
+  &:hover{
+    background-color: var(--ev-color-dark);
+  }
+  &-disable{
+    background-color: var(--ev-color-gray);
+    cursor: default;
+    &:hover{
+      background-color: var(--ev-color-gray);
+    }
+  }
+  &-modal-portfolio > i:first-child{
+    margin-right: $gap-grid-octo;
+  }
+
+  &-modal-portfolio > i:last-child{
+    margin-left: $gap-grid-octo;
+  }
+}
+

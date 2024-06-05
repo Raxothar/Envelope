@@ -1,0 +1,41 @@
+.portfolio-cards{
+  margin-top: $gap-grid;
+  margin-bottom: $gap-grid-half;
+  .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: $gap-grid;
+    & > *{
+      width: 100%;
+    }
+    &-slider{
+      border-radius: $gap-grid-quarter;
+      overflow: hidden;
+      border: px2rem(1) solid var(--ev-color-light-op-03);
+      box-shadow: 0 px2rem(4) px2rem(6) var(--ev-color-light-op-01);
+      margin-bottom: $gap-grid-half;
+      aspect-ratio: 1920 / 1040;
+      .carousel__slide{
+        aspect-ratio: 1920 / 1040;
+        width: calc(100% - $gap-grid);
+        &:not(:first-child){
+          margin-left: $gap-grid;
+        }
+      }
+    }
+    &-title{
+      margin-bottom: $gap-grid-quarter;
+    }
+    &-text{
+      margin-bottom: $gap-grid-half;
+    }
+    .button{
+      align-self: flex-end;
+    }
+    .button > i{
+      margin-left: $gap-grid-quarter;
+    }
+  }
+}

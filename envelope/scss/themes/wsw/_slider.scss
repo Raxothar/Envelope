@@ -1,0 +1,27 @@
+.carousel{
+
+  &__slide{
+    width: 100%;
+    margin: 0;
+  }
+
+  &__button {
+    position: absolute;
+    width: $gap-grid;
+    height: $gap-grid;
+    border-radius: 50%;
+    background-color: var(--ev-color-light);
+    top: calc(50% - 2rem);
+    cursor: pointer;
+    border: px2rem(1) solid var(--ev-color-dark-op-50);
+    color: var(--ev-color-dark);
+    top: calc(50% - ($gap-grid / 2));
+    &--left{
+      left: calc($gap-grid-quarter);
+    }
+    &--right{
+      right: calc($gap-grid-quarter);
+    }
+  }
+
+}

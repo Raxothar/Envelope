@@ -1,0 +1,45 @@
+.popup-img-modal {
+  background-color: var(--ev-color-dark-op-50);
+  &-close {
+    position: absolute;
+    width: $gap-grid;
+    height: $gap-grid;
+    border-radius: 50%;
+    background-color: var(--ev-color-light);
+    cursor: pointer;
+    border: px2rem(1) solid var(--ev-color-dark-op-50);
+    color: var(--ev-color-dark);
+    top: calc(-1 * $gap-grid-half);
+    right: calc(-1 * $gap-grid-half);
+    font-size: $gap-grid-half;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-content {
+    width: 80%;
+    height: fit-content;
+    max-width: px2rem(900);
+    max-height: px2rem(900);
+    position: relative;
+    padding: 0;
+  }
+  &-image {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  img{
+    border: px2rem(1) solid var(--ev-color-dark);
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@include bp(xs, lg){
+  .popup-img-modal{
+    &-content {
+      width: 90%;
+      max-height: 90%;
+    }
+  }
+}
