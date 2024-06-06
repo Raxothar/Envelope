@@ -1,0 +1,41 @@
+.servicesSection{
+  position: relative;
+  background-image: url("#{$assetsPath}/images/bf-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: $gap-grid;
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: var(--ev-gradient-grayBlueGray);
+    opacity: 0.85;
+  }
+
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+
+  .services__header--text{
+    padding-left: 0;
+  }
+
+  .h1, .services__header--text > *, .services__header--quote, .card__title.title, .breadcrumbs *{
+    color: var(--ev-color-mainWhite) !important;
+  }
+
+  .card:hover .card__title.title{
+    color: var(--ev-color-mainGray) !important;
+  }
+
+  .breadcrumbs{
+    margin: $gap-grid 0;
+  }
+
+}

@@ -2781,7 +2781,7 @@ input, input::placeholder, .button, .tabs__items-item {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 9;
     width: 100%;
   }
   .header.open {
@@ -3898,6 +3898,42 @@ input, input::placeholder, .button, .tabs__items-item {
 .contractInfo {
   padding: 5.5rem 0 5.0625rem 0;
   background-color: var(--ev-color-addColdWhite);
+}
+
+.servicesSection {
+  position: relative;
+  background-image: url("../../../../assets/images/bf-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 2rem;
+}
+.servicesSection::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: var(--ev-gradient-grayBlueGray);
+  opacity: 0.85;
+}
+.servicesSection .container {
+  position: relative;
+  z-index: 2;
+}
+.servicesSection .services__header--text {
+  padding-left: 0;
+}
+.servicesSection .h1, .servicesSection .services__header--text > *, .servicesSection .services__header--quote, .servicesSection .card__title.title, .servicesSection .breadcrumbs * {
+  color: var(--ev-color-mainWhite) !important;
+}
+.servicesSection .card:hover .card__title.title {
+  color: var(--ev-color-mainGray) !important;
+}
+.servicesSection .breadcrumbs {
+  margin: 2rem 0;
 }
 
 .bf {
