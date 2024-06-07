@@ -24,6 +24,12 @@ $iconSet: (
 	'rub': ('mask'),
 	'info': ('mask'),
 	'time': ('mask'),
+	'conversation': ('mask'),
+	'services-agreement': ('mask'),
+	'wreath': ('mask'),
+	'hearse': ('mask'),
+	'tombstone': ('mask'),
+	'big-arrow': ('mask'),
 );
 
 @mixin icon($icon, $type, $color: null) {

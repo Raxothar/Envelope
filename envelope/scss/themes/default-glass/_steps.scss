@@ -1,0 +1,11 @@
+.steps{
+  padding-top: px2rem(90);
+  padding-bottom: px2rem(80);
+  background: var(--ev-gradient-coldLightGray);
+  .h2{
+    text-transform: uppercase;
+    margin-bottom: px2rem(24);
+    color: var(--ev-color-mainGray);
+    padding: px2rem(8);
+  }
+}

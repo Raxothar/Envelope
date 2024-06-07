@@ -1,0 +1,8 @@
+.content > ol {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: px2rem(24);
+  list-style-type: decimal;
+}

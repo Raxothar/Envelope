@@ -146,3 +146,45 @@
 		}
 	}
 }
+
+.steps-cards{
+	align-items: stretch;
+	.card{
+		margin-bottom: $gap-grid;
+		background-color: var(--ev-color-addColdWhite);
+		border-radius: px2rem(8);
+		border: px2rem(1) solid var(--ev-color-addColdBlue);
+		padding: 0 px2rem(24) px2rem(24) px2rem(24);
+		.card-title{
+			color: var(--ev-color-mainGray);
+			padding-top: px2rem(24);
+			padding-bottom: px2rem(8);
+		}
+		.card-digit{
+			display: flex;
+			align-items: center;
+			margin-top: px2rem(16);
+			&::after{
+				content: "";
+				display: flex;
+				width: px2rem(89);
+				height: px2rem(16);
+				@include icon('big-arrow', 'mask');
+				background-color: var(--ev-color-addColdBlue);
+				margin-left: px2rem(8);
+			}
+		}
+		@include bp(xs, lg){
+			.card-digit::after{
+				width: px2rem(40);
+				height: px2rem(9);
+			}
+		}
+	}
+}
+
+@include bp(xs, lg){
+	.steps-cards .card{
+		padding: px2rem(16);
+	}
+}

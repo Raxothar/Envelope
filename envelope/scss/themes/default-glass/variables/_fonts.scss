@@ -41,6 +41,9 @@
 @include fontObject('.requisites__content--table--item > .key', 'Inter', 400, normal, px2rem(16), px2rem(20.8), px2rem(0.5), var(--ev-color-mainGray));
 @include fontObject('.requisites__content--table--item > .value', 'Inter', 700, normal, px2rem(18), px2rem(19.8), px2rem(0.5), var(--ev-color-mainGray));
 
+@include fontObject('.card-digit', 'DejaVu Serif', 400, normal, px2rem(102), 100%, normal, var(--ev-color-addColdBlue));
+
+
 @include bp(xs, lg){
 	@include fontObject('.colorCard__text', 'Inter', 400, normal, px2rem(12), px2rem(16.8), px2rem(1), var(--ev-color-mainWhite));
 	@include fontObject('.notes__cards--item-title', 'Inter', 600, normal, px2rem(16), px2rem(17.6), px2rem(0.5), var(--ev-color-mainGray));
@@ -68,6 +71,10 @@
 	@include fontObject('.bf__info-card-phone.text > span', 'Inter', 500, normal, px2rem(22), 105%, normal, var(--ev-color-mainBlue));
 	@include fontObject('.bf__info-card-fax.text', 'Inter', 400, normal, px2rem(16), px2rem(20.8), px2rem(0.5), var(--ev-color-addGray));
 	@include fontObject('.bf__info-card-worktime.logoSubtitle', 'Inter', 400, normal, px2rem(16), px2rem(16), px2rem(0.5), var(--ev-color-addGray));
+	@include fontObject('.OneServicePageCards .h4', 'Inter', 400, normal, px2rem(14), px2rem(18.2), px2rem(0.5), var(--ev-color-mainGray));
+	@include fontObject('.card-digit', 'DejaVu Serif', 400, normal, px2rem(82), 100%, normal, var(--ev-color-addColdBlue));
+	@include fontObject('.steps-cards .card-title', 'Inter', 400, normal, px2rem(16), px2rem(17.6), px2rem(0.5), var(--ev-color-mainGray));
+
 }
 
 //
