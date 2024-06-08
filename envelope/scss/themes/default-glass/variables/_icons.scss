@@ -41,6 +41,8 @@ $iconSet: (
 		mask-image: url("#{$iconPath}/#{$icon}.svg");
 		-webkit-mask-image: url("#{$iconPath}/#{$icon}.svg");
 		background-color: #{$color};
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
 	} @else if($type == 'mask') {
 		mask-size: contain;
 		-webkit-mask-size: contain;
@@ -48,6 +50,8 @@ $iconSet: (
 		-webkit-mask-position: center;
 		mask-image: url("#{$iconPath}/#{$icon}.svg");
 		-webkit-mask-image: url("#{$iconPath}/#{$icon}.svg");
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
 	} @else {
 		background-image: url("#{$iconPath}/#{$icon}.svg");
 	}

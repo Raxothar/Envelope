@@ -1,3 +1,165 @@
 .pricesSection{
-  background-image: var(--ev-gradient-grayBlueGray);
+  background-image: var(--ev-gradient-coldLightGray);
+  padding-top: $gap-grid;
+  padding-bottom: px2rem(80);
+
+  .breadcrumbs{
+    *{
+      color: var(--ev-color-mainGray);
+    }
+  }
+
+  &__header{
+    margin-bottom: px2rem(40);
+    .h1, .text{
+      color: var(--ev-color-mainGray);
+    }
+    .h1{
+      text-transform: uppercase;
+      margin-bottom: px2rem(24);
+      margin-top: px2rem(16);
+    }
+
+    .quote{
+      color: var(--ev-color-mainBlue);
+      text-align: right;
+    }
+  }
+
+  &__glass{
+    padding: px2rem(60);
+    border-radius: $gap-grid;
+    background-color: var(--ev-color-mainWhiteTransparent);
+    .priceSec__tabs{
+      margin: 0;
+      .tabs__content{
+        padding-top: px2rem(40);
+      }
+    }
+    .tabs__items{
+      margin-left: 0;
+    }
+  }
+}
+
+@include bp(xs, lg){
+  .pricesSection{
+    margin-top: $mobileHeaderHeight;
+    .breadcrumbs{
+      display: none;
+    }
+    &__glass{
+      padding: px2rem(40) px2rem(24);
+      width: calc(100% - px2rem(24));
+      margin-left: auto;
+      margin-right: auto;
+      .priceSec__tabs .tabs__content{
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.pricesSectionContent{
+  padding-top: px2rem(80);
+  padding-bottom: px2rem(80);
+  & *{
+    color: var(--ev-color-mainGray);
+  }
+  &__text{
+    .h2{
+      padding: px2rem(8);
+      margin-bottom: px2rem(8);
+      text-transform: uppercase;
+    }
+    .text{
+      padding: px2rem(24) px2rem(16);
+    }
+  }
+  &__card{
+    display: flex;
+    background-color: var(--ev-color-addColdWhite);
+    box-shadow: 0 px2rem(20) px2rem(30) 0 var(--ev-color-cardShadow);
+    padding: px2rem(24) px2rem(16);
+    .icon{
+      width: px2rem(60);
+      height: px2rem(60);
+      background-color: var(--ev-color-addColdBlue);
+      margin-right: px2rem(21);
+    }
+    .content{
+      .title{
+        margin-top: px2rem(8);
+        margin-bottom: px2rem(12);
+      }
+    }
+  }
+  &__phones{
+    padding: px2rem(8);
+    & > .text{
+      padding: px2rem(8) px2rem(24);
+    }
+    &--items{
+      padding: px2rem(8);
+      .mainText__content--phones-item:not(:last-child){
+        margin-bottom: px2rem(16);
+      }
+    }
+
+  }
+}
+
+@include bp(xs, lg){
+  .pricesSectionContent{
+    padding-top: px2rem(40);
+    padding-bottom: px2rem(40);
+    &__card{
+      flex-direction: column;
+    }
+    &__phones{
+      margin-top: $gap-grid;
+    }
+  }
+}
+
+.pricesSectionDarkContent{
+  padding-top: px2rem(80);
+  padding-bottom: px2rem(80);
+  background: var(--ev-gradient-darkGray);
+  & *{
+    color: var(--ev-color-mainWhite);
+  }
+  .icon{
+    width: px2rem(60);
+    height: px2rem(60);
+    background-color: var(--ev-color-addColdBlue);
+    mask-size: px2rem(60);
+    -webkit-mask-size: px2rem(60);
+  }
+  .content{
+    width: calc(100% - px2rem(60));
+    padding-left: $gap-grid;
+    padding-top: px2rem(8);
+    padding-bottom: px2rem(8);
+    .title, ul{
+      padding: px2rem(8) 0;
+    }
+    .title{
+      margin-bottom: px2rem(8);
+    }
+  }
+}
+
+@include bp(xs, lg){
+  .pricesSectionDarkContent{
+    padding-top: px2rem(40);
+    padding-bottom: px2rem(80);
+    .col-xs-12{
+      flex-direction: column;
+      .content{
+        padding-left: 0;
+        width: 100%;
+      }
+    }
+  }
 }
