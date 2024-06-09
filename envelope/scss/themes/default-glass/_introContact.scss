@@ -112,3 +112,13 @@
     }
   }
 }
+
+@include bp(xs, lg){
+  .introContactPhones{
+    padding-bottom: px2rem(120);
+    &__item{
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}

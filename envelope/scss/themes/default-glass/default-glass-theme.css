@@ -4586,6 +4586,15 @@ input, input::placeholder, .button, .tabs__items-item {
   margin-bottom: 0.25rem;
 }
 
+@media (min-width: 0) and (max-width: 992px) {
+  .introContactPhones {
+    padding-bottom: 7.5rem;
+  }
+  .introContactPhones__item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .bf {
   padding: 3rem 0;
   background-repeat: no-repeat;
