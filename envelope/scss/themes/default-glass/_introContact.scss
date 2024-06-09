@@ -1,0 +1,114 @@
+.introContact{
+  position: relative;
+  padding-top: $gap-grid;
+  padding-bottom: px2rem(72);
+  background-image: var(--ev-gradient-coldLightGray);
+  &::after{
+    content: "";
+    display: flex;
+    width: 150vw;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -50vw;
+    background-image: url("#{$assetsPath}/images/bf-bg.jpg");
+    opacity: 0.3;
+    transform: rotate(180deg);
+  }
+  & > .container{
+    position: relative;
+  }
+  .breadcrumbs *{
+    color: var(--ev-color-mainGray);
+  }
+  &__row{
+    position: relative;
+    z-index: 2;
+    margin-bottom: px2rem(40);
+    &--card{
+      position: absolute;
+      left: 0;
+      .glass{
+        padding: px2rem(54) px2rem(45);
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: px2rem(80);
+        background-image: var(--ev-color-coldLightGray);
+        & > *{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          color: var(--ev-color-mainGray);
+          &:not(:first-child){
+            margin-top: $gap-grid-half;
+          }
+        }
+      }
+    }
+  }
+  &__content{
+    position: relative;
+    z-index: 2;
+    .content{
+      padding: px2rem(24) px2rem(8);
+      & *{
+        color: var(--ev-color-mainGray);
+      }
+    }
+  }
+}
+
+@include bp(xs, lg){
+  .introContact{
+    padding: px2rem(40) 0;
+    .breadcrumbs{
+      display: none;
+    }
+    &__row{
+      &--card{
+        position: static;
+        margin-bottom: px2rem(40);
+        .glass{
+          padding: px2rem(16);
+          border-radius: px2rem(32);
+          justify-content: center;
+          align-items: center;
+          .h4:last-child{
+            width: 80%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    &__content .content:last-child{
+      padding-top: 0;
+    }
+  }
+}
+
+.introContactPhones{
+  padding-top: px2rem(40);
+  padding-bottom: px2rem(40);
+  &__item{
+    width: fit-content;
+    max-width: px2rem(200);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: px2rem(40);
+    padding-bottom: px2rem(8);
+    border-bottom: px2rem(1) solid var(--ev-color-addColdBlue);
+    & > *{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    & > .comment:first-child{
+      margin-bottom: px2rem(10);
+    }
+    & > .title{
+      margin-bottom: px2rem(4);
+    }
+  }
+}

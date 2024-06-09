@@ -4474,6 +4474,118 @@ input, input::placeholder, .button, .tabs__items-item {
     width: 100%;
   }
 }
+.introContact {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 4.5rem;
+  background-image: var(--ev-gradient-coldLightGray);
+}
+.introContact::after {
+  content: "";
+  display: flex;
+  width: 150vw;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -50vw;
+  background-image: url("../../../../assets/images/bf-bg.jpg");
+  opacity: 0.3;
+  transform: rotate(180deg);
+}
+.introContact > .container {
+  position: relative;
+}
+.introContact .breadcrumbs * {
+  color: var(--ev-color-mainGray);
+}
+.introContact__row {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2.5rem;
+}
+.introContact__row--card {
+  position: absolute;
+  left: 0;
+}
+.introContact__row--card .glass {
+  padding: 3.375rem 2.8125rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5rem;
+  background-image: var(--ev-color-coldLightGray);
+}
+.introContact__row--card .glass > * {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--ev-color-mainGray);
+}
+.introContact__row--card .glass > *:not(:first-child) {
+  margin-top: 1rem;
+}
+.introContact__content {
+  position: relative;
+  z-index: 2;
+}
+.introContact__content .content {
+  padding: 1.5rem 0.5rem;
+}
+.introContact__content .content * {
+  color: var(--ev-color-mainGray);
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .introContact {
+    padding: 2.5rem 0;
+  }
+  .introContact .breadcrumbs {
+    display: none;
+  }
+  .introContact__row--card {
+    position: static;
+    margin-bottom: 2.5rem;
+  }
+  .introContact__row--card .glass {
+    padding: 1rem;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .introContact__row--card .glass .h4:last-child {
+    width: 80%;
+    text-align: center;
+  }
+  .introContact__content .content:last-child {
+    padding-top: 0;
+  }
+}
+.introContactPhones {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.introContactPhones__item {
+  width: fit-content;
+  max-width: 12.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.0625rem solid var(--ev-color-addColdBlue);
+}
+.introContactPhones__item > * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.introContactPhones__item > .comment:first-child {
+  margin-bottom: 0.625rem;
+}
+.introContactPhones__item > .title {
+  margin-bottom: 0.25rem;
+}
+
 .bf {
   padding: 3rem 0;
   background-repeat: no-repeat;
