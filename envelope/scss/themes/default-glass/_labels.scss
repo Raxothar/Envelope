@@ -1,0 +1,18 @@
+.label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: px2rem(16);
+  right: 0;
+  padding: px2rem(8) px2rem(24);
+  border-radius: px2rem(32);
+  background-color: var(--ev-color-addGreen);
+  &.label-first{
+    background-color: var(--ev-color-mainDark);
+  }
+  &.label-second{
+    background: var(--ev-gradient-grayBlueGray);
+  }
+}

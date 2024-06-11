@@ -21,24 +21,7 @@
 		position: relative;
 	}
 
-	&__label{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-transform: uppercase;
-		position: absolute;
-		top: px2rem(16);
-		right: 0;
-		padding: px2rem(8) px2rem(24);
-		border-radius: px2rem(32);
-		background-color: var(--ev-color-addGreen);
-		&.label-first{
-			background-color: var(--ev-color-mainDark);
-		}
-		&.label-second{
-			background: var(--ev-gradient-grayBlueGray);
-		}
-	}
+	
 
 	&__footer{
 		display: flex;
@@ -97,6 +80,22 @@
 		border-width: px2rem(1);
 		border-color: var(--ev-color-addColdBlue);
 		box-shadow: inset 0 0 px2rem(3) transparent;
+	}
+
+	@include bp(xs, lg){
+		&-product{
+			.card__footer{
+				display: flex;
+				flex-wrap: wrap;
+				& > *{
+					width: 100%;
+				}
+				.button{
+					width: fit-content;
+					margin-top: px2rem(16);
+				}
+			}
+		}
 	}
 
 	&-product:hover{
@@ -186,5 +185,40 @@
 @include bp(xs, lg){
 	.steps-cards .card{
 		padding: px2rem(16);
+	}
+}
+
+.cards-catalogInfo{
+	margin-top: px2rem(24);
+	align-items: stretch;
+	.card{
+		border: none;
+		padding: 0 px2rem(24) px2rem(24) px2rem(24);
+		border-radius: px2rem(8);
+		background-color: var(--ev-color-addColdWhite);
+		.icon{
+			width: px2rem(60);
+			height: px2rem(60);
+			margin: px2rem(20);
+			background-color: var(--ev-color-addColdBlue);
+			mask-size: px2rem(60);
+			-webkit-mask-size: px2rem(60);
+		}
+		.title{
+			padding: px2rem(8) 0;
+			zoom: 90%;
+		}
+		.title, .content, .content *{
+			color: var(--ev-color-mainGray);
+		}
+		.content ul+p{
+			margin-top: px2rem(8);
+		}
+	}
+	@include bp(xs, lg){
+		.card{
+			padding: px2rem(8);
+			margin-bottom: $gap-grid;
+		}
 	}
 }

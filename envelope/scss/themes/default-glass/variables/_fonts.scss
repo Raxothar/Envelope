@@ -43,6 +43,8 @@
 
 @include fontObject('.card-digit', 'DejaVu Serif', 400, normal, px2rem(102), 100%, normal, var(--ev-color-addColdBlue));
 
+@include fontObject('.productSection__tabs--item', 'Inter', 500, normal, px2rem(22), 100%, normal, var(--ev-color-addGray));
+@include fontObject('.productSection__tabs--item.active', 'Inter', 500, normal, px2rem(22), 100%, normal, var(--ev-color-mainWhite));
 
 @include bp(xs, lg){
 	@include fontObject('.colorCard__text', 'Inter', 400, normal, px2rem(12), px2rem(16.8), px2rem(1), var(--ev-color-mainWhite));

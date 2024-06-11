@@ -57,4 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
         new Carousel(requisitesLicensesSlider, {0: 2}, {arrows: true, nav: true});
     }
 
+    let catalogSlider = document.querySelector('.catalog__slider');
+    if(catalogSlider){
+        new Carousel(catalogSlider, {0: 1, 992:3}, {arrows: true, nav: true});
+    }
+
+    let addProductSlider = document.querySelector('.addProduct__slider');
+    if(addProductSlider){
+        new Carousel(addProductSlider, {0: 1, 992:3}, {arrows: true, nav: true});
+    }
+
 });
