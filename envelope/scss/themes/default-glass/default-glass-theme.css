@@ -4246,7 +4246,39 @@ input, input::placeholder, .button, .tabs__items-item {
 .contractInfo__content .content, .contractInfo__content .content > * {
   color: var(--ev-color-mainGray);
 }
+.contractInfo__footer {
+  margin-top: 1.875rem;
+}
+.contractInfo__footer .icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: var(--ev-color-addColdBlue);
+}
+.contractInfo__footer--text {
+  width: calc(100% - 3.75rem);
+  padding-left: 1.875rem;
+}
+.contractInfo__footer--text, .contractInfo__footer--text > * {
+  color: var(--ev-color-mainGray);
+}
 
+@media (min-width: 0) and (max-width: 992px) {
+  .contractInfo {
+    padding: 2.5rem 0 2.5rem 0;
+  }
+  .contractInfo__footer {
+    margin-top: 1.875rem;
+    padding: 1rem;
+  }
+  .contractInfo__footer .content {
+    flex-wrap: wrap;
+  }
+  .contractInfo__footer--text {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 5rem;
+  }
+}
 .servicesSection {
   position: relative;
   background-image: url("../../../../assets/images/bf-bg.jpg");

@@ -72,4 +72,38 @@
     }
   }
 
+  &__footer{
+    margin-top: px2rem(30);
+    .icon{
+      width: px2rem(60);
+      height: px2rem(60);
+      background-color: var(--ev-color-addColdBlue);
+    }
+    &--text{
+      width: calc(100% - px2rem(60));
+      padding-left: px2rem(30);
+      &, & > *{
+        color: var(--ev-color-mainGray);
+      }
+    }
+  }
+}
+
+@include bp(xs, lg){
+  .contractInfo{
+    padding: px2rem(40) 0 px2rem(40) 0;
+
+    &__footer{
+      margin-top: px2rem(30);
+      padding: px2rem(16);
+      .content{
+        flex-wrap: wrap;
+      }
+      &--text{
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: px2rem(80);
+      }
+    }
+  }
 }
