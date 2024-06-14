@@ -53,4 +53,23 @@
 .contractInfo{
   padding: px2rem(88) 0 px2rem(81) 0;
   background-color: var(--ev-color-addColdWhite);
+
+  &__title{
+    padding: px2rem(8);
+    text-transform: uppercase;
+    color: var(--ev-color-mainGray);
+  }
+
+  &__content{
+    margin-top: px2rem(24);
+    .content{
+      padding: px2rem(16) px2rem(24);
+      background-color: var(--ev-color-mainWhite);
+      margin-bottom: px2rem(24);
+      &, & > *{
+        color: var(--ev-color-mainGray);
+      }
+    }
+  }
+
 }

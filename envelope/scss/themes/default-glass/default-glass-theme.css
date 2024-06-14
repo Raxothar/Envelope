@@ -4230,6 +4230,22 @@ input, input::placeholder, .button, .tabs__items-item {
   padding: 5.5rem 0 5.0625rem 0;
   background-color: var(--ev-color-addColdWhite);
 }
+.contractInfo__title {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  color: var(--ev-color-mainGray);
+}
+.contractInfo__content {
+  margin-top: 1.5rem;
+}
+.contractInfo__content .content {
+  padding: 1rem 1.5rem;
+  background-color: var(--ev-color-mainWhite);
+  margin-bottom: 1.5rem;
+}
+.contractInfo__content .content, .contractInfo__content .content > * {
+  color: var(--ev-color-mainGray);
+}
 
 .servicesSection {
   position: relative;
