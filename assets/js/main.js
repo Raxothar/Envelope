@@ -67,4 +67,9 @@ document.addEventListener('DOMContentLoaded', function () {
         new Carousel(addProductSlider, {0: 1, 992:3}, {arrows: true, nav: true});
     }
 
+    let pageReviewsSlider = document.querySelector('.pageReviews__slider');
+    if(pageReviewsSlider){
+        new Carousel(pageReviewsSlider, {0: 5, 992:2}, {arrows: true, nav: true});
+    }
+
 });

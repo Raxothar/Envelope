@@ -1,0 +1,52 @@
+.reviewsPage{
+  padding-top: px2rem(35);
+  padding-bottom: px2rem(80);
+  position: relative;
+
+  &::before, &::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &::before{
+    background-image: url("#{$assetsPath}/images/bf-bg.jpg");
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0.2;
+    z-index: 2;
+  }
+
+  &::after{
+    background-image: var(--ev-gradient-coldLightGray);
+    z-index: 1;
+  }
+
+  .container{
+    position: relative;
+    z-index: 3;
+  }
+
+  .breadcrumbs{
+    margin-bottom: $gap-grid;
+  }
+
+  &__title{
+    color: var(--ev-color-mainGray);
+    text-transform: uppercase;
+  }
+
+  &__slider{
+    margin-top: px2rem(32);
+    &--item{
+      border-left: px2rem(3) solid var(--ev-color-addColdBlue);
+      padding: px2rem(8) px2rem(16);
+      margin-bottom: px2rem(30);
+    }
+  }
+
+}
