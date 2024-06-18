@@ -20,6 +20,8 @@ $ev-gradients: (
 	coldLightGray: linear-gradient(180deg, #CDDCE6 0%, #F5FAFA 71.53%, #FFFFFF 131.25%),
 	darkGray: linear-gradient(90deg, #404447 0%, rgba(17, 37, 70, 0.6) 100%),
 	grayBlueGray: linear-gradient(286.13deg, rgba(64, 68, 71, 0.8) 0%, #559DD2 53.11%, rgba(64, 68, 71, 0.8) 100%),
+	coldLightGray2: linear-gradient(1.18deg, #CDDCE6 4.22%, #F5FAFA 55.84%, #FFFFFF 98.95%),
+
 );
 
 @include ev-colors-generate($ev-colors, $ev-gradients);

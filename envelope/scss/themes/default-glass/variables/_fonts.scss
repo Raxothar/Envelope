@@ -76,6 +76,7 @@
 	@include fontObject('.OneServicePageCards .h4', 'Inter', 400, normal, px2rem(14), px2rem(18.2), px2rem(0.5), var(--ev-color-mainGray));
 	@include fontObject('.card-digit', 'DejaVu Serif', 400, normal, px2rem(82), 100%, normal, var(--ev-color-addColdBlue));
 	@include fontObject('.steps-cards .card-title', 'Inter', 400, normal, px2rem(16), px2rem(17.6), px2rem(0.5), var(--ev-color-mainGray));
+	@include fontObject('.table td, .table th', 'Inter', 400, normal, px2rem(12), px2rem(16.8), px2rem(1), var(--ev-color-mainGray));
 
 }
 

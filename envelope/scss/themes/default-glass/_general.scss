@@ -6,3 +6,21 @@
   padding-inline-start: px2rem(24);
   list-style-type: decimal;
 }
+
+@include bp(xs, lg){
+  .breadcrumbs{
+    display: none !important;
+  }
+  section{
+    padding-top: px2rem(40);
+    padding-bottom: px2rem(40);
+  }
+}
+
+body > *:not(.filter__back, .productSection__tabs, .table){
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+.allowanceIntro{
+  padding-top: px2rem(30);
+  padding-bottom: px2rem(80);
+  background-image: var(--ev-gradient-coldLightGray2);
+  &__content{
+    .h1{
+      text-transform: uppercase;
+      color: var(--ev-color-mainGray);
+      margin-bottom: px2rem(16);
+    }
+    .content{
+      padding: px2rem(16) px2rem(24);
+      *{
+        color: var(--ev-color-mainGray);
+      }
+    }
+    .quoteCard{
+      margin-bottom: px2rem(32);
+    }
+    .button{
+      width: fit-content;
+    }
+  }
+}
+
+@include bp(xs, lg){
+  .allowanceIntro{
+    margin-top: $mobileHeaderHeight;
+    .button{
+      margin: 0 auto;
+    }
+    .content{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.allowanceTable{
+  padding-top: px2rem(80);
+  padding-bottom: px2rem(80);
+  background-color: var(--ev-color-addColdWhite);
+  .h2, .content *{
+    color: var(--ev-color-mainGray);
+  }
+  .h2{
+    text-transform: uppercase;
+    margin-bottom: px2rem(16);
+  }
+  .content{
+    padding: px2rem(16) px2rem(8);
+  }
+}

@@ -490,13 +490,6 @@ body.lock {
   left: 0;
   z-index: 9999;
 }
-body *:not(.filter__back, .productSection__tabs) {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-body *:not(.filter__back, .productSection__tabs)::-webkit-scrollbar {
-  display: none;
-}
 
 .p-1 {
   padding: 0.25rem;
@@ -1993,6 +1986,15 @@ input, input::placeholder, .button, .tabs__items-item {
     letter-spacing: 0.03125rem;
     color: var(--ev-color-mainGray);
   }
+  .table td, .table th {
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75rem;
+    line-height: 1.05rem;
+    letter-spacing: 0.0625rem;
+    color: var(--ev-color-mainGray);
+  }
 }
 :root {
   --ev-color-mainGray: #404447;
@@ -2013,6 +2015,7 @@ input, input::placeholder, .button, .tabs__items-item {
   --ev-gradient-coldLightGray: linear-gradient(180deg, #CDDCE6 0%, #F5FAFA 71.53%, #FFFFFF 131.25%);
   --ev-gradient-darkGray: linear-gradient(90deg, #404447 0%, rgba(17, 37, 70, 0.6) 100%);
   --ev-gradient-grayBlueGray: linear-gradient(286.13deg, rgba(64, 68, 71, 0.8) 0%, #559DD2 53.11%, rgba(64, 68, 71, 0.8) 100%);
+  --ev-gradient-coldLightGray2: linear-gradient(1.18deg, #CDDCE6 4.22%, #F5FAFA 55.84%, #FFFFFF 98.95%);
 }
 
 .icon.cart {
@@ -2535,6 +2538,23 @@ input, input::placeholder, .button, .tabs__items-item {
   list-style-type: decimal;
 }
 
+@media (min-width: 0) and (max-width: 992px) {
+  .breadcrumbs {
+    display: none !important;
+  }
+  section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+body > *:not(.filter__back, .productSection__tabs, .table) {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body > *:not(.filter__back, .productSection__tabs, .table)::-webkit-scrollbar {
+  display: none;
+}
+
 .cards {
   align-items: center;
 }
@@ -2743,6 +2763,15 @@ input, input::placeholder, .button, .tabs__items-item {
     padding: 0.5rem;
     margin-bottom: 2rem;
   }
+}
+
+.card-allowance {
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--ev-color-addGray);
+  padding: 1rem 1.5rem;
+  color: var(--ev-color-mainGray);
+  background-color: transparent;
+  margin-top: 1rem;
 }
 
 .tabs__items {
@@ -4082,6 +4111,39 @@ input, input::placeholder, .button, .tabs__items-item {
   background: var(--ev-gradient-grayBlueGray);
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow: scroll !important;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  border: 0.0625rem solid var(--ev-color-addColdBlue);
+  border-radius: 0.5rem;
+}
+.table thead {
+  background-color: var(--ev-color-addColdBlue);
+}
+.table thead tr > th:not(:last-child) {
+  border-right: 0.0625rem solid var(--ev-color-mainBlue);
+}
+.table thead tr > th {
+  padding: 1rem 1.25rem;
+  color: var(--ev-color-mainGray);
+}
+.table td {
+  width: 33.3333333333%;
+  padding: 1rem 1.25rem;
+  border-bottom: 0.0625rem solid var(--ev-color-addColdBlue);
+  color: var(--ev-color-mainGray);
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .table th, .table td {
+    padding: 0.25rem !important;
+  }
+}
 .introAbout {
   padding: 1.875rem 0 5rem 0;
   background-size: cover;
@@ -5087,6 +5149,57 @@ input, input::placeholder, .button, .tabs__items-item {
   border-left: 0.1875rem solid var(--ev-color-addColdBlue);
   padding: 0.5rem 1rem;
   margin-bottom: 1.875rem;
+}
+
+.allowanceIntro {
+  padding-top: 1.875rem;
+  padding-bottom: 5rem;
+  background-image: var(--ev-gradient-coldLightGray2);
+}
+.allowanceIntro__content .h1 {
+  text-transform: uppercase;
+  color: var(--ev-color-mainGray);
+  margin-bottom: 1rem;
+}
+.allowanceIntro__content .content {
+  padding: 1rem 1.5rem;
+}
+.allowanceIntro__content .content * {
+  color: var(--ev-color-mainGray);
+}
+.allowanceIntro__content .quoteCard {
+  margin-bottom: 2rem;
+}
+.allowanceIntro__content .button {
+  width: fit-content;
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .allowanceIntro {
+    margin-top: 4.625rem;
+  }
+  .allowanceIntro .button {
+    margin: 0 auto;
+  }
+  .allowanceIntro .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.allowanceTable {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--ev-color-addColdWhite);
+}
+.allowanceTable .h2, .allowanceTable .content * {
+  color: var(--ev-color-mainGray);
+}
+.allowanceTable .h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.allowanceTable .content {
+  padding: 1rem 0.5rem;
 }
 
 .bf {

@@ -222,3 +222,12 @@
 		}
 	}
 }
+
+.card-allowance{
+	border-radius: px2rem(8);
+	border: px2rem(1) solid var(--ev-color-addGray);
+	padding: px2rem(16) px2rem(24);
+	color: var(--ev-color-mainGray);
+	background-color: transparent;
+	margin-top: px2rem(16);
+}

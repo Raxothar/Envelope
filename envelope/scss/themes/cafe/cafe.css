@@ -490,13 +490,6 @@ body.lock {
   left: 0;
   z-index: 9999;
 }
-body *:not(.filter__back, .productSection__tabs) {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-body *:not(.filter__back, .productSection__tabs)::-webkit-scrollbar {
-  display: none;
-}
 
 .p-1 {
   padding: 0.25rem;
