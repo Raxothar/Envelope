@@ -25,3 +25,7 @@ $ev-gradients: (
 );
 
 @include ev-colors-generate($ev-colors, $ev-gradients);
+
+.blue{
+	color: var(--ev-color-mainBlue) !important;
+}

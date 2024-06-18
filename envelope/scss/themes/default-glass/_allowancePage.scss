@@ -51,3 +51,91 @@
     padding: px2rem(16) px2rem(8);
   }
 }
+
+.allowanceWhere{
+  padding: px2rem(80) 0;
+  .h2{
+    text-transform: uppercase;
+    padding: px2rem(8);
+    margin-bottom: px2rem(16);
+  }
+  .content{
+    padding: px2rem(8) px2rem(16);
+    margin-bottom: px2rem(32);
+  }
+  .h2, .content{
+    color: var(--ev-color-mainGray);
+  }
+
+  &-cards-broderLeft{
+    border-left: px2rem(1) solid var(--ev-color-mainBlue);
+    & > .card:not(:last-child){
+      margin-bottom: px2rem(16);
+    }
+  }
+}
+
+@include bp(xs, lg){
+  .allowanceWhere {
+    padding: px2rem(40) 0;
+    .h2{
+      padding: 0;
+    }
+    .content{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.allowanceDocs{
+  background-color: var(--ev-color-addColdWhite);
+  padding: px2rem(80) 0;
+  *{
+    color: var(--ev-color-mainGray);
+  }
+  .h2{
+    padding: px2rem(8);
+    text-transform: uppercase;
+    margin-bottom: px2rem(16);
+  }
+}
+
+@include bp(xs, lg){
+  .allowanceDocs{
+    padding: px2rem(40) 0;
+    &-cards{
+      margin-top: px2rem(16);
+    }
+    .h2{
+      padding: 0;
+    }
+  }
+}
+
+.allowanceHow{
+  padding: px2rem(80) 0;
+  .h2{
+    color: var(--ev-color-mainGray);
+    padding: px2rem(8);
+    margin-bottom: px2rem(24);
+    text-transform: uppercase;
+  }
+  .content{
+    padding: px2rem(8) px2rem(16);
+    color: var(--ev-color-mainGray);
+  }
+}
+
+@include bp(xs, lg){
+  .allowanceHow{
+    padding: px2rem(40) 0 px2rem(120) 0;
+    .h2{
+      padding: 0;
+    }
+    .content{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

@@ -231,3 +231,69 @@
 	background-color: transparent;
 	margin-top: px2rem(16);
 }
+
+.allowanceWhere-cards .card{
+	padding: px2rem(16) px2rem(24);
+	background-color: var(--ev-color-addColdWhite);
+	border: none;
+	border-radius: unset;
+	*{
+		color: var(--ev-color-mainGray);
+	}
+}
+
+@include bp(xs, lg){
+	.allowanceWhere-cards{
+		&-header{
+			border-top: px2rem(1) solid var(--ev-color-addGray);
+			border-left: px2rem(1) solid var(--ev-color-addGray);
+			border-right: px2rem(1) solid var(--ev-color-addGray);
+			.card{
+				background-color: var(--ev-color-addColdBlue);
+				font-weight: 700;
+			}
+		}
+		&-broderLeft{
+			border-left: px2rem(1) solid var(--ev-color-addGray);
+			border-right: px2rem(1) solid var(--ev-color-addGray);
+			background-color: var(--ev-color-addColdWhite);
+			padding: px2rem(16);
+			.card{
+				background-color: var(--ev-color-mainWhite);
+				padding: px2rem(8) px2rem(16);
+			}
+		}
+		&-footer{
+			border-bottom: px2rem(1) solid var(--ev-color-addGray);
+			border-left: px2rem(1) solid var(--ev-color-addGray);
+			border-right: px2rem(1) solid var(--ev-color-addGray);
+			.card{
+				background-color: var(--ev-color-addColdBlue);
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.allowanceDocs-cards .card{
+	border: none;
+	border-radius: unset;
+	padding: px2rem(24) px2rem(16);
+}
+
+.allowanceHow-cards > .card{
+	margin-top: px2rem(32);
+	box-shadow: 0 px2rem(20) px2rem(30) 0 var(--ev-color-cardShadow);
+	width: 100%;
+	border: px2rem(1) solid var(--ev-color-mainBlue);
+	border-radius: px2rem(8);
+	padding: px2rem(16) px2rem(24);
+	& > *{
+		width: 100%;
+		text-align: center;
+	}
+	& > *:not(:last-child){
+		margin-bottom: px2rem(16);
+	}
+}
+

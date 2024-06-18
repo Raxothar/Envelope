@@ -2018,6 +2018,10 @@ input, input::placeholder, .button, .tabs__items-item {
   --ev-gradient-coldLightGray2: linear-gradient(1.18deg, #CDDCE6 4.22%, #F5FAFA 55.84%, #FFFFFF 98.95%);
 }
 
+.blue {
+  color: var(--ev-color-mainBlue) !important;
+}
+
 .icon.cart {
   mask-size: contain;
   -webkit-mask-size: contain;
@@ -2772,6 +2776,68 @@ body > *:not(.filter__back, .productSection__tabs, .table)::-webkit-scrollbar {
   color: var(--ev-color-mainGray);
   background-color: transparent;
   margin-top: 1rem;
+}
+
+.allowanceWhere-cards .card {
+  padding: 1rem 1.5rem;
+  background-color: var(--ev-color-addColdWhite);
+  border: none;
+  border-radius: unset;
+}
+.allowanceWhere-cards .card * {
+  color: var(--ev-color-mainGray);
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .allowanceWhere-cards-header {
+    border-top: 0.0625rem solid var(--ev-color-addGray);
+    border-left: 0.0625rem solid var(--ev-color-addGray);
+    border-right: 0.0625rem solid var(--ev-color-addGray);
+  }
+  .allowanceWhere-cards-header .card {
+    background-color: var(--ev-color-addColdBlue);
+    font-weight: 700;
+  }
+  .allowanceWhere-cards-broderLeft {
+    border-left: 0.0625rem solid var(--ev-color-addGray);
+    border-right: 0.0625rem solid var(--ev-color-addGray);
+    background-color: var(--ev-color-addColdWhite);
+    padding: 1rem;
+  }
+  .allowanceWhere-cards-broderLeft .card {
+    background-color: var(--ev-color-mainWhite);
+    padding: 0.5rem 1rem;
+  }
+  .allowanceWhere-cards-footer {
+    border-bottom: 0.0625rem solid var(--ev-color-addGray);
+    border-left: 0.0625rem solid var(--ev-color-addGray);
+    border-right: 0.0625rem solid var(--ev-color-addGray);
+  }
+  .allowanceWhere-cards-footer .card {
+    background-color: var(--ev-color-addColdBlue);
+    font-weight: 700;
+  }
+}
+.allowanceDocs-cards .card {
+  border: none;
+  border-radius: unset;
+  padding: 1.5rem 1rem;
+}
+
+.allowanceHow-cards > .card {
+  margin-top: 2rem;
+  box-shadow: 0 1.25rem 1.875rem 0 var(--ev-color-cardShadow);
+  width: 100%;
+  border: 0.0625rem solid var(--ev-color-mainBlue);
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+.allowanceHow-cards > .card > * {
+  width: 100%;
+  text-align: center;
+}
+.allowanceHow-cards > .card > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .tabs__items {
@@ -5202,6 +5268,90 @@ body > *:not(.filter__back, .productSection__tabs, .table)::-webkit-scrollbar {
   padding: 1rem 0.5rem;
 }
 
+.allowanceWhere {
+  padding: 5rem 0;
+}
+.allowanceWhere .h2 {
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.allowanceWhere .content {
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+}
+.allowanceWhere .h2, .allowanceWhere .content {
+  color: var(--ev-color-mainGray);
+}
+.allowanceWhere-cards-broderLeft {
+  border-left: 0.0625rem solid var(--ev-color-mainBlue);
+}
+.allowanceWhere-cards-broderLeft > .card:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .allowanceWhere {
+    padding: 2.5rem 0;
+  }
+  .allowanceWhere .h2 {
+    padding: 0;
+  }
+  .allowanceWhere .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.allowanceDocs {
+  background-color: var(--ev-color-addColdWhite);
+  padding: 5rem 0;
+}
+.allowanceDocs * {
+  color: var(--ev-color-mainGray);
+}
+.allowanceDocs .h2 {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .allowanceDocs {
+    padding: 2.5rem 0;
+  }
+  .allowanceDocs-cards {
+    margin-top: 1rem;
+  }
+  .allowanceDocs .h2 {
+    padding: 0;
+  }
+}
+.allowanceHow {
+  padding: 5rem 0;
+}
+.allowanceHow .h2 {
+  color: var(--ev-color-mainGray);
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.allowanceHow .content {
+  padding: 0.5rem 1rem;
+  color: var(--ev-color-mainGray);
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .allowanceHow {
+    padding: 2.5rem 0 7.5rem 0;
+  }
+  .allowanceHow .h2 {
+    padding: 0;
+  }
+  .allowanceHow .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .bf {
   padding: 3rem 0;
   background-repeat: no-repeat;
