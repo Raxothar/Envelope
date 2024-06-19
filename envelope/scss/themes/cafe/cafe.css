@@ -491,6 +491,17 @@ body.lock {
   z-index: 9999;
 }
 
+.article.content p, .article.content h1, .article.content h2, .article.content h3, .article.content ul, .article.content ol {
+  margin-bottom: 1rem;
+}
+.article.content * {
+  color: var(--ev-color-mainGray);
+}
+.article.content img {
+  max-width: 100%;
+  height: auto;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
